@@ -1,25 +1,32 @@
-*{box-sizing: border-box; -webkit-box-sizing: border-box; }
-html, body { height: 100%; }
-body { margin: 0; font: 16px/1.3 sans-serif; }
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
 
 /*
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 */
-h1{
+h1 {
     font-size: 50px;
 }
+
 .bg-text {
-    background-color: black;
+    background-color: #ffffff;
     overflow: hidden;
     padding: 20px 20px 100px 20px;
     position: relative;
-    font-size:12vw;
+    font-size: 12vw;
     z-index: -10;
     text-shadow: 10px 10px 30px #D3D3D3
 }
+
 .bg-text::after {
-    vertical-align: center;
     text-shadow: 10px 10px 30px gray;
     font-weight: bolder;
     z-index: -10;
@@ -27,7 +34,7 @@ h1{
     color: white;
     content: attr(data-bg-text);
     display: block;
-    font-size:12vw;
+    font-size: 12vw;
     line-height: 1;
     position: absolute;
     top: 50%;
@@ -40,7 +47,8 @@ h1{
 .CSSgal {
     position: relative;
     overflow: hidden;
-    height: 100%; /* Or set a fixed height */
+    height: 100%;
+    /* Or set a fixed height */
 }
 
 /* SLIDER */
@@ -54,7 +62,7 @@ h1{
 
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgal .slider>* {
     font-size: 1rem;
     display: inline-block;
     white-space: normal;
@@ -73,18 +81,21 @@ h1{
     top: 50%;
     width: 100%;
     height: 0;
+    background-color: black;
 }
 
-.CSSgal .prevNext > div+div {
-    visibility: hidden; /* Hide all but first P/N container */
+.CSSgal .prevNext>div+div {
+    visibility: hidden;
+    /* Hide all but first P/N container */
 }
 
 .CSSgal .prevNext a {
-    background: #fff;
+    background: black;
     position: absolute;
-    width:       60px;
-    height:      60px;
-    line-height: 60px; /* If you want to place numbers */
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    /* If you want to place numbers */
     text-align: center;
     opacity: 0.7;
     -webkit-transition: 0.3s;
@@ -93,9 +104,11 @@ h1{
     transform: translateY(-50%);
     left: 0;
 }
+
 .CSSgal .prevNext a:hover {
     opacity: 1;
 }
+
 .CSSgal .prevNext a+a {
     left: auto;
     right: 0;
@@ -111,10 +124,11 @@ h1{
     width: 100%;
     text-align: center;
 }
-.CSSgal .bullets > a {
+
+.CSSgal .bullets>a {
     display: inline-block;
-    width:       30px;
-    height:      30px;
+    width: 30px;
+    height: 30px;
     line-height: 30px;
     text-decoration: none;
     text-align: center;
@@ -122,39 +136,127 @@ h1{
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
-.CSSgal .bullets > a+a {
-    background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+
+.CSSgal .bullets>a+a {
+    background: rgba(255, 255, 255, 0.5);
+    /* Dim all but first */
 }
-.CSSgal .bullets > a:hover {
+
+.CSSgal .bullets>a:hover {
     background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+.CSSgal>s:target~.bullets>* {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 /* ACTIVE */
-#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s1:target~.bullets>*:nth-child(1) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s2:target~.bullets>*:nth-child(2) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s3:target~.bullets>*:nth-child(3) {
+    background: rgba(255, 255, 255, 1);
+}
+
+#s4:target~.bullets>*:nth-child(4) {
+    background: rgba(255, 255, 255, 1);
+}
+#s5:target~.bullets>*:nth-child(5) {
+    background: rgba(255, 255, 255, 1);
+}
+#s6:target~.bullets>*:nth-child(6) {
+    background: rgba(255, 255, 255, 1);
+}
+#s7:target~.bullets>*:nth-child(7) {
+    background: rgba(255, 255, 255, 1);
+}
+#s8:target~.bullets>*:nth-child(8) {
+    background: rgba(255, 255, 255, 1);
+}
+
 /* More slides? Add here more rules */
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.CSSgal>s:target~.prevNext>* {
+    visibility: hidden;
+}
+
 /* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s1:target~.prevNext>*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target~.prevNext>*:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target~.prevNext>*:nth-child(3) {
+    visibility: visible;
+}
+
+#s4:target~.prevNext>*:nth-child(4) {
+    visibility: visible;
+}
+#s5:target~.prevNext>*:nth-child(5) {
+    visibility: visible;
+}
+#s6:target~.prevNext>*:nth-child(6) {
+    visibility: visible;
+}
+#s7:target~.prevNext>*:nth-child(7) {
+    visibility: visible;
+}
+#s7:target~.prevNext>*:nth-child(8) {
+    visibility: visible;
+}
+
 /* More slides? Add here more rules */
 
 /* SLIDER ANIMATION POSITIONS */
 
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s1:target~.slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:target~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+#s4:target~.slider {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+}
+#s5:target~.slider {
+    transform: translateX(-400%);
+    -webkit-transform: translateX(-400%);
+}
+#s6:target~.slider {
+    transform: translateX(-500%);
+    -webkit-transform: translateX(-500%);
+}
+#s7:target~.slider {
+    transform: translateX(-600%);
+    -webkit-transform: translateX(-600%);
+}
+#s8:target~.slider {
+    transform: translateX(-700%);
+    -webkit-transform: translateX(-700%);
+}
 /* More slides? Add here more rules */
 
 
@@ -162,20 +264,23 @@ h1{
    ____________________
    All above was mainly to get it working :)
    CSSgal CUSTOM STYLES / OVERRIDES HERE: */
-.title{
- display: flex;
+.title {
+    display: flex;
 }
-.CSSgal{
+
+.CSSgal {
     color: black;
 }
+
 .CSSgal .slider .slide1 h1 {
     margin-left: auto;
     padding-right: 8vw;
-    margin-top:60vh;
+    margin-top: 60vh;
     font-weight: bolder;
     letter-spacing: -0.06em;
     font-size: 3vw;
 }
+
 .CSSgal .slider .slide2 p {
     display: flex;
     top: 50%;
@@ -188,29 +293,39 @@ h1{
     letter-spacing: -0.06em;
     font-size: 1.6vw;
 }
+
 .CSSgal .slider .slide3 .gridContainer {
-
+    min-height: 30vh;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    margin-bottom: 20vh;
 }
-.CSSgal .slider .slide3 .gridContainer section{
 
-
+.CSSgal .slider .slide3 .grid-item {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 10px 10px 30px gray;
+    font-size: 1vw;
 }
-.CSSgal .slider .slide3 .gridContainer section div{
-    background: #000;
 
-}
-.CSSgal .slider .slide3 .text {
-    height: 50%;
+
+.CSSgal .slider .slide3 .textContainer {
+    min-height: 50vh;
     display: flex;
     font-family: "Calibri", sans-serif;
-    transform: translate(0, -50%);
-    margin-top: 40%;
+    margin-top: 5%;
     margin-right: 40%;
-    margin-left: 20%;
+    margin-left: 10%;
+    margin-bottom: 40%;
     flex-direction: column;
     line-height: 10px;
 
 }
+
 .CSSgal .slider .slide3 h1 {
     display: flex;
     font-weight: 5000;
@@ -218,21 +333,412 @@ h1{
     letter-spacing: -0.06em;
     font-size: 2.5vw;
 }
+
 .CSSgal .slider .slide3 p {
     display: flex;
     line-height: 30px;
     font-weight: 500;
     font-size: 1.6vw;
 }
+
+.CSSgal .slider .slide4 .listContainer {
+    min-height: 20vh;
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+.CSSgal .slider .slide4 .listContainer p{
+
+    font-weight: 5000;
+}
+.CSSgal .slider .slide4 .columnContainer {
+    min-height: 10vh;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.CSSgal .slider .slide4 .column {
+    flex: 30%;
+    border-radius: 20px;
+}
+.CSSgal .slider .slide4 .column h1 {
+    font-weight: 500;
+    letter-spacing: -0.06em;
+    font-size: 1.2vw;
+}
+.CSSgal .slider .slide4 .column h2 {
+    align-self: flex-end;
+    font-weight: 500;
+    letter-spacing: -0.06em;
+    font-size: 1.2vw;
+    color: #ce8f18;
+}
+.CSSgal .slider .slide4 .columnSpace {
+
+    flex: 5%;
+    font-size: 2vw;
+    text-align: center;
+    font-family: "Calibri", sans-serif;
+}
+.CSSgal .slider .slide4 .bottomContainer {
+    display: flex;
+}
+.CSSgal .slider .slide4 .textContainer {
+    z-index:100;
+    display: flex;
+    font-family: "Calibri", sans-serif;
+    margin-top: 5%;
+    margin-right: 40%;
+    margin-left: 10%;
+    margin-bottom: 40%;
+    flex-direction: column;
+}
+.CSSgal .slider .slide4 .textContainer h1 {
+    font-weight: bolder;
+    font-size: 3vw;
+}
+.CSSgal .slider .slide4 .textContainer h2 {
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+.CSSgal .slider .slide4 .textContainer p {
+    font-family: "Calibri", sans-serif;
+    font-weight: 500;
+    font-size: 1.6vw;
+    line-height: 2vw;
+}
+
+.CSSgal .slider .slide5 .listContainer {
+    min-height: 20vh;
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+.CSSgal .slider .slide5 .listContainer p{
+
+    font-weight: 5000;
+}
+.CSSgal .slider .slide5 .columnContainer {
+    min-height: 10vh;
+    display: flex;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+.CSSgal .slider .slide5 .column {
+    flex: 30%;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.CSSgal .slider .slide5 .column h1 {
+    font-weight: 500;
+    letter-spacing: -0.06em;
+    font-size: 1.2vw;
+}
+.CSSgal .slider .slide5 .column h2 {
+    align-self: flex-end;
+    font-weight: 500;
+    letter-spacing: -0.06em;
+    font-size: 1.2vw;
+    color: #ce8f18;
+    margin-bottom: auto;
+}
+.CSSgal .slider .slide5 .columnSpace {
+
+    flex: 5%;
+    font-size: 2vw;
+    text-align: center;
+    font-family: "Calibri", sans-serif;
+}
+.CSSgal .slider .slide5 .bottomContainer {
+    display: flex;
+    z-index: 50;
+    min-height: 30vh;
+}
+.CSSgal .slider .slide5 .textContainer {
+    z-index:100;
+    display: flex;
+    font-family: "Calibri", sans-serif;
+    margin-top: 5%;
+    margin-right: 40%;
+    margin-left: 10%;
+    margin-bottom: 40%;
+    flex-direction: column;
+}
+.CSSgal .slider .slide5 .textContainer h1 {
+    font-weight: bolder;
+    font-size: 3vw;
+}
+.CSSgal .slider .slide5 .textContainer h2 {
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+.CSSgal .slider .slide5 .textContainer p {
+    font-family: "Calibri", sans-serif;
+    font-weight: 500;
+    font-size: 1.6vw;
+    line-height: 2vw;
+}
+
+.CSSgal .slider .slide6 .listContainer {
+    min-height: 20vh;
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+.CSSgal .slider .slide6 .listContainer p{
+
+    font-weight: 5000;
+}
+.CSSgal .slider .slide6 .columnContainer {
+    min-height: 10vh;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.CSSgal .slider .slide6 .column {
+    flex: 30%;
+    border-radius: 20px;
+}
+.CSSgal .slider .slide6 .column h1 {
+    font-weight: 500;
+    letter-spacing: -0.06em;
+    font-size: 1.2vw;
+}
+.CSSgal .slider .slide6 .column h2 {
+    align-self: flex-end;
+    font-weight: 500;
+    letter-spacing: -0.06em;
+    font-size: 1.2vw;
+    color: #ce8f18;
+}
+.CSSgal .slider .slide6 .columnSpace {
+
+    flex: 5%;
+    font-size: 2vw;
+    text-align: center;
+    font-family: "Calibri", sans-serif;
+}
+.CSSgal .slider .slide6 .bottomContainer {
+    display: flex;
+    z-index: 50;
+    min-height: 30vh;
+}
+.CSSgal .slider .slide6 .textContainer {
+    z-index:100;
+    display: flex;
+    font-family: "Calibri", sans-serif;
+    margin-top: 5%;
+    margin-right: 40%;
+    margin-left: 10%;
+    margin-bottom: 40%;
+    flex-direction: column;
+}
+.CSSgal .slider .slide6 .textContainer h1 {
+    font-weight: bolder;
+    font-size: 3vw;
+}
+.CSSgal .slider .slide6 .textContainer h2 {
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+.CSSgal .slider .slide6 .textContainer p {
+    font-family: "Calibri", sans-serif;
+    font-weight: 500;
+    font-size: 1.6vw;
+    line-height: 2vw;
+}
+
+.bottomContainer-bg-text {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    font-size: 12vw;
+    z-index: -10;
+    text-shadow: 10px 10px 30px #D3D3D3
+}
+.bottomContainer-bg-text::after {
+    text-shadow: 10px 10px 30px gray;
+    font-weight: bolder;
+    z-index: -10;
+    letter-spacing: -20px;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    line-height: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.CSSgal .slider .slide7 .profile-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30vh;
+    border-style: solid;
+
+}
+.CSSgal .slider .slide7 .profile-container .profile-gap{
+    width: 25vw;
+    border-style: solid;
+}
+.CSSgal .slider .slide7 .profile-container .profile-picture{
+    display: flex;
+    height: 300px;
+    border-radius: 50%;
+    border-width: 5px;
+    margin: 0;
+    border-color:#ce8f18;
+    border-style: solid;
+}
+.CSSgal .slider .slide7 .profile-container .profile{
+    padding-left: 2vw;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+
+}
+.CSSgal .slider .slide7 .profile-container .job-type{
+    font-size: 15px;
+    font-weight: lighter;
+    color:#ce8f18;
+    display: flex;
+    height: 5vh;
+    border-style: solid;
+}
+.CSSgal .slider .slide7 .profile-container .name{
+    font-weight: bolder;
+    font-size: 3vh;
+    text-align: center;
+    align-items: center;
+    height: 5vh;
+    display: flex;
+    border-style: solid;
+}
+
+.team-bg-text{
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    font-size: 12vw;
+    z-index: -10;
+    text-shadow: 10px 10px 30px #D3D3D3
+}
+.team-bg-text::after{
+    text-shadow: 10px 10px 30px gray;
+    font-weight: bolder;
+    z-index: -10;
+    letter-spacing: -20px;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    line-height: 1;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+
+.CSSgal .slider .slide8 .contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    gap:50px;
+}
+.CSSgal .slider .slide8 .contact-info-container{
+    display: flex;
+    border-style: solid;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:10%;
+    margin-right: 10%;
+    width: 50%;
+    height: 100%;
+
+}
+.CSSgal .slider .slide8 .contact-card-container{
+    display: flex;
+    border-style: solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:10%;
+    margin-right: 10%;
+    width: 50%;
+    height: 100%;
+
+}
+.CSSgal .slider .slide8 .contact-card-container .card-item{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #DDDDDD;
+    color: BLACK;
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+
+}
+.CSSgal .slider .slide8 .contact-card-container .msg{
+    height: 15vh;
+    padding-bottom: 80px;
+
+}
+.CSSgal .slider .slide8 .contact-card-container .submit{
+    border: white;
+    background-color: white;
+    box-shadow: 10px 10px 30px #DDDDDD;
+
+}
+.CSSgal .slider .slide8 .contact-card-container .submit:hover{
+    border: white;
+    background-color: white;
+    box-shadow: 10px 10px 50px #ce8f18;;
+
+
+}
+
+.contact-bg-text{
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    font-size: 12vw;
+    z-index: -10;
+    text-shadow: 10px 10px 30px #D3D3D3
+}
+.contact-bg-text::after{
+    text-shadow: 10px 10px 30px gray;
+    font-weight: bolder;
+    z-index: -10;
+    letter-spacing: -20px;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    line-height: 1;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+
+
 .CSSgal a {
     border-radius: 50%;
     margin: 0 3px;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
 }
 
 
-.slide1{
+.slide1 {
     text-align: center;
     top: 50%;
     left: 50%;
