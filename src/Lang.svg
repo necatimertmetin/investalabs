@@ -1,0 +1,33 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="18mm" height="6mm" viewBox="0 0 50 17">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        font-size: 14px;
+        font-family: ArialMT, Arial;
+      }
+    </style>
+  </defs>
+  <g id="on_off" data-name="on off">
+    <g id="bg">
+      <path class="cls-1" d="M31,0h0Z"/>
+      <path class="cls-2" d="M31,0h0Z"/>
+    </g>
+    <circle id="dot" cx="32" cy="8" r="2"/>
+  </g>
+  <g id="En-2" class="cls-3">
+    <text class="cls-4" transform="translate(0 12)">En</text>
+  </g>
+</svg>

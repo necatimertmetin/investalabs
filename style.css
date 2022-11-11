@@ -1,12 +1,128 @@
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 5000;
 }
 
 html,
 body {
     height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 5000;
 }
+
+header {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 3rem 5rem;
+}
+.nav {
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-logo-container{
+    height: 5vh;
+}
+.site-logo{
+
+}
+.nav-item-container{
+    display: flex;
+    border-style: solid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 8vh;
+    gap: 5vw;
+}
+.lang-icon{
+height: 3vh;
+}
+.ham-menu{
+    border-style: solid;
+    display: flex;
+    height: 3vh;
+}
+.wrapper{
+    position: fixed;
+    top:0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background: white;
+    transition: all 0.6s ease-in-out;
+}
+#active:checked ~ .wrapper{
+    right: 0;
+}
+.menu-btn{
+    position: relative;
+    border-style: solid;
+    z-index: 2;
+    height: 5vh;
+    width: 5vh;
+
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu-btn:before{
+    transform: translateY(-8px);
+}
+.menu-btn:after{
+    transform: translateY(8px);
+}
+.close{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: background .6s;
+}
+
+.wrapper ul{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+
+}
+.nav-item{
+
+    z-index: 10000;
+    background-color: white;
+    padding-bottom: 10vh;
+    height: 5vh;
+    font-size: 3vh;
+    color:white;
+    text-shadow: 10px 10px 30px #D3D3D3;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
 
 /*
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
@@ -23,14 +139,15 @@ h1 {
     position: relative;
     font-size: 12vw;
     z-index: -10;
-    text-shadow: 10px 10px 30px #D3D3D3
+    text-shadow: 10px 10px 30px #D3D3D3;
+    font-family: "Poppins", sans-serif;
 }
 
 .bg-text::after {
-    text-shadow: 10px 10px 30px gray;
+    text-shadow: 10px 10px 30px #527BCD;
+    font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
-    letter-spacing: -20px;
     color: white;
     content: attr(data-bg-text);
     display: block;
@@ -46,7 +163,6 @@ h1 {
 
 .CSSgal {
     position: relative;
-    overflow: hidden;
     height: 100%;
     /* Or set a fixed height */
 }
@@ -272,6 +388,13 @@ h1 {
     color: black;
 }
 
+.slide1 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .CSSgal .slider .slide1 h1 {
     margin-left: auto;
     padding-right: 8vw;
@@ -282,16 +405,13 @@ h1 {
 }
 
 .CSSgal .slider .slide2 p {
-    display: flex;
-    top: 50%;
-    font-family: "Calibri", sans-serif;
-    transform: translate(0, -50%);
+    display: block;
+    height: 25vh;
+    font-size: 1.5em;
+    top: 40%;
     position: absolute;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-right: 50%;
-    font-weight: 500;
-    letter-spacing: -0.06em;
-    font-size: 1.6vw;
 }
 
 .CSSgal .slider .slide3 .gridContainer {
@@ -552,10 +672,10 @@ h1 {
     position: relative;
     font-size: 12vw;
     z-index: -10;
-    text-shadow: 10px 10px 30px #D3D3D3
+    text-shadow: 10px 10px 30px #527BCD
 }
 .bottomContainer-bg-text::after {
-    text-shadow: 10px 10px 30px gray;
+    text-shadow: -33.4px -55.7px -62px #527BCD;
     font-weight: bolder;
     z-index: -10;
     letter-spacing: -20px;
@@ -625,10 +745,10 @@ h1 {
     position: relative;
     font-size: 12vw;
     z-index: -10;
-    text-shadow: 10px 10px 30px #D3D3D3
+    text-shadow: 10px 10px 30px #527BCD;
 }
 .team-bg-text::after{
-    text-shadow: 10px 10px 30px gray;
+    text-shadow: 10px 10px 30px #527BCD;
     font-weight: bolder;
     z-index: -10;
     letter-spacing: -20px;
@@ -738,9 +858,94 @@ h1 {
 }
 
 
-.slide1 {
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.footer{
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
 }
+.footer .copy\&social-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+
+    width: 20vw;
+}
+.footer .copy\&social-container .social{
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center ;
+
+}
+.footer .copy\&social-container .social-icon{
+    color:black;
+
+
+}
+.footer .copy\&social-container .copyright{
+    height: 3vh;
+    text-align: center;
+
+}
+.footer .mouse-icon-container{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .mouse-icon-container .mouse-icon{
+    height: 8vh;
+    border-width: 0.5vh;
+}
+.footer .mail-elements-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+    width: 20vw;
+
+}
+.footer .mail-elements-container .email-icon-container{
+    width: 8vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+}
+.footer .mail-elements-container .email-icon{
+    vertical-align: center;
+    width: 8vh;
+}
+.footer .mail-elements-container .email-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
+}
+.footer .mail-elements-container .email-container .email-us{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vh;
+
+}
+.footer .mail-elements-container .email-container .email-address{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2.5vh;
+}
+

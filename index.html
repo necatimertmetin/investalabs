@@ -7,13 +7,13 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
         rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compitable" content="ie=edge">
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
@@ -22,9 +22,34 @@
 </head>
 
 <body>
-    <header>
 
-    </header>
+<header>
+    <nav class="nav">
+        <div class="site-logo-container">
+            <img class="site-logo" src="src/Logo.svg"/>
+        </div>
+        <div class="nav-item-container">
+            <a><img src="src/Lang.svg" class="lang-icon"/></a>
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn ham-menu"><span></span></label>
+            <div class="wrapper">
+                <ul class="nav-list">
+                    <img class="site-logo" src="src/Logo.svg"/>
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">VentureCapital</a></li>
+                    <li class="nav-item"><a href="#">Development</a></li>
+                    <li class="nav-item"><a href="#">Investments</a></li>
+                    <li class="nav-item"><a href="#">Team</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+</header>
 
 
     <div class="CSSgal">
@@ -291,7 +316,36 @@
 
 
     <footer>
+        <section class="footer">
 
+            <div class="copy&social-container">
+                <div class="social">
+
+                    <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="social-icon" href="#"><i class="fa fa-youtube-play"></i></a>
+                    <a class="social-icon" href="#"><i class="fa fa-instagram"></i></a>
+
+
+                </div>
+                <p class="copyright">© 2022 INVESTALABS - All Rights Reserved.</p>
+            </div>
+
+            <div class="mouse-icon-container">
+                <img class="mouse-icon"  src="src/sony.png"/>
+            </div>
+
+            <div class="mail-elements-container">
+                <div class="email-icon-container">
+                    <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="email-container">
+                    <div class="email-us">EMAIL US</div>
+                    <div class="email-address">info@investalabs.com</div>
+                </div>
+
+            </div>
+        </section>
     </footer>
 </body>
 
