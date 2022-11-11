@@ -14,16 +14,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Quicksand', sans-serif;
-        }
-    </style>
+
 </head>
 
 <body>
 
-<header>
+<header class="header" id="navbar">
     <nav class="nav">
         <div class="site-logo-container">
             <img class="site-logo" src="src/Logo.svg"/>
@@ -35,13 +31,13 @@
             <div class="wrapper">
                 <ul class="nav-list">
                     <img class="nav-item-site-logo" src="src/Logo.svg"/>
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">VentureCapital</a></li>
-                    <li class="nav-item"><a href="#">Development</a></li>
-                    <li class="nav-item"><a href="#">Investments</a></li>
-                    <li class="nav-item"><a href="#">Team</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#s1">Home</a></li>
+                    <li class="nav-item"><a href="#s2">About</a></li>
+                    <li class="nav-item"><a href="#s4">VentureCapital</a></li>
+                    <li class="nav-item"><a href="#s5">Development</a></li>
+                    <li class="nav-item"><a href="#s6">Investments</a></li>
+                    <li class="nav-item"><a href="#s7">Team</a></li>
+                    <li class="nav-item"><a href="#s8">Contact</a></li>
 
                 </ul>
             </div>
@@ -260,9 +256,6 @@
                 </div>
             </div>
 
-
-
-
             <div class="team-bg-text slide7" data-bg-text="Team">
                 <div class="profile-container">
                     <div class="profile-gap"></div>
@@ -315,17 +308,6 @@
             <div><a href="#s7"></a><a href="#s1"></a></div>
         </div>
 
-        <div class="bullets">
-            <a href="#s1">1</a>
-            <a href="#s2">2</a>
-            <a href="#s3">3</a>
-            <a href="#s4">4</a>
-            <a href="#s5">5</a>
-            <a href="#s6">6</a>
-            <a href="#s7">7</a>
-            <a href="#s8">8</a>
-        </div>
-
     </div>
 
 
@@ -361,6 +343,25 @@
             </div>
         </section>
     </footer>
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 
 </html>

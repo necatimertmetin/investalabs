@@ -6,7 +6,6 @@
 
     font-weight: 5000;
 }
-
 html,
 body {
     height: 100%;
@@ -14,15 +13,25 @@ body {
     font-weight: 5000;
 }
 
-header {
-    position: relative;
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+.header {
+    z-index: 5000;
     width: 100%;
     background-color: white;
-    padding: 3rem 5rem;
+    padding: 2rem;
 }
 .nav {
+
     display: flex;
-    height: 5vh;
+    height: 3vh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -51,8 +60,10 @@ width: 10vh;
 .wrapper{
     position: fixed;
     top:0;
+    margin-top: -100px;
+    z-index: 5000;
     right: -100%;
-    height: 100%;
+    height: 110%;
     width: 100%;
     background: white;
     transition: all 0.6s ease-in-out;
@@ -62,10 +73,10 @@ width: 10vh;
 }
 .menu-btn{
     position: relative;
-    z-index: 2;
     width: 5vh;
     background-image: url("src/Menu.svg");
     background-repeat: no-repeat;
+    z-index: 5001;
 
     font-size: 20px;
     cursor: pointer;
@@ -77,7 +88,6 @@ width: 10vh;
     transform: translateY(8px);
 }
 .close{
-    z-index: 1;
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -85,7 +95,9 @@ width: 10vh;
 }
 
 .wrapper ul{
-    position: absolute;
+    position: relative;
+
+    z-index: 5000;
     top: 60%;
     left:50%;
     height: 90%;
@@ -93,6 +105,21 @@ width: 10vh;
     list-style: none;
     text-align: center;
 }
+.wrapper ul li a{
+    position: relative;
+    text-shadow: 1px 1px 30px darkblue;
+    z-index: 50000;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 3em;
+}
+.wrapper ul li a:hover{
+    text-shadow: 1px 1px 30px darkblue;
+    color: black;
+    text-decoration: none;
+}
+
 input[type="checkbox"]{
     display: none;
 }
@@ -131,7 +158,6 @@ h1 {
     padding: 20px 20px 100px 20px;
     position: relative;
     font-size: 12vw;
-    z-index: -10;
     text-shadow: 10px 10px 30px #a9bfe5;
     font-family: "Poppins", sans-serif;
 }
@@ -166,6 +192,7 @@ h1 {
     height: 100%;
     white-space: nowrap;
     font-size: 0;
+
     transition: 0.8s;
 }
 
@@ -186,7 +213,6 @@ h1 {
 
 .CSSgal .prevNext {
     position: absolute;
-    z-index: 1;
     top: 50%;
     width: 100%;
     height: 0;
@@ -223,76 +249,7 @@ h1 {
     right: 0;
 }
 
-/* NAVIGATION */
 
-.CSSgal .bullets {
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-}
-
-.CSSgal .bullets>a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-decoration: none;
-    text-align: center;
-    background: rgba(255, 255, 255, 1);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.CSSgal .bullets>a+a {
-    background: rgba(255, 255, 255, 0.5);
-    /* Dim all but first */
-}
-
-.CSSgal .bullets>a:hover {
-    background: rgba(255, 255, 255, 0.7) !important;
-}
-
-/* NAVIGATION BUTTONS */
-/* ALL: */
-.CSSgal>s:target~.bullets>* {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-/* ACTIVE */
-#s1:target~.bullets>*:nth-child(1) {
-    background: rgba(255, 255, 255, 1);
-}
-
-#s2:target~.bullets>*:nth-child(2) {
-    background: rgba(255, 255, 255, 1);
-}
-
-#s3:target~.bullets>*:nth-child(3) {
-    background: rgba(255, 255, 255, 1);
-}
-
-#s4:target~.bullets>*:nth-child(4) {
-    background: rgba(255, 255, 255, 1);
-}
-#s5:target~.bullets>*:nth-child(5) {
-    background: rgba(255, 255, 255, 1);
-}
-#s6:target~.bullets>*:nth-child(6) {
-    background: rgba(255, 255, 255, 1);
-}
-#s7:target~.bullets>*:nth-child(7) {
-    background: rgba(255, 255, 255, 1);
-}
-#s8:target~.bullets>*:nth-child(8) {
-    background: rgba(255, 255, 255, 1);
-}
-
-/* More slides? Add here more rules */
-
-/* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
 .CSSgal>s:target~.prevNext>* {
     visibility: hidden;
@@ -327,9 +284,7 @@ h1 {
     visibility: visible;
 }
 
-/* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
 
 #s1:target~.slider {
     transform: translateX(0%);
@@ -366,13 +321,9 @@ h1 {
     transform: translateX(-700%);
     -webkit-transform: translateX(-700%);
 }
-/* More slides? Add here more rules */
 
 
-/* YOU'RE THE DESIGNER!
-   ____________________
-   All above was mainly to get it working :)
-   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
 .title {
     display: flex;
 }
@@ -385,8 +336,14 @@ h1 {
     text-align: center;
     top: 50%;
     left: 50%;
+
+
     transform: translate(-50%, -50%);
 }
+.slide3, .slide4, .slide5, .slide6{
+    margin-top: 100px;
+}
+
 
 .CSSgal .slider .slide1 h1 {
     margin-left: auto;
@@ -506,7 +463,6 @@ h1 {
     display: flex;
 }
 .CSSgal .slider .slide4 .textContainer {
-    z-index:100;
     display: flex;
     font-family: "Calibri", sans-serif;
     margin-top: 5%;
@@ -576,11 +532,9 @@ h1 {
 }
 .CSSgal .slider .slide5 .bottomContainer {
     display: flex;
-    z-index: 50;
     min-height: 30vh;
 }
 .CSSgal .slider .slide5 .textContainer {
-    z-index:100;
     display: flex;
     font-family: "Calibri", sans-serif;
     margin-top: 5%;
@@ -649,11 +603,9 @@ h1 {
 }
 .CSSgal .slider .slide6 .bottomContainer {
     display: flex;
-    z-index: 50;
     min-height: 30vh;
 }
 .CSSgal .slider .slide6 .textContainer {
-    z-index:100;
     display: flex;
     font-family: "Calibri", sans-serif;
     margin-top: 5%;
@@ -864,6 +816,8 @@ h1 {
 
 
 .footer{
+    position: relative;
+    z-index: 400;
     height: 9vh;
     display: flex;
     flex-direction: row;
