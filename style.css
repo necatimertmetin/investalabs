@@ -31,11 +31,10 @@ header {
     height: 5vh;
 }
 .site-logo{
-
+    height: 5vh;
 }
 .nav-item-container{
     display: flex;
-    border-style: solid;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -43,10 +42,9 @@ header {
     gap: 5vw;
 }
 .lang-icon{
-height: 3vh;
+width: 10vh;
 }
 .ham-menu{
-    border-style: solid;
     display: flex;
     height: 3vh;
 }
@@ -64,12 +62,11 @@ height: 3vh;
 }
 .menu-btn{
     position: relative;
-    border-style: solid;
     z-index: 2;
-    height: 5vh;
     width: 5vh;
+    background-image: url("src/Menu.svg");
+    background-repeat: no-repeat;
 
-    border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
 }
@@ -107,16 +104,12 @@ input[type="checkbox"]{
     position: absolute;
 
 }
+.nav-item-site-logo{
+    height: 5vh;
+    margin-bottom: 5vh;
+}
 .nav-item{
 
-    z-index: 10000;
-    background-color: white;
-    padding-bottom: 10vh;
-    height: 5vh;
-    font-size: 3vh;
-    color:white;
-    text-shadow: 10px 10px 30px #D3D3D3;
-    font-family: "Poppins", sans-serif;
 }
 
 
@@ -139,12 +132,12 @@ h1 {
     position: relative;
     font-size: 12vw;
     z-index: -10;
-    text-shadow: 10px 10px 30px #D3D3D3;
+    text-shadow: 10px 10px 30px #a9bfe5;
     font-family: "Poppins", sans-serif;
 }
 
 .bg-text::after {
-    text-shadow: 10px 10px 30px #527BCD;
+    text-shadow: 10px 10px 30px #a9bfe5;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
@@ -416,20 +409,25 @@ h1 {
 
 .CSSgal .slider .slide3 .gridContainer {
     min-height: 30vh;
-    margin-left: 20%;
+    margin-left: 30%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 20px;
-    padding: 10px;
+    grid-gap: 1px;
     margin-bottom: 20vh;
 }
 
 .CSSgal .slider .slide3 .grid-item {
-    border-radius: 10px;
+    padding-left: 5px;
+    display: flex;
+    border-radius: 5px;
+    gap:5px;
+    align-items: center;
+    align-content: center;
+
+    width: 15vw;
+    height: 7vh;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    box-shadow: 10px 10px 30px gray;
-    font-size: 1vw;
+    box-shadow: 10px 10px 30px #a9bfe5;
 }
 
 
@@ -494,7 +492,12 @@ h1 {
 }
 .CSSgal .slider .slide4 .columnSpace {
 
-    flex: 5%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     font-size: 2vw;
     text-align: center;
     font-family: "Calibri", sans-serif;
@@ -561,8 +564,12 @@ h1 {
     margin-bottom: auto;
 }
 .CSSgal .slider .slide5 .columnSpace {
-
-    flex: 5%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     font-size: 2vw;
     text-align: center;
     font-family: "Calibri", sans-serif;
@@ -630,7 +637,12 @@ h1 {
 }
 .CSSgal .slider .slide6 .columnSpace {
 
-    flex: 5%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     font-size: 2vw;
     text-align: center;
     font-family: "Calibri", sans-serif;
@@ -672,10 +684,10 @@ h1 {
     position: relative;
     font-size: 12vw;
     z-index: -10;
-    text-shadow: 10px 10px 30px #527BCD
+    text-shadow: 10px 10px 30px #a9bfe5;
 }
 .bottomContainer-bg-text::after {
-    text-shadow: -33.4px -55.7px -62px #527BCD;
+    text-shadow: -33.4px -55.7px -62px #a9bfe5;
     font-weight: bolder;
     z-index: -10;
     letter-spacing: -20px;
@@ -696,12 +708,10 @@ h1 {
     justify-content: center;
     display: flex;
     margin-top: 30vh;
-    border-style: solid;
 
 }
 .CSSgal .slider .slide7 .profile-container .profile-gap{
     width: 25vw;
-    border-style: solid;
 }
 .CSSgal .slider .slide7 .profile-container .profile-picture{
     display: flex;
@@ -710,14 +720,12 @@ h1 {
     border-width: 5px;
     margin: 0;
     border-color:#ce8f18;
-    border-style: solid;
 }
 .CSSgal .slider .slide7 .profile-container .profile{
     padding-left: 2vw;
     width: 25vw;
     display: flex;
     flex-direction: column;
-    border-style: solid;
 
 }
 .CSSgal .slider .slide7 .profile-container .job-type{
@@ -726,7 +734,6 @@ h1 {
     color:#ce8f18;
     display: flex;
     height: 5vh;
-    border-style: solid;
 }
 .CSSgal .slider .slide7 .profile-container .name{
     font-weight: bolder;
@@ -735,7 +742,6 @@ h1 {
     align-items: center;
     height: 5vh;
     display: flex;
-    border-style: solid;
 }
 
 .team-bg-text{
@@ -745,10 +751,10 @@ h1 {
     position: relative;
     font-size: 12vw;
     z-index: -10;
-    text-shadow: 10px 10px 30px #527BCD;
+    text-shadow: 10px 10px 30px #a9bfe5;
 }
 .team-bg-text::after{
-    text-shadow: 10px 10px 30px #527BCD;
+    text-shadow: 10px 10px 30px #a9bfe5;
     font-weight: bolder;
     z-index: -10;
     letter-spacing: -20px;
@@ -773,7 +779,6 @@ h1 {
 }
 .CSSgal .slider .slide8 .contact-info-container{
     display: flex;
-    border-style: solid;
     flex-direction: column;
     justify-content: center;
     margin-left:10%;
@@ -784,7 +789,6 @@ h1 {
 }
 .CSSgal .slider .slide8 .contact-card-container{
     display: flex;
-    border-style: solid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -831,10 +835,10 @@ h1 {
     position: relative;
     font-size: 12vw;
     z-index: -10;
-    text-shadow: 10px 10px 30px #D3D3D3
+    text-shadow: 10px 10px 30px #a9bfe5;
 }
 .contact-bg-text::after{
-    text-shadow: 10px 10px 30px gray;
+    text-shadow: 10px 10px 30px #a9bfe5;
     font-weight: bolder;
     z-index: -10;
     letter-spacing: -20px;
