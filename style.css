@@ -280,7 +280,7 @@ h1 {
 #s7:target~.prevNext>*:nth-child(7) {
     visibility: visible;
 }
-#s7:target~.prevNext>*:nth-child(8) {
+#s8:target~.prevNext>*:nth-child(8) {
     visibility: visible;
 }
 
