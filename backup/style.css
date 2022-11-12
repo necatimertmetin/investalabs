@@ -1,8 +1,16 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 5000;
+}
+html,
 body {
+    height: 100%;
     font-family: "Poppins", sans-serif;
     overflow: hidden;
-    padding: 0;
 
 }
 
@@ -19,24 +27,32 @@ body {
     z-index: 5000;
     width: 100%;
     background-color: white;
+    padding: 2rem;
+}
+.nav {
+
     display: flex;
-    height: 10vh;
+    height: 3vh;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
     align-items: center;
-
+}
+.site-logo-container{
+    height: 5vh;
+}
+.site-logo{
+    height: 5vh;
 }
 .nav-item-container{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding-right: 5vw;
-    gap:2vw;
+    height: 8vh;
+    gap: 5vw;
 }
 .lang-icon{
-width: 5vw;
+width: 10vh;
 }
 .ham-menu{
     display: flex;
@@ -58,9 +74,8 @@ width: 5vw;
 }
 .menu-btn{
     position: relative;
-    width: 3vw;
+    width: 5vh;
     background-image: url("src/Menu.svg");
-    background-position: center;
     background-repeat: no-repeat;
     z-index: 5001;
 
@@ -128,6 +143,8 @@ h1 {
 
 .bg-text {
     background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
     position: relative;
     font-size: 12vw;
     text-shadow: 10px 10px 30px #a9bfe5;
@@ -143,6 +160,7 @@ h1 {
     content: attr(data-bg-text);
     display: block;
     font-size: 12vw;
+    line-height: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -152,19 +170,24 @@ h1 {
 
 
 .CSSgal {
-    color: black;
-    width: 100%;
+    position: relative;
+    height: 100%;
+
+    overflow-y: hidden;
+
+
+    margin: 0 auto;
+    /* Or set a fixed height */
 }
 
 /* SLIDER */
 
 .CSSgal .slider {
-    height: 80%;
+    height: 100%;
     white-space: nowrap;
     font-size: 0;
     overflow: hidden;
     transition: 0.8s;
-    z-index: -100;
 }
 
 
@@ -180,19 +203,27 @@ h1 {
 
 }
 
+
+
+.title {
+    display: flex;
+}
+
+.CSSgal {
+    color: black;
+}
+
 #container{
     margin-bottom: 500px;
 }
 
-.slides{
-    display: table-row;
-    border-style: solid;
+.slide1, .slide2{
+    top: 40%;
+    left: 50%;
+
+
+    transform: translate(-50%, -50%);
 }
-
-
-
-
-
 
 
 .CSSgal .slider .slide1 h1 {
@@ -203,33 +234,16 @@ h1 {
     font-size: 3vw;
 }
 
-.CSSgal .slider .slides{
-    height: 75vh;
-
-
-}
-
-
-.CSSgal {
-    position: relative;
-    height: 100%;
-    border-style: dashed;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-
-    /* Or set a fixed height */
-}
-
-.CSSgal .slider .slide2-text{
-
-    display: flex;
-    height: 75vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    margin-right: 50%;
-    margin-left: 20%;
+.CSSgal .slider .slide2 .p {
+    font-size: 1.5vw;
+    height: 50vh;
+    top: 100%;
+    left: 0%;
+    line-height: 3vh;
+    transform: translate(0%, -135%);
+    position: absolute;
+    margin-left: 15%;
+    margin-right: 60%;
 }
 
 .CSSgal .slider .slide3 .gridContainer {
@@ -277,7 +291,7 @@ h1 {
 }
 
 .CSSgal .slider .slide4 .listContainer {
-    min-height: 13vh;
+    min-height: 20vh;
     padding-left: 5vw;
     padding-top: 5vh;
 }
@@ -321,7 +335,6 @@ h1 {
 }
 .CSSgal .slider .slide4 .bottomContainer {
     display: flex;
-    border-style: solid;
 }
 .CSSgal .slider .slide4 .textContainer {
     display: flex;
@@ -347,9 +360,8 @@ h1 {
     line-height: 2vw;
 }
 
-
 .CSSgal .slider .slide5 .listContainer {
-    min-height: 13vh;
+    min-height: 20vh;
     padding-left: 5vw;
     padding-top: 5vh;
 }
@@ -358,7 +370,6 @@ h1 {
     font-weight: 5000;
 }
 .CSSgal .slider .slide5 .columnContainer {
-    box-sizing: border-box;
     min-height: 10vh;
     display: flex;
     padding-left: 15vw;
@@ -395,7 +406,6 @@ h1 {
 }
 .CSSgal .slider .slide5 .bottomContainer {
     display: flex;
-    border-style: solid;
 }
 .CSSgal .slider .slide5 .textContainer {
     display: flex;
@@ -422,7 +432,7 @@ h1 {
 }
 
 .CSSgal .slider .slide6 .listContainer {
-    min-height: 13vh;
+    min-height: 20vh;
     padding-left: 5vw;
     padding-top: 5vh;
 }
@@ -466,7 +476,6 @@ h1 {
 }
 .CSSgal .slider .slide6 .bottomContainer {
     display: flex;
-    border-style: solid;
 }
 .CSSgal .slider .slide6 .textContainer {
     display: flex;
@@ -492,6 +501,31 @@ h1 {
     line-height: 2vw;
 }
 
+.bottomContainer-bg-text {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    font-size: 12vw;
+    z-index: -10;
+    text-shadow: 10px 10px 30px #a9bfe5;
+}
+.bottomContainer-bg-text::after {
+    text-shadow: -33.4px -55.7px -62px #a9bfe5;
+    font-weight: bolder;
+    z-index: -10;
+    letter-spacing: -20px;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    line-height: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .CSSgal .slider .slide7 .profile-container{
     align-items: center;
@@ -504,14 +538,8 @@ h1 {
     width: 25vw;
 }
 .CSSgal .slider .slide7 .profile-container .profile-picture{
-    display: inline-block;
-    height: 200px;
-    background:black;
-    width: 200px;
-    min-width: 20px;
-
-    box-sizing: content-box;
-    min-height: 20px;
+    display: flex;
+    height: 300px;
     border-radius: 50%;
     border-width: 5px;
     margin: 0;
@@ -540,17 +568,39 @@ h1 {
     display: flex;
 }
 
+.team-bg-text{
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    font-size: 12vw;
+    z-index: -10;
+    text-shadow: 10px 10px 30px #a9bfe5;
+}
+.team-bg-text::after{
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-weight: bolder;
+    z-index: -10;
+    letter-spacing: -20px;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    line-height: 1;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
 
 .CSSgal .slider .slide8 .contact-container{
     display: flex;
-
-    width: 100%;
-    margin-top:10%;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    height: 100%;
+    gap:50px;
 }
-
 .CSSgal .slider .slide8 .contact-info-container{
     display: flex;
     flex-direction: column;
@@ -602,6 +652,37 @@ h1 {
 
 }
 
+.contact-bg-text{
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    font-size: 12vw;
+    z-index: -10;
+    text-shadow: 10px 10px 30px #a9bfe5;
+}
+.contact-bg-text::after{
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-weight: bolder;
+    z-index: -10;
+    letter-spacing: -20px;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    line-height: 1;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+
+.CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
 
 
 
@@ -613,7 +694,7 @@ h1 {
     height: 7vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     align-content: center;
 }
@@ -624,7 +705,7 @@ h1 {
     align-content: center;
     justify-content: space-between;
 
-    width: 20vh;
+    width: 20vw;
 }
 .footer .copy\&social-container .social{
     height: 4vh;
@@ -661,7 +742,7 @@ h1 {
     align-items: stretch;
     align-content: center;
     justify-content: space-between;
-    width: 20vh;
+    width: 20vw;
 
 }
 .footer .mail-elements-container .email-icon-container{
@@ -689,21 +770,21 @@ h1 {
     flex-direction: column;
     align-items: stretch;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-@media screen and (max-width: 700px) {
-
-    .footer .mouse-icon-container{
-       display: none;
-    }
-    .footer .mail-elements-container .email-icon-container{
-        display: none;
-
-    }
-    *{
-        margin:0;
-    }
+.footer .mail-elements-container .email-container .email-us{
+    width: 100%;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    font-size: 1vh;
 
 }
-
+.footer .mail-elements-container .email-container .email-address{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2vh;
+    font-size: 2vh;
+}
 

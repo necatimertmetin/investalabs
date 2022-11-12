@@ -20,7 +20,7 @@
 <body>
 
 <header class="header" id="navbar">
-
+    <nav class="nav">
         <div class="site-logo-container">
             <img class="site-logo" src="src/Logo.svg"/>
         </div>
@@ -44,11 +44,11 @@
         </div>
 
 
-
+    </nav>
 </header>
 
 
-<div class="CSSgal">
+    <div class="CSSgal">
 
         <!-- Don't wrap targets in parent -->
         <s id="s1"></s>
@@ -72,14 +72,11 @@
             </div>
 
             <div class="slides slide2 bg-text" data-bg-text="About">
-                <div class="slide2-text">
-                    <p>We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
-                        Investa Labs's mission of creating more economic freedom for the world.<br><br>We partner with
-                        founding
-                        teams at the earliest stages, and invest broadly across all categories within the
-                        cryptoeconomy.
-                    </p>
-                </div>
+                <p  class="p">We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
+                    Investa Labs's mission of creating more economic freedom for the world.<br><br>We partner with
+                    founding
+                    teams at the earliest stages, and invest broadly across all categories within the
+                    cryptoeconomy.</p>
             </div>
 
             <div class="slides slide3 bg-text" data-bg-text="Development">
@@ -173,7 +170,7 @@
                         <h2>Seed Stage</h2>
                     </div>
                 </div>
-                <div class="bottomContainer" data-bg-text="VentureCapital">
+                <div class="bottomContainer bottomContainer-bg-text " data-bg-text="VentureCapital">
                     <div class="textContainer">
                         <h1>Investa Labs Incubator</h1>
                         <h2>Our Investment Arm</h2>
@@ -183,7 +180,7 @@
                 </div>
             </div>
 
-            <div class="slides slide5 bg-text">
+            <div class="slides slide5">
                 <div class="listContainer">
                     <p>Seed Stage</p>
                     <div style="display: flex; flex-direction: row">
@@ -208,7 +205,7 @@
                         <h2>Pre-IDO Stage</h2>
                     </div>
                 </div>
-                <div class="bottomContainer" data-bg-text="VentureCapital">
+                <div class="bottomContainer bottomContainer-bg-text " data-bg-text="VentureCapital">
                     <div class="textContainer">
                         <h1>Investa Labs Incubator</h1>
                         <h2>Our Investment Arm</h2>
@@ -218,7 +215,7 @@
                 </div>
             </div>
 
-            <div class="slides slide6 bg-text">
+            <div class="slides slide6">
                 <div class="listContainer">
                     <p>Seed Stage</p>
                     <p>pre-IDO & IDO Stages</p>
@@ -258,10 +255,10 @@
                 </div>
             </div>
 
-            <div class="slides slide7 bg-text" data-bg-text="Team">
+            <div class="slides team-bg-text slide7" data-bg-text="Team">
                 <div class="profile-container">
                     <div class="profile-gap"></div>
-                    <img class="profile-picture"/>
+                    <img class="profile-picture"  style="background:black; width: 300px"/>
                     <div class="profile">
                         <h1 class="job-type">CO-FOUNDER & CEO</h1>
                         <p class="name">Mustafa Güler</p>
@@ -270,7 +267,7 @@
                 </div>
             </div>
 
-            <div class="slides slide8 bg-text" data-bg-text="Contact">
+            <div class="slides contact-bg-text slide8" data-bg-text="Contact">
                 <div class="contact-container">
                     <div class="contact-info-container">
                         <h2>CONNECTED WITH US</h2>
@@ -313,7 +310,7 @@
     </div>
 
 
-<footer>
+    <footer>
         <section class="footer">
 
             <div class="copy&social-container">
@@ -344,9 +341,7 @@
 
             </div>
         </section>
-</footer>
-
-
+    </footer>
 <script>
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
@@ -377,18 +372,6 @@
         })
     });
 </script>
-<script>
-    const element = document.querySelector("#container");
-
-    element.addEventListener('touch', (event) => {
-        event.preventDefault();
-        element.scrollBy({
-            left: event.deltaY < 0 ? -document.body.scrollWidth : document.body.scrollWidth,
-            behavior : "smooth"
-        })
-    });
-</script>
-
 </body>
 
 </html>
