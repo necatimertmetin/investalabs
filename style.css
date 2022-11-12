@@ -751,9 +751,17 @@ h1 {
 
 }
 .footer .mail-elements-container .email-icon-container{
-    width: 8vh;
+    width: 10vh;
+    height: 8vh;
+    background-image: url("src/Mail.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
+
     vertical-align: middle;
 
 }
@@ -767,21 +775,21 @@ h1 {
     flex-direction: column;
     align-items: stretch;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .footer .mail-elements-container .email-container .email-us{
     width: 100%;
-    height: 5vh;
+    height: 2vh;
     display: flex;
     align-items: center;
-    font-size: 1.5vh;
+    font-size: 1vh;
 
 }
 .footer .mail-elements-container .email-container .email-address{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100%;
-    font-size: 2.5vh;
+    height: 2vh;
+    font-size: 2vh;
 }
 
