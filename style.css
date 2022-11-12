@@ -269,21 +269,18 @@ h1 {
     box-shadow: 10px 10px 30px #a9bfe5;
 }
 .CSSgal .slider .slide3 .textContainer {
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     font-family: "Calibri", sans-serif;
-    margin-top: 5%;
-    margin-right: 40%;
-    margin-left: 10%;
-    margin-bottom: 40%;
+    margin: 10% 40% 40% 10%;
     flex-direction: column;
-    line-height: 10px;
 
 }
 .CSSgal .slider .slide3 h1 {
     display: flex;
     font-weight: 5000;
     line-height: 50px;
+    margin-top: -50px;
     letter-spacing: -0.06em;
     font-size: 2.5vw;
 }
@@ -291,7 +288,7 @@ h1 {
     display: flex;
     line-height: 30px;
     font-weight: 500;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
 }
 
 .CSSgal .slider .slide4 .listContainer {
@@ -343,7 +340,7 @@ h1 {
 .CSSgal .slider .slide4 .textContainer {
     display: flex;
     font-family: "Calibri", sans-serif;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right: 40%;
     margin-left: 10%;
     margin-bottom: 40%;
@@ -414,7 +411,7 @@ h1 {
 .CSSgal .slider .slide5 .textContainer {
     display: flex;
     font-family: "Calibri", sans-serif;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right: 40%;
     margin-left: 10%;
     margin-bottom: 40%;
@@ -484,7 +481,7 @@ h1 {
 .CSSgal .slider .slide6 .textContainer {
     display: flex;
     font-family: "Calibri", sans-serif;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right: 40%;
     margin-left: 10%;
     margin-bottom: 40%;
@@ -593,7 +590,7 @@ h1 {
     line-height: 1;
     position: absolute;
     top: 40%;
-    left: 13%;
+    left: 18%;
     transform: translate(-50%, -50%);
 }
 
@@ -659,7 +656,6 @@ h1 {
 .contact-bg-text{
     background-color: #ffffff;
     overflow: hidden;
-    padding: 20px 20px 100px 20px;
     position: relative;
     font-size: 12vw;
     z-index: -10;
@@ -677,7 +673,7 @@ h1 {
     line-height: 1;
     position: absolute;
     top: 40%;
-    left: 20%;
+    left: 25%;
     transform: translate(-50%, -50%);
 }
 
@@ -696,7 +692,7 @@ h1 {
     z-index: 5000;
     top:90%;
     width: 100%;
-    height: 9vh;
+    height: 7vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
