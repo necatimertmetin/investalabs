@@ -195,10 +195,9 @@ h1 {
 
 
 
-.CSSgal .slider .slide1 h1 {
-    margin-left: auto;
-    padding-right: 8vw;
-    margin-top: 60vh;
+.CSSgal .slider .slide1 .title {
+    margin-left: 45vw;
+    margin-top: 50vh;
     letter-spacing: -0.06em;
     font-size: 3vw;
 }
@@ -213,6 +212,7 @@ h1 {
 .CSSgal {
     position: relative;
     height: 100%;
+    width: 100%;
     border-style: dashed;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -693,6 +693,38 @@ h1 {
 }
 @media screen and (max-width: 700px) {
 
+    .CSSgal .slider .slide1 .title {
+        margin-left: auto;
+        margin-top: 80%;
+        letter-spacing: -0.06em;
+        font-size: medium;
+        display: block;
+        max-width: 100%;
+    }
+    .site-logo{
+        height: 4vh;
+    }
+    .nav-item-container{
+        height: 100%;
+        width: 16vh;
+        padding-right: 0;
+        gap: 4vh;
+
+    }
+    .lang-icon{
+        width: 10vw;
+    }
+
+
+    .CSSgal .slider .slide8 .contact-container{
+        display: flex;
+
+        width: 100%;
+        margin-top:10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .footer .mouse-icon-container{
        display: none;
     }
