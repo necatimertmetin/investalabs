@@ -11,6 +11,8 @@ body {
     height: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 5000;
+    overflow: hidden;
+
 }
 
 
@@ -135,19 +137,7 @@ input[type="checkbox"]{
     height: 5vh;
     margin-bottom: 5vh;
 }
-.nav-item{
 
-}
-
-
-
-
-
-
-/*
-PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
-http://stackoverflow.com/a/34696029/383904
-*/
 h1 {
     font-size: 50px;
 }
@@ -183,6 +173,11 @@ h1 {
 .CSSgal {
     position: relative;
     height: 100%;
+
+    overflow-y: hidden;
+
+
+    margin: 0 auto;
     /* Or set a fixed height */
 }
 
@@ -192,11 +187,10 @@ h1 {
     height: 100%;
     white-space: nowrap;
     font-size: 0;
-
+    overflow: hidden;
     transition: 0.8s;
 }
 
-/* SLIDES */
 
 .CSSgal .slider>* {
     font-size: 1rem;
@@ -207,119 +201,7 @@ h1 {
     width: 100%;
     background: none 50% no-repeat;
     background-size: cover;
-}
 
-/* PREV/NEXT, CONTAINERS & ANCHORS */
-
-.CSSgal .prevNext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 0;
-    background-color: black;
-}
-
-.CSSgal .prevNext>div+div {
-    visibility: hidden;
-    /* Hide all but first P/N container */
-}
-
-.CSSgal .prevNext a {
-    background: black;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    /* If you want to place numbers */
-    text-align: center;
-    opacity: 0.7;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 0;
-}
-
-.CSSgal .prevNext a:hover {
-    opacity: 1;
-}
-
-.CSSgal .prevNext a+a {
-    left: auto;
-    right: 0;
-}
-
-
-/* ALL: */
-.CSSgal>s:target~.prevNext>* {
-    visibility: hidden;
-}
-
-/* ACTIVE: */
-#s1:target~.prevNext>*:nth-child(1) {
-    visibility: visible;
-}
-
-#s2:target~.prevNext>*:nth-child(2) {
-    visibility: visible;
-}
-
-#s3:target~.prevNext>*:nth-child(3) {
-    visibility: visible;
-}
-
-#s4:target~.prevNext>*:nth-child(4) {
-    visibility: visible;
-}
-#s5:target~.prevNext>*:nth-child(5) {
-    visibility: visible;
-}
-#s6:target~.prevNext>*:nth-child(6) {
-    visibility: visible;
-}
-#s7:target~.prevNext>*:nth-child(7) {
-    visibility: visible;
-}
-#s8:target~.prevNext>*:nth-child(8) {
-    visibility: visible;
-}
-
-
-
-#s1:target~.slider {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-}
-
-#s2:target~.slider {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-}
-
-#s3:target~.slider {
-    transform: translateX(-200%);
-    -webkit-transform: translateX(-200%);
-}
-
-#s4:target~.slider {
-    transform: translateX(-300%);
-    -webkit-transform: translateX(-300%);
-}
-#s5:target~.slider {
-    transform: translateX(-400%);
-    -webkit-transform: translateX(-400%);
-}
-#s6:target~.slider {
-    transform: translateX(-500%);
-    -webkit-transform: translateX(-500%);
-}
-#s7:target~.slider {
-    transform: translateX(-600%);
-    -webkit-transform: translateX(-600%);
-}
-#s8:target~.slider {
-    transform: translateX(-700%);
-    -webkit-transform: translateX(-700%);
 }
 
 
@@ -332,16 +214,17 @@ h1 {
     color: black;
 }
 
-.slide1 {
+#container{
+    margin-bottom: 500px;
+}
+
+.slide1, .slide2{
     text-align: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
 
 
     transform: translate(-50%, -50%);
-}
-.slide3, .slide4, .slide5, .slide6{
-    margin-top: 100px;
 }
 
 
@@ -372,7 +255,6 @@ h1 {
     grid-gap: 1px;
     margin-bottom: 20vh;
 }
-
 .CSSgal .slider .slide3 .grid-item {
     padding-left: 5px;
     display: flex;
@@ -386,8 +268,6 @@ h1 {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 10px 10px 30px #a9bfe5;
 }
-
-
 .CSSgal .slider .slide3 .textContainer {
     min-height: 50vh;
     display: flex;
@@ -400,7 +280,6 @@ h1 {
     line-height: 10px;
 
 }
-
 .CSSgal .slider .slide3 h1 {
     display: flex;
     font-weight: 5000;
@@ -408,7 +287,6 @@ h1 {
     letter-spacing: -0.06em;
     font-size: 2.5vw;
 }
-
 .CSSgal .slider .slide3 p {
     display: flex;
     line-height: 30px;
@@ -532,7 +410,6 @@ h1 {
 }
 .CSSgal .slider .slide5 .bottomContainer {
     display: flex;
-    min-height: 30vh;
 }
 .CSSgal .slider .slide5 .textContainer {
     display: flex;
@@ -603,7 +480,6 @@ h1 {
 }
 .CSSgal .slider .slide6 .bottomContainer {
     display: flex;
-    min-height: 30vh;
 }
 .CSSgal .slider .slide6 .textContainer {
     display: flex;
@@ -659,7 +535,7 @@ h1 {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 30vh;
+    margin-top: 20vh;
 
 }
 .CSSgal .slider .slide7 .profile-container .profile-gap{
@@ -801,7 +677,7 @@ h1 {
     line-height: 1;
     position: absolute;
     top: 40%;
-    left: 13%;
+    left: 20%;
     transform: translate(-50%, -50%);
 }
 
@@ -816,8 +692,10 @@ h1 {
 
 
 .footer{
-    position: relative;
-    z-index: 400;
+    position: absolute;
+    z-index: 5000;
+    top:90%;
+    width: 100%;
     height: 9vh;
     display: flex;
     flex-direction: row;
