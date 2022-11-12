@@ -10,7 +10,6 @@ html,
 body {
     height: 100%;
     font-family: "Poppins", sans-serif;
-    font-weight: 5000;
     overflow: hidden;
 
 }
@@ -219,7 +218,6 @@ h1 {
 }
 
 .slide1, .slide2{
-    text-align: center;
     top: 40%;
     left: 50%;
 
@@ -232,19 +230,20 @@ h1 {
     margin-left: auto;
     padding-right: 8vw;
     margin-top: 60vh;
-    font-weight: bolder;
     letter-spacing: -0.06em;
     font-size: 3vw;
 }
 
-.CSSgal .slider .slide2 p {
-    display: block;
-    height: 25vh;
-    font-size: 1.5em;
-    top: 40%;
+.CSSgal .slider .slide2 .p {
+    font-size: 1.5vw;
+    height: 50vh;
+    top: 100%;
+    left: 0%;
+    line-height: 3vh;
+    transform: translate(0%, -135%);
     position: absolute;
     margin-left: 15%;
-    margin-right: 50%;
+    margin-right: 60%;
 }
 
 .CSSgal .slider .slide3 .gridContainer {
