@@ -31,7 +31,7 @@
             <div class="wrapper">
                 <ul class="nav-list">
                     <img class="nav-item-site-logo" src="src/Logo.svg"/>
-                    <li class="nav-item"><a href="#s1">Home</a></li>
+                    <li class="nav-item"><a href="#s1" onclick="topFunction()">Home</a></li>
                     <li class="nav-item"><a href="#s2">About</a></li>
                     <li class="nav-item"><a href="#s4">VentureCapital</a></li>
                     <li class="nav-item"><a href="#s5">Development</a></li>
@@ -153,27 +153,28 @@
                     <p> pre-IDO & IDO Stages</p><p>Launch & Post-Launch Period</p>
                 </div>
                 <div class="columnContainer">
-                    <div class="bg-text column" data-bg-text="1" style="z-index: 100; height: 12vw">
+                    <div class="bg-text column" data-bg-text="1" style="z-index: 100;">
                         <h1>perform due dilligence and project analysis</h1>
                         <h2>Seed Stage</h2>
                     </div>
                     <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="2" style="z-index: 100; height: 12vw">
+                    <div class="bg-text column" data-bg-text="2" style="z-index: 100;">
                         <h1>Give recommendations on the pitch deck, tokenomics, WP, and token circulation models</h1>
                         <h2>Seed Stage</h2>
                     </div>
                     <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="3" style="z-index: 100; height: 12vw">
+                    <div class="bg-text column" data-bg-text="3" style="z-index: 100;">
                         <h1>Invest ourselves and attract other Tier-1 VCs. into the seed round</h1>
                         <h2>Seed Stage</h2>
                     </div>
                     <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="4" style="z-index: 100; height: 12vw">
+                    <div class="bg-text column" data-bg-text="4" style="z-index: 100;">
                         <h1>Develop, secure and integrate utilities</h1>
                         <h2>Seed Stage</h2>
                     </div>
                 </div>
-                <div class="bottomContainer" data-bg-text="VentureCapital">
+                <div class="bottomContainer">
+                    <div class="bottomContainer-bg-text" data-bg-text="ventureCapital"></div>
                     <div class="textContainer">
                         <h1>Investa Labs Incubator</h1>
                         <h2>Our Investment Arm</h2>
@@ -208,7 +209,7 @@
                         <h2>Pre-IDO Stage</h2>
                     </div>
                 </div>
-                <div class="bottomContainer" data-bg-text="VentureCapital">
+                <div class="bottomContainer">
                     <div class="textContainer">
                         <h1>Investa Labs Incubator</h1>
                         <h2>Our Investment Arm</h2>
@@ -248,7 +249,7 @@
                         <h2>Post-Launch Period</h2>
                     </div>
                 </div>
-                <div class="bottomContainer bottomContainer-bg-text " data-bg-text="VentureCapital">
+                <div class="bottomContainer">
                     <div class="textContainer">
                         <h1>Investa Labs Incubator</h1>
                         <h2>Our Investment Arm</h2>
@@ -299,16 +300,6 @@
 
         </div>
 
-        <div class="prevNext">
-            <div><a href="#s8"></a><a href="#s2"></a></div>
-            <div><a href="#s1"></a><a href="#s3"></a></div>
-            <div><a href="#s2"></a><a href="#s4"></a></div>
-            <div><a href="#s3"></a><a href="#s5"></a></div>
-            <div><a href="#s4"></a><a href="#s6"></a></div>
-            <div><a href="#s5"></a><a href="#s7"></a></div>
-            <div><a href="#s6"></a><a href="#s8"></a></div>
-            <div><a href="#s7"></a><a href="#s1"></a></div>
-        </div>
 
     </div>
 
@@ -387,6 +378,12 @@
             behavior : "smooth"
         })
     });
+</script>
+<script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 
 </body>

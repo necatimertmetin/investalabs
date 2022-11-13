@@ -16,7 +16,7 @@ body {
     padding-top: 60px;
 }
 .header {
-    z-index: 5000;
+    z-index: 5500;
     width: 100%;
     background-color: white;
     display: flex;
@@ -66,12 +66,6 @@ width: 5vw;
 
     font-size: 20px;
     cursor: pointer;
-}
-.menu-btn:before{
-    transform: translateY(-8px);
-}
-.menu-btn:after{
-    transform: translateY(8px);
 }
 .close{
     width: 100%;
@@ -276,8 +270,10 @@ h1 {
     font-size: 1.4vw;
 }
 
+
+
 .CSSgal .slider .slide4 .listContainer {
-    min-height: 13vh;
+    height: 10vh;
     padding-left: 5vw;
     padding-top: 5vh;
 }
@@ -286,24 +282,24 @@ h1 {
     font-weight: 5000;
 }
 .CSSgal .slider .slide4 .columnContainer {
-    min-height: 10vh;
+    border-style: solid;
+    height: 20vh;
     display: flex;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 .CSSgal .slider .slide4 .column {
     flex: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 20px;
+    border-style: solid;
 }
 .CSSgal .slider .slide4 .column h1 {
-    font-weight: 500;
-    letter-spacing: -0.06em;
     font-size: 1.2vw;
 }
 .CSSgal .slider .slide4 .column h2 {
-    align-self: flex-end;
-    font-weight: 500;
-    letter-spacing: -0.06em;
     font-size: 1.2vw;
     color: #ce8f18;
 }
@@ -320,16 +316,15 @@ h1 {
     font-family: "Calibri", sans-serif;
 }
 .CSSgal .slider .slide4 .bottomContainer {
+    height: 38vh;
     display: flex;
     border-style: solid;
+    float: bottom;
+    align-items: center;
+    align-content: center;
 }
 .CSSgal .slider .slide4 .textContainer {
     display: flex;
-    font-family: "Calibri", sans-serif;
-    margin-top: 3%;
-    margin-right: 40%;
-    margin-left: 10%;
-    margin-bottom: 40%;
     flex-direction: column;
 }
 .CSSgal .slider .slide4 .textContainer h1 {
@@ -346,6 +341,24 @@ h1 {
     font-size: 1.6vw;
     line-height: 2vw;
 }
+
+.bottomContainer-bg-text{
+    background-color: #ffffff;
+    position: relative;
+    font-size: 12vw;
+    font-weight: bolder;
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+}
+.bottomContainer-bg-text::after{
+    text-shadow: 10px 10px 30px #a9bfe5;
+    z-index: -10;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    position: absolute;
+ }
 
 
 .CSSgal .slider .slide5 .listContainer {
@@ -399,11 +412,6 @@ h1 {
 }
 .CSSgal .slider .slide5 .textContainer {
     display: flex;
-    font-family: "Calibri", sans-serif;
-    margin-top: 3%;
-    margin-right: 40%;
-    margin-left: 10%;
-    margin-bottom: 40%;
     flex-direction: column;
 }
 .CSSgal .slider .slide5 .textContainer h1 {
@@ -470,11 +478,6 @@ h1 {
 }
 .CSSgal .slider .slide6 .textContainer {
     display: flex;
-    font-family: "Calibri", sans-serif;
-    margin-top: 3%;
-    margin-right: 40%;
-    margin-left: 10%;
-    margin-bottom: 40%;
     flex-direction: column;
 }
 .CSSgal .slider .slide6 .textContainer h1 {
@@ -695,10 +698,9 @@ h1 {
 
     .CSSgal .slider .slide1 .title {
         margin-left: auto;
-        margin-top: 80%;
-        letter-spacing: -0.06em;
-        font-size: medium;
-        display: block;
+        margin-top: 100%;
+
+        font-size: 1vw;
         max-width: 100%;
     }
     .site-logo{
@@ -708,11 +710,17 @@ h1 {
         height: 100%;
         width: 16vh;
         padding-right: 0;
-        gap: 4vh;
+        margin: 0;
 
     }
     .lang-icon{
         width: 10vw;
+    }
+    .menu-btn{
+        width: 6vw;
+        margin-bottom: 0;
+        margin-left: 5px;
+        padding-right: 0;
     }
 
 
