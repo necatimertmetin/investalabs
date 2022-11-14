@@ -180,7 +180,7 @@ h1 {
 
 .slides{
     display: table-row;
-    border-style: solid;
+
 }
 
 
@@ -207,7 +207,7 @@ h1 {
     position: relative;
     height: 100%;
     width: 100%;
-    border-style: dashed;
+
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 
@@ -247,6 +247,10 @@ h1 {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 10px 10px 30px #a9bfe5;
 }
+.CSSgal .slider .slide3 .grid-item img{
+    height: 50px;
+    width: 50px;
+}
 .CSSgal .slider .slide3 .textContainer {
     min-height: 40vh;
     display: flex;
@@ -282,43 +286,38 @@ h1 {
     font-weight: 5000;
 }
 .CSSgal .slider .slide4 .columnContainer {
-    border-style: solid;
+
     height: 20vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 .CSSgal .slider .slide4 .column {
-    flex: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
     border-radius: 20px;
-    border-style: solid;
+
 }
-.CSSgal .slider .slide4 .column h1 {
-    font-size: 1.2vw;
-}
-.CSSgal .slider .slide4 .column h2 {
-    font-size: 1.2vw;
-    color: #ce8f18;
+.CSSgal .slider .slide4 .column h4{
+    font-size: 1vw;
 }
 .CSSgal .slider .slide4 .columnSpace {
 
-    padding-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    font-size: 2vw;
-    text-align: center;
-    font-family: "Calibri", sans-serif;
+    font-size: 3vw;
+    font-family: "poppins", sans-serif;
 }
 .CSSgal .slider .slide4 .bottomContainer {
     height: 38vh;
     display: flex;
-    border-style: solid;
+
     float: bottom;
     align-items: center;
     align-content: center;
@@ -408,7 +407,7 @@ h1 {
 }
 .CSSgal .slider .slide5 .bottomContainer {
     display: flex;
-    border-style: solid;
+
 }
 .CSSgal .slider .slide5 .textContainer {
     display: flex;
@@ -474,7 +473,7 @@ h1 {
 }
 .CSSgal .slider .slide6 .bottomContainer {
     display: flex;
-    border-style: solid;
+
 }
 .CSSgal .slider .slide6 .textContainer {
     display: flex;
@@ -495,12 +494,11 @@ h1 {
     line-height: 2vw;
 }
 
-
 .CSSgal .slider .slide7 .profile-container{
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 20vh;
+    margin-top: 30vh;
 
 }
 .CSSgal .slider .slide7 .profile-container .profile-gap{
@@ -543,6 +541,29 @@ h1 {
     display: flex;
 }
 
+.profile-bg-text {
+    background-color: #ffffff;
+    position: relative;
+    font-size: 12vw;
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+}
+
+.profile-bg-text::after {
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    z-index: -10;
+    margin-top: -12vh;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    position: absolute;
+}
+
+
+
 
 .CSSgal .slider .slide8 .contact-container{
     display: flex;
@@ -553,7 +574,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
 .CSSgal .slider .slide8 .contact-info-container{
     display: flex;
     flex-direction: column;
@@ -605,7 +625,26 @@ h1 {
 
 }
 
+.contact-bg-text {
+    background-color: #ffffff;
+    position: relative;
+    font-size: 12vw;
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+}
 
+.contact-bg-text::after {
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    z-index: -10;
+    margin-top: -25vh;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    position: absolute;
+}
 
 
 .footer{
@@ -723,6 +762,49 @@ h1 {
         padding-right: 0;
     }
 
+    .slider{
+        width: 100vw;
+    }
+    .CSSgal .slider .slide3 .gridContainer {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .CSSgal .slider .slide3 .grid-item {
+        padding-left: 5px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        gap:5px;
+        align-items: center;
+        align-content: center;
+
+        width: 15vw;
+        height: 7vh;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 10px 10px 30px #a9bfe5;
+    }
+    .CSSgal .slider .slide3 .textContainer {
+        min-height: 40vh;
+        display: flex;
+        font-family: "Calibri", sans-serif;
+        margin: 10% 40% 40% 10%;
+        flex-direction: column;
+
+    }
+    .CSSgal .slider .slide3 h1 {
+        display: flex;
+        font-weight: 5000;
+        line-height: 50px;
+        margin-top: -50px;
+        letter-spacing: -0.06em;
+        font-size: 2.5vw;
+    }
+    .CSSgal .slider .slide3 p {
+        display: flex;
+        line-height: 30px;
+        font-weight: 500;
+        font-size: 1.4vw;
+    }
 
     .CSSgal .slider .slide8 .contact-container{
         display: flex;
