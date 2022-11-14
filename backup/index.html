@@ -21,15 +21,15 @@
         <a><img src="src/Lang.svg" class="lang-icon"/></a>
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn ham-menu"><span></span></label>
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper">
             <ul class="nav-list">
                 <img class="nav-item-site-logo" src="src/Logo.svg"/>
-                <li class="nav-item"><a href="#s1" onclick="navclick(200)">Home</a></li>
-                <li class="nav-item"><a href="#s2" onclick="navclick(300)">About</a></li>
-                <li class="nav-item"><a href="#s3" onclick="navclick(100)">Development</a></li>
-                <li class="nav-item"><a href="#s4" onclick="navclick(0)">VentureCapital</a></li>
-                <li class="nav-item"><a href="#s5" onclick="navclick(150)">Team</a></li>
-                <li class="nav-item"><a href="#s6" onclick="navclick(50)">Contact</a></li>
+                <li class="nav-item"><a href="#s1" onclick="topFunction()">Home</a></li>
+                <li class="nav-item"><a href="#s2">About</a></li>
+                <li class="nav-item"><a href="#s3">Development</a></li>
+                <li class="nav-item"><a href="#s4">VentureCapital</a></li>
+                <li class="nav-item"><a href="#s7">Team</a></li>
+                <li class="nav-item"><a href="#s8">Contact</a></li>
 
             </ul>
         </div>
@@ -37,15 +37,13 @@
 </header>
 
 
-
-
-<div id="s1" class="container home">
+<div class="container home">
     <div class="bg-text" data-bg-text="Investalabs"></div>
     <div class="title">
         <h1>We build Markets and Utilities for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
     </div>
 </div>
-<div id="s2" class="container about">
+<div class="container about">
     <div class="bg-text" data-bg-text="About"></div>
     <div class="about-text">
         <h3>We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
@@ -56,7 +54,7 @@
         </h3>
     </div>
 </div>
-<div id="s3" class="container development">
+<div class="container development">
     <div class="bg-text" data-bg-text="Development"></div>
     <div class="gridContainer">
         <div class="grid-item"><img src="src/icon-1.svg"/>
@@ -117,50 +115,45 @@
             which product to develop to increase the demand for the token.</p>
     </div>
 </div>
-<div id="s4" class="container venturecapital">
+
+
+
+<div class="container venturecapital">
     <div class="bg-text" data-bg-text="VentureCapital"></div>
     <div class="topContainer">
-        <div class="topContainerCursor" >
-            <span class="arrow" onclick="currentSlide(1)">></span>
-            <span class="arrow" onclick="currentSlide(2)">></span>
-            <span class="arrow" onclick="currentSlide(3)">></span>
-        </div>
-
-        <div class="topContainerList">
-            <span class="dot" onclick="currentSlide(1)">Seed Stage</span>
-            <span class="dot" onclick="currentSlide(2)">pre-IDO & IDO Stages</span>
-            <span class="dot" onclick="currentSlide(3)">Launch & Post-Launch Period</span>
+        <div style="display: flex; align-items: center; justify-content: center; align-content: center; flex-direction: column;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
 
     <div class="slideContainer">
         <div class="slides fade slide-1">
             <div class="columnContainer">
-
                 <div class="column">
-                    <div class="bg-text" data-bg-text="1"></div>
+
                     <div></div>
                     <div>perform due dilligence and project analysis</div>
                     <div style="color: #ce8f18">Seed Stage</div>
 
                 </div>
                 <div class="column">
-                    <div class="bg-text" data-bg-text="2"></div>
+
                     <div></div>
                     <div>Give recommendations on the pitch deck, tokenomics, WP, and token circulation models</div>
                     <div style="color: #ce8f18">Seed Stage</div>
 
                 </div>
                 <div class="column">
-                    <div class="bg-text" data-bg-text="3"></div>
-                    <div></div>
+
+                    <div style="color: transparent"></div>
                     <div>Invest ourselves and attract other Tier-1 VCs. into the seed round</div>
                     <div style="color: #ce8f18">Seed Stage</div>
 
                 </div>
                 <div class="column">
-                    <div class="bg-text" data-bg-text="4"></div>
-                    <div></div>
+                    <div style="color: transparent"></div>
                     <div>Develop, secure and integrate utilities</div>
                     <div style="color: #ce8f18">Seed Stage</div>
                 </div>
@@ -171,21 +164,18 @@
         <div class="slides fade slide-2">
             <div class="columnContainer">
                 <div class="column" style="z-index: 100;">
-                    <div class="bg-text" data-bg-text="5"></div>
                     <div></div>
                     <div>Direct connection with Top IDO Launchpads</div>
                     <div style="color: #ce8f18">Pre-IDO Stage</div>
                 </div>
 
                 <div class="bg-text column" style="z-index: 100;">
-                    <div class="bg-text" data-bg-text="6"></div>
                     <div></div>
                     <div>Direct Connection with Tier-1 CEXes</div>
                     <div style="color: #ce8f18">Pre-IDO Stage</div>
                 </div>
 
                 <div class="column" style="z-index: 100;">
-                    <div class="bg-text" data-bg-text="7"></div>
                     <div></div>
                     <div>Implement snipe-protection And prepare for IDO</div>
                     <div style="color: #ce8f18">Pre-IDO Stage</div>
@@ -195,29 +185,25 @@
 
         <div class="slides fade slide-3">
             <div class="columnContainer">
-                <div class="column" style="z-index: 100;">
-                    <div class="bg-text" data-bg-text="8"></div>
+                <div class="column" data-bg-text="8" style="z-index: 100;">
                     <div></div>
                     <div>Develop and implement A strategy for the first 48 hours of trading</div>
                     <div style="color: #ce8f18">Launch Stage</div>
                 </div>
 
-                <div class="column" style="z-index: 100;">
-                    <div class="bg-text" data-bg-text="9"></div>
+                <div class="column" data-bg-text="9" style="z-index: 100;">
                     <div></div>
                     <div>Token liquidation</div>
                     <div style="color: #ce8f18">Launch Stage</div>
                 </div>
 
                 <div class="column" style="z-index: 100;">
-                    <div class="bg-text" data-bg-text="10"></div>
                     <div></div>
                     <div>We support the project and it's Investors on their way to the top of The crypto market</div>
                     <div style="color: #ce8f18">Post-Launch Period</div>
                 </div>
 
                 <div class="column" style="z-index: 100;">
-                    <div class="bg-text" data-bg-text="11"></div>
                     <div></div>
                     <div>Develop, secure and integrate utilities</div>
                     <div style="color: #ce8f18">Post-Launch Period</div>
@@ -236,9 +222,10 @@
 
     </div>
     <a class="prev" style="background: black" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)"></a>
+    <a class="next" style="background: black" onclick="plusSlides(1)">❯</a>
 </div>
-<div id="s5" class="container team">
+
+<div class="container team">
     <div class="bg-text" data-bg-text="Team"></div>
     <div class="profile-container">
 
@@ -251,7 +238,7 @@
 
     </div>
 </div>
-<div id="s6" class="container contact">
+<div class="container contact">
     <div class="bg-text" data-bg-text="Contact"></div>
     <div class="contact-info-container">
         <div class="contact-info-text">
@@ -267,7 +254,7 @@
             <form class="contact-card-container" action="mailto:info@investalabs.com" method="post" enctype="text/plain">
                 <input class="card-item name"type="text" id="Name" name="name" value="YOUR NAME"><br>
                 <input class="card-item email" type="text" id="Email" name="email" value="EMAIL"><br>
-                <textarea class="card-item msg" type="text" id="Msg" name="msg">hey</textarea><br>
+                <input class="card-item msg" type="text" id="Msg" name="msg" value="Your Message"><br>
                 <input class="card-item submit" type="submit" value="Send">
             </form>
 
@@ -282,81 +269,14 @@
 <div style="height: 8.6vh"></div>
 
 <footer class="footer">
-    <div class="copy&social-container">
-        <div class="social">
-
-            <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="social-icon" href="#"><i class="fa fa-youtube-play"></i></a>
-            <a class="social-icon" href="#"><i class="fa fa-instagram"></i></a>
-
-
-        </div>
-        <p class="copyright">© 2022 INVESTALABS. - All Rights Reserved.</p>
-    </div>
-
-
-        <img class="mouse-icon" alt="mouse" src="src/Mouse.svg"/>
-
-
-    <div class="mail-elements-container">
-        <div class="email-icon-container">
-
-        </div>
-        <div class="email-container">
-            <div class="email-us">EMAIL US</div>
-            <div class="email-address">info@investalabs.com</div>
-        </div>
-
-    </div>
+    sfghsfghgsfhgfsh
 </footer>
 
 
 
 
-<script>
-    function slide() {
-        h = document.documentElement.clientHeight
-        $(".one, .two, .three").css('height', h);
-    };
-    $(window).resize(slide);
-    $(document).ready(slide);
 
 
-    $(document).bind('mousewheel DOMMouseScroll', function(event) {
-        scroll(event);
-    });
-
-    var num = 1;
-    var scrolling = false;
-
-    function scroll(event) {
-        event.preventDefault();
-        if (!scrolling) {
-            scrolling = true;
-            if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-                num--;
-                num = num < 1 ? 1 : num;
-            } else {
-                num++;
-                num = num > 3 ? 3 : num;
-            }
-
-            $('html, body').animate({
-                scrollTop: $(".num" + num).offset().top
-            }, 500, "linear", function() {
-                scrolling = false;
-            });
-        }
-    }
-</script>
-<script>
-    function navclick(n){
-        document.getElementById('wrapper').style.right = "-100%";
-        document.getElementById("active").checked = false;
-        scrollTo(n,0)
-    }
-</script>
 <script>
     let slideIndex = 1;
     showSlides(slideIndex);
@@ -373,7 +293,6 @@
         let i;
         let slides = document.getElementsByClassName("slides");
         let dots = document.getElementsByClassName("dot");
-        let arrows = document.getElementsByClassName("arrow");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
@@ -381,11 +300,9 @@
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
-            arrows[i].className = arrows[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
-        arrows[slideIndex-1].className += " active";
     }
 </script>
 <script>
