@@ -1,348 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
     <title>InvestaLabs</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
-
 <body>
 
 <header class="header" id="navbar">
 
-        <div class="site-logo-container">
-            <img class="site-logo" src="src/Logo.svg"/>
+    <div class="site-logo-container">
+        <img class="site-logo" src="src/Logo.svg"/>
+    </div>
+    <div class="nav-item-container">
+        <a><img src="src/Lang.svg" class="lang-icon"/></a>
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn ham-menu"><span></span></label>
+        <div class="wrapper">
+            <ul class="nav-list">
+                <img class="nav-item-site-logo" src="src/Logo.svg"/>
+                <li class="nav-item"><a href="#s1" onclick="topFunction()">Home</a></li>
+                <li class="nav-item"><a href="#s2">About</a></li>
+                <li class="nav-item"><a href="#s3">Development</a></li>
+                <li class="nav-item"><a href="#s4">VentureCapital</a></li>
+                <li class="nav-item"><a href="#s7">Team</a></li>
+                <li class="nav-item"><a href="#s8">Contact</a></li>
+
+            </ul>
         </div>
-        <div class="nav-item-container">
-            <a><img src="src/Lang.svg" class="lang-icon"/></a>
-            <input type="checkbox" id="active">
-            <label for="active" class="menu-btn ham-menu"><span></span></label>
-            <div class="wrapper">
-                <ul class="nav-list">
-                    <img class="nav-item-site-logo" src="src/Logo.svg"/>
-                    <li class="nav-item"><a href="#s1" onclick="topFunction()">Home</a></li>
-                    <li class="nav-item"><a href="#s2">About</a></li>
-                    <li class="nav-item"><a href="#s3">Development</a></li>
-                    <li class="nav-item"><a href="#s4">VentureCapital</a></li>
-                    <li class="nav-item"><a href="#s7">Team</a></li>
-                    <li class="nav-item"><a href="#s8">Contact</a></li>
-
-                </ul>
-            </div>
-        </div>
-
-
-
+    </div>
 </header>
 
 
-<div class="CSSgal">
-
-
-        <div class="slider" id="container">
-
-            <div  id="s1" class="slides slide1 bg-text" data-bg-text="INVESTALABS">
-                <div class="title">
-                    <h1>We build Markets and Utilities for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
-                </div>
-
-
-            </div>
-
-            <div id="s2" class="slides slide2 bg-text" data-bg-text="About">
-                <div class="slide2-text">
-                    <h3>We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
-                        Investa Labs's mission of creating more economic freedom for the world.<br><br>We partner with
-                        founding
-                        teams at the earliest stages, and invest broadly across all categories within the
-                        cryptoeconomy.
-                    </h3>
-                </div>
-            </div>
-
-            <div id="s3" class="slides slide3 bg-text" data-bg-text="Development">
-
-                <div class="gridContainer">
-                    <div class="grid-item"><img src="src/icon-1.svg"/>
-                        Dedicated nodes
-                    </div>
-                    <div class="grid-item"><img src="src/icon-2.svg" style="height: 50px; width: 50px" /> Shared
-                        Nodes
-                    </div>
-                    <div class="grid-item"><img src="src/icon-3.svg" style="height: 50px; width: 50px" /> NFT
-                        Marketplace
-                    </div>
-                    <div class="grid-item"><img src="src/icon-4.svg" style="height: 50px; width: 50px" />
-                        Custodial
-                        Service</div>
-                    <div class="grid-item"><img src="src/icon-5.svg" style="height: 50px; width: 50px" /> Trading
-                        tools
-                    </div>
-                    <div class="grid-item"><img src="src/icon-6.svg" style="height: 50px; width: 50px" /> Crypto
-                        Exchanges
-                    </div>
-                    <div class="grid-item"><img src="src/icon-7.svg" style="height: 50px; width: 50px" /> Live
-                        Price Feed
-                    </div>
-                    <div class="grid-item"><img src="src/icon-8.svg" style="height: 50px; width: 50px" />
-                        Industrial
-                        solutions</div>
-                    <div class="grid-item"><img src="src/icon-9.svg" style="height: 50px; width: 50px" />
-                        Coin/Token
-                        Insurance</div>
-                    <div class="grid-item"><img src="src/icon-10.svg" style="height: 50px; width: 50px" /> DAPP
-                        Creation
-                    </div>
-                    <div class="grid-item"><img src="src/icon-11.svg" style="height: 50px; width: 50px" />
-                        Tokenomics</div>
-                    <div class="grid-item"><img src="src/icon-12.svg" style="height: 50px; width: 50px" /> Exchange
-                        Services</div>
-                    <div class="grid-item"><img src="src/icon-13.svg" style="height: 50px; width: 50px" />
-                        E-Learning
-                        Infrastructure</div>
-                    <div class="grid-item"><img src="src/icon-14.svg" style="height: 50px; width: 50px" />
-                        Decentralized
-                        File Storage</div>
-                    <div class="grid-item"><img src="src/icon-15.svg" style="height: 50px; width: 50px" /> Smart
-                        Contract
-                        Writing</div>
-                    <div class="grid-item"><img src="src/icon-16.svg" style="height: 50px; width: 50px" /> Smart
-                        Contract
-                        Auditing</div>
-                </div>
-
-
-                <div class="textContainer">
-                    <h1>We develop, build and integrate Utilities only to add value to the project</h1>
-                    <p>We have already created dozens of useful utilities that rocketed the project's earnings.
-                        We know
-                        how difficult it is to find qualified developers, but it is even more difficult to
-                        understand
-                        which product to develop to increase the demand for the token.</p>
-                </div>
-            </div>
-
-            <div id="s4" class="slides slide4">
-                <div class="listContainer">
-                    <div style="display: flex; flex-direction: row">
-                        <p  style="font-weight: bold; color: #ce8f18; font-size: 20px">> </p>
-                        <p style="text-decoration: underline; font-weight: bold"> Seed Stage</p>
-                    </div>
-                    <p> pre-IDO & IDO Stages</p><p>Launch & Post-Launch Period</p>
-                </div>
-                <div class="columnContainer">
-                    <div class="bg-text column" data-bg-text="1" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>perform due dilligence and project analysis</h4>
-                        <h4 style="color: #ce8f18">Seed Stage</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="2" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>Give recommendations on the pitch deck, tokenomics, WP, and token circulation models</h4>
-                        <h4 style="color: #ce8f18">Seed Stage</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="3" style="z-index: 100;">
-                        <h4 style="color: transparent"></h4>
-                        <h4>Invest ourselves and attract other Tier-1 VCs. into the seed round</h4>
-                        <h4 style="color: #ce8f18">Seed Stage</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="4" style="z-index: 100;">
-                        <h4 style="color: transparent"></h4>
-                        <h4>Develop, secure and integrate utilities</h4>
-                        <h4 style="color: #ce8f18">Seed Stage</h4>
-                    </div>
-                </div>
-                <div class="bottomContainer">
-                    <div class="bottomContainer-bg-text" data-bg-text="ventureCapital"></div>
-                    <div class="textContainer">
-                        <h1>Investa Labs Incubator</h1>
-                        <h3>Our Investment Arm</h3>
-                        <h4 >Investa Labs has come undreds of paths with the founders from idea to successfully launching their tokens on the exchange and mass adoption.</h4>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="s5" class="slides slide5 bg-text">
-                <div class="listContainer">
-                    <p>Seed Stage</p>
-                    <div style="display: flex; flex-direction: row">
-                        <p style="font-weight: bold; color: #ce8f18; font-size: 20px">></p>
-                        <p style="text-decoration: underline;  font-weight: bold">pre-IDO & IDO Stages</p>
-                    </div>
-                    <p>Launch & Post-Launch Period</p>
-                </div>
-                <div class="columnContainer">
-                    <div class="bg-text column" data-bg-text="5" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>Direct connection with Top IDO Launchpads</h4>
-                        <h4 style="color: #ce8f18">Pre-IDO Stage</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="6" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>Direct Connection with Tier-1 CEXes</h4>
-                        <h4 style="color: #ce8f18">Pre-IDO Stage</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="7" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>Implement snipe-protection And prepare for IDO</h4>
-                        <h4 style="color: #ce8f18">Pre-IDO Stage</h4>
-                    </div>
-                </div>
-                <div class="bottomContainer">
-                    <div class="bottomContainer-bg-text" data-bg-text="ventureCapital"></div>
-                    <div class="textContainer">
-                        <h1>Investa Labs Incubator</h1>
-                        <h3>Our Investment Arm</h3>
-                        <h4 >Investa Labs has come undreds of paths with the founders from idea to successfully launching their tokens on the exchange and mass adoption.</h4>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="s6" class="slides slide6 bg-text">
-                <div class="listContainer">
-                    <p>Seed Stage</p>
-                    <p>pre-IDO & IDO Stages</p>
-                    <div style="display: flex; flex-direction: row">
-                        <p  style="font-weight: bold; color: #ce8f18; font-size: 20px">> </p>
-                        <p style="text-decoration: underline;  font-weight: bold">Launch & Post-Launch Period</p>
-                    </div>
-                </div>
-                <div class="columnContainer">
-                    <div class="bg-text column" data-bg-text="8" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>Develop and implement A strategy for the first 48 hours of trading</h4>
-                        <h4 style="color: #ce8f18">Launch Stage</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="9" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>Token liquidation</h4>
-                        <h4 style="color: #ce8f18">Launch Stage</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="10" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>We support the project and it's Investors on their way to the top of The crypto market</h4>
-                        <h4 style="color: #ce8f18">Post-Launch Period</h4>
-                    </div>
-                    <div class="columnSpace">></div>
-                    <div class="bg-text column" data-bg-text="11" style="z-index: 100;">
-                        <h4></h4>
-                        <h4>Develop, secure and integrate utilities</h4>
-                        <h4 style="color: #ce8f18">Post-Launch Period</h4>
-                    </div>
-                </div>
-                <div class="bottomContainer">
-                    <div class="bottomContainer-bg-text" data-bg-text="ventureCapital"></div>
-                    <div class="textContainer">
-                        <h1>Investa Labs Incubator</h1>
-                        <h3>Our Investment Arm</h3>
-                        <h4>Investa Labs has come undreds of paths with the founders from idea to successfully launching their tokens on the exchange and mass adoption.</h4>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="s7" class="slides slide7 profile-bg-text" data-bg-text="Team">
-                    <div class="profile-container">
-
-                        <div class="profile-gap"></div>
-                        <img class="profile-picture"/>
-                        <div class="profile-info">
-                            <h1 class="job-type">CO-FOUNDER & CEO</h1>
-                            <p class="name">Mustafa Güler</p>
-                        </div>
-
-                    </div>
-
-
-            </div>
-
-            <div id="s8" class="slides slide8 contact-bg-text" data-bg-text="Contact">
-                <div class="contact-container">
-                    <div class="contact-info-container">
-                        <h2>CONNECTED WITH US</h2>
-                        <p>Quis ipsum suspendisse ultrices. Rissus commodo viverra maecenas accumsan lacus sed vel facilisis adipiscing.</p>
-                        <br>
-                        <br>
-                        <h1>info@investalabs.com</h1>
-                        <p>004 Riley Street, Surry Hills 2050 Sydney, Australia</p>
-                        <p>+0234 233 423 444</p>
-                    </div>
-
-                        <div class="contact-card-container">
-                            <form action="mailto:info@investalabs.com" method="post" enctype="text/plain">
-                            <input class="card-item name"type="text" id="Name" name="name" value="YOUR NAME"><br>
-                            <input class="card-item email" type="text" id="Email" name="email" value="EMAIL"><br>
-                            <input class="card-item msg" type="text" id="Msg" name="msg" value="Your Message"><br>
-                            <input class="card-item submit" type="submit" value="Send">
-                            </form>
-                        </div>
-
-
-                </div>
-            </div>
-
-
-
+<div class="container home">
+    <div class="bg-text" data-bg-text="Investalabs"></div>
+    <div class="title">
+        <h1>We build Markets and Utilities for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
+    </div>
+</div>
+<div class="container about">
+    <div class="bg-text" data-bg-text="About"></div>
+    <div class="about-text">
+        <h3>We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
+            Investa Labs's mission of creating more economic freedom for the world.<br><br>We partner with
+            founding
+            teams at the earliest stages, and invest broadly across all categories within the
+            cryptoeconomy.
+        </h3>
+    </div>
+</div>
+<div class="container development">
+    <div class="bg-text" data-bg-text="Development"></div>
+    <div class="gridContainer">
+        <div class="grid-item"><img src="src/icon-1.svg"/>
+            Dedicated nodes
         </div>
-
-
+        <div class="grid-item"><img src="src/icon-2.svg" /> Shared
+            Nodes
+        </div>
+        <div class="grid-item"><img src="src/icon-3.svg" /> NFT
+            Marketplace
+        </div>
+        <div class="grid-item"><img src="src/icon-4.svg" />
+            Custodial
+            Service</div>
+        <div class="grid-item"><img src="src/icon-5.svg" /> Trading
+            tools
+        </div>
+        <div class="grid-item"><img src="src/icon-6.svg" /> Crypto
+            Exchanges
+        </div>
+        <div class="grid-item"><img src="src/icon-7.svg" /> Live
+            Price Feed
+        </div>
+        <div class="grid-item"><img src="src/icon-8.svg" />
+            Industrial
+            solutions</div>
+        <div class="grid-item"><img src="src/icon-9.svg" />
+            Coin/Token
+            Insurance</div>
+        <div class="grid-item"><img src="src/icon-10.svg" /> DAPP
+            Creation
+        </div>
+        <div class="grid-item"><img src="src/icon-11.svg" />
+            Tokenomics</div>
+        <div class="grid-item"><img src="src/icon-12.svg" /> Exchange
+            Services</div>
+        <div class="grid-item"><img src="src/icon-13.svg" />
+            E-Learning
+            Infrastructure</div>
+        <div class="grid-item"><img src="src/icon-14.svg" />
+            Decentralized
+            File Storage</div>
+        <div class="grid-item"><img src="src/icon-15.svg" /> Smart
+            Contract
+            Writing</div>
+        <div class="grid-item"><img src="src/icon-16.svg" /> Smart
+            Contract
+            Auditing</div>
     </div>
 
 
-<footer>
-        <section class="footer">
+    <div class="textContainer">
+        <h2>We develop, build and integrate Utilities only to add value to the project</h2>
+        <p>We have already created dozens of useful utilities that rocketed the project's earnings.
+            We know
+            how difficult it is to find qualified developers, but it is even more difficult to
+            understand
+            which product to develop to increase the demand for the token.</p>
+    </div>
+</div>
 
-            <div class="copy&social-container">
-                <div class="social">
 
-                    <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-youtube-play"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-instagram"></i></a>
 
+<div class="container venturecapital">
+    <div class="bg-text" data-bg-text="VentureCapital"></div>
+    <div class="topContainer">
+        <div style="display: flex; align-items: center; justify-content: center; align-content: center; flex-direction: column;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="slideContainer">
+        <div class="slides fade slide-1">
+            <div class="columnContainer">
+                <div class="column">
+
+                    <div></div>
+                    <div>perform due dilligence and project analysis</div>
+                    <div style="color: #ce8f18">Seed Stage</div>
 
                 </div>
-                <p class="copyright">© 2022 INVESTALABS. - All Rights Reserved.</p>
-            </div>
+                <div class="column">
 
-            <div class="mouse-icon-container">
-                <img class="mouse-icon"  src="src/Mouse.svg"/>
-            </div>
-
-            <div class="mail-elements-container">
-                <div class="email-icon-container">
+                    <div></div>
+                    <div>Give recommendations on the pitch deck, tokenomics, WP, and token circulation models</div>
+                    <div style="color: #ce8f18">Seed Stage</div>
 
                 </div>
-                <div class="email-container">
-                    <div class="email-us">EMAIL US</div>
-                    <div class="email-address">info@investalabs.com</div>
+                <div class="column">
+
+                    <div style="color: transparent"></div>
+                    <div>Invest ourselves and attract other Tier-1 VCs. into the seed round</div>
+                    <div style="color: #ce8f18">Seed Stage</div>
+
+                </div>
+                <div class="column">
+                    <div style="color: transparent"></div>
+                    <div>Develop, secure and integrate utilities</div>
+                    <div style="color: #ce8f18">Seed Stage</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slides fade slide-2">
+            <div class="columnContainer">
+                <div class="column" style="z-index: 100;">
+                    <div></div>
+                    <div>Direct connection with Top IDO Launchpads</div>
+                    <div style="color: #ce8f18">Pre-IDO Stage</div>
                 </div>
 
+                <div class="bg-text column" style="z-index: 100;">
+                    <div></div>
+                    <div>Direct Connection with Tier-1 CEXes</div>
+                    <div style="color: #ce8f18">Pre-IDO Stage</div>
+                </div>
+
+                <div class="column" style="z-index: 100;">
+                    <div></div>
+                    <div>Implement snipe-protection And prepare for IDO</div>
+                    <div style="color: #ce8f18">Pre-IDO Stage</div>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <div class="slides fade slide-3">
+            <div class="columnContainer">
+                <div class="column" data-bg-text="8" style="z-index: 100;">
+                    <div></div>
+                    <div>Develop and implement A strategy for the first 48 hours of trading</div>
+                    <div style="color: #ce8f18">Launch Stage</div>
+                </div>
+
+                <div class="column" data-bg-text="9" style="z-index: 100;">
+                    <div></div>
+                    <div>Token liquidation</div>
+                    <div style="color: #ce8f18">Launch Stage</div>
+                </div>
+
+                <div class="column" style="z-index: 100;">
+                    <div></div>
+                    <div>We support the project and it's Investors on their way to the top of The crypto market</div>
+                    <div style="color: #ce8f18">Post-Launch Period</div>
+                </div>
+
+                <div class="column" style="z-index: 100;">
+                    <div></div>
+                    <div>Develop, secure and integrate utilities</div>
+                    <div style="color: #ce8f18">Post-Launch Period</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottomContainer">
+        <div class="textContainer">
+            <h1>Investa Labs Incubator</h1>
+            <h3>Our Investment Arm</h3>
+            <h4 >Investa Labs has come undreds of paths with the founders from idea to successfully launching their tokens on the exchange and mass adoption.</h4>
+        </div>
+
+    </div>
+    <a class="prev" style="background: black" onclick="plusSlides(-1)">❮</a>
+    <a class="next" style="background: black" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div class="container team">
+    <div class="bg-text" data-bg-text="Team"></div>
+    <div class="profile-container">
+
+        <div class="profile-gap"></div>
+        <img class="profile-picture"/>
+        <div class="profile-info">
+            <h1 class="job-type">CO-FOUNDER & CEO</h1>
+            <p class="name">Mustafa Güler</p>
+        </div>
+
+    </div>
+</div>
+<div class="container contact">
+    <div class="bg-text" data-bg-text="Contact"></div>
+    <div class="contact-info-container">
+        <div class="contact-info-text">
+            <h3 style="letter-spacing: 0.5vw; font-weight: bold">CONNECTED WITH US</h3>
+            <p style="margin-right: 10vw; font-weight : inherit ">Quis ipsum suspendisse ultrices. Rissus commodo viverra maecenas accumsan lacus sed vel facilisis adipiscing.</p>
+            <h2 style="font-weight: lighter; font-size: 2vw">info@investalabs.com</h2>
+            <p>004 Riley Street, Surry Hills 2050 Sydney, Australia</p>
+            <p>+0234 233 423 444</p>
+        </div>
+
+        </div>
+
+            <form class="contact-card-container" action="mailto:info@investalabs.com" method="post" enctype="text/plain">
+                <input class="card-item name"type="text" id="Name" name="name" value="YOUR NAME"><br>
+                <input class="card-item email" type="text" id="Email" name="email" value="EMAIL"><br>
+                <input class="card-item msg" type="text" id="Msg" name="msg" value="Your Message"><br>
+                <input class="card-item submit" type="submit" value="Send">
+            </form>
+
+
+</div>
+
+
+
+
+
+
+<div style="height: 8.6vh"></div>
+
+<footer class="footer">
+    sfghsfghgsfhgfsh
 </footer>
 
 
+
+
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+<script>
+    function wheel(event) {
+        var delta = 0;
+        if (event.wheelDelta) {(delta = event.wheelDelta / 120);}
+        else if (event.detail) {(delta = -event.detail / 3);}
+
+        handle(delta);
+        if (event.preventDefault) {(event.preventDefault());}
+        event.returnValue = false;
+    }
+
+    function handle(delta) {
+        var time = 1000;
+        var distance = 300;
+
+        $('html, body').stop().animate({
+            scrollTop: $(window).scrollTop() - (distance * delta)
+        }, time );
+    }
+
+    if (window.addEventListener) {window.addEventListener('DOMMouseScroll', wheel, false);}
+    window.onmousewheel = document.onmousewheel = wheel;
+</script>
 <script>
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
@@ -362,35 +347,5 @@
         }
     }
 </script>
-<script>
-    const element = document.querySelector("#container");
-
-    element.addEventListener('wheel', (event) => {
-        event.preventDefault();
-        element.scrollBy({
-            left: event.deltaY < 0 ? -document.body.scrollWidth : document.body.scrollWidth,
-            behavior : "smooth"
-        })
-    });
-</script>
-<script>
-    const element = document.querySelector("#container");
-
-    element.addEventListener('touch', (event) => {
-        event.preventDefault();
-        element.scrollBy({
-            left: event.deltaY < 0 ? -document.body.scrollWidth : document.body.scrollWidth,
-            behavior : "smooth"
-        })
-    });
-</script>
-<script>
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
-
 </body>
-
 </html>

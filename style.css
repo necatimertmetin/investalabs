@@ -1,10 +1,10 @@
 
-body {
-    font-family: "Poppins", sans-serif;
-    overflow: hidden;
+html{
+    overflow-x: hidden;
     padding: 0;
-
+    margin: 0;
 }
+
 
 
 .sticky {
@@ -27,16 +27,19 @@ body {
     align-items: center;
 
 }
+.site-logo{
+    margin-left: 2vw;
+}
 .nav-item-container{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding-right: 5vw;
-    gap:2vw;
+    gap: 3vw;
+    margin-right: 3vw;
 }
 .lang-icon{
-width: 5vw;
+    width: 4vw;
 }
 .ham-menu{
     display: flex;
@@ -58,7 +61,7 @@ width: 5vw;
 }
 .menu-btn{
     position: relative;
-    width: 3vw;
+    width: 2vw;
     background-image: url("src/Menu.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +76,6 @@ width: 5vw;
     pointer-events: none;
     transition: background .6s;
 }
-
 .wrapper ul{
     position: relative;
 
@@ -99,7 +101,6 @@ width: 5vw;
     color: black;
     text-decoration: none;
 }
-
 input[type="checkbox"]{
     display: none;
 }
@@ -121,15 +122,29 @@ h1 {
     font-size: 50px;
 }
 
-.bg-text {
-    background-color: #ffffff;
-    position: relative;
-    font-size: 12vw;
-    text-shadow: 10px 10px 30px #a9bfe5;
+
+
+
+
+
+.container{
     font-family: "Poppins", sans-serif;
+    position:relative;
+
+    margin-left: 6vw;
+    width:88vw;
+    height: 80vh;
+
+    border-style: solid;
 }
 
-.bg-text::after {
+.home .title{
+
+    margin-left: 45vw;
+    margin-top: 50vh;
+
+}
+.home .bg-text::after {
     text-shadow: 10px 10px 30px #a9bfe5;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
@@ -139,467 +154,415 @@ h1 {
     display: block;
     font-size: 12vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-
-
-/* SLIDER */
-
-.CSSgal .slider {
-    height: 80%;
-    white-space: nowrap;
-    font-size: 0;
-    overflow: hidden;
-    transition: 0.8s;
-    z-index: -100;
-}
-
-
-.CSSgal .slider>* {
-    font-size: 1rem;
-    display: inline-block;
-    white-space: normal;
-    vertical-align: top;
-    height: 100%;
-    width: 100%;
-    background: none 50% no-repeat;
-    background-size: cover;
-
-}
-
-#container{
-    margin-bottom: 500px;
-}
-
-.slides{
-    display: table-row;
-
-}
-
-
-
-
-
-
-
-.CSSgal .slider .slide1 .title {
-    margin-left: 45vw;
-    margin-top: 50vh;
-    letter-spacing: -0.06em;
-    font-size: 3vw;
-}
-
-.CSSgal .slider .slides{
-    height: 75vh;
+    top: 25%;
+    left: 10%;
 
 
 }
+.about .bg-text::after {
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    z-index: -10;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 12vw;
+    position: absolute;
+    top: 25%;
+    left: 25%;
 
 
-.CSSgal {
-    position: relative;
-
-    height: 100%;
-    width: 100%;
-
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-
-    /* Or set a fixed height */
+}
+.about-text{
+    position: absolute;
+    top: 30vh;
+    left: 10%;
 }
 
-.CSSgal .slider .slide2-text{
 
-    display: flex;
-    height: 75vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    margin-right: 50%;
-    margin-left: 10%;
+.development .bg-text::after {
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    z-index: -10;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 13vw;
+    position: absolute;
+    top: 40%;
+    left: -10%;
+
+
+
 }
-
-.CSSgal .slider .slide3 .gridContainer {
-    min-height: 30vh;
-    margin-left: 30%;
+.development .gridContainer {
+    padding-top:2vh;
+    padding-right: 2vw;
+    min-height: 40vh;
+    margin-left: 25vw;
     display: grid;
+    row-gap: 1vw;
+    column-gap: 2vh;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 1px;
-    margin-bottom: 20vh;
 }
-.CSSgal .slider .slide3 .grid-item {
-    padding-left: 5px;
+.development .grid-item {
+
+    font-size: 0.7vw;
+    padding-left: 1vw;
     display: flex;
+    gap: 1vw;
+    height: 8vh;
     border-radius: 5px;
-    gap:5px;
     align-items: center;
     align-content: center;
-
-    width: 15vw;
-    height: 7vh;
+    font-weight: bolder;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 10px 10px 30px #a9bfe5;
 }
-.CSSgal .slider .slide3 .grid-item img{
-    height: 50px;
-    width: 50px;
+.development .grid-item img{
+    width: 1.8vw;
 }
-.CSSgal .slider .slide3 .textContainer {
-    min-height: 10vh;
-    display: flex;
-    font-family: "Calibri", sans-serif;
-    margin: 10% 45% 40% 20%;
-    flex-direction: column;
+.development .textContainer {
+    font-size: 1vw;
+    margin-left: 18vw;
+    margin-right: 40vw;
+    font-family: "Poppins", sans-serif;
 
 }
-.CSSgal .slider .slide3 h1 {
-    display: flex;
-    font-weight: 5000;
-    line-height: 50px;
-    margin-top: -50px;
-    letter-spacing: -0.06em;
-    font-size: 2.5vw;
+.development .textContainer h2{
+    font-size: 2vw;
+    margin-right: 4vw;
+    font-family: "Poppins", sans-serif;
+
 }
-.CSSgal .slider .slide3 p {
-    display: flex;
-    line-height: 30px;
-    font-weight: 500;
-    font-size: 1.4vw;
+.development .textContainer p{
+    margin-top: -2vh;
+    font-weight: bold;
+    font-size: 0.7vw;
+    font-family: "Poppins", sans-serif;
+
 }
 
 
+.venturecapital{
 
-.CSSgal .slider .slide4 .listContainer {
-    font-family: "poppins", sans-serif;
-    height: 10vh;
-    padding-left: 5vw;
-    padding-top: 5vh;
 }
-.CSSgal .slider .slide4 .listContainer p{
-
-    font-weight: 5000;
+.venturecapital .topContainer{
+    height: 15vh;
+    border-style: solid;
 }
-.CSSgal .slider .slide4 .columnContainer {
-
+.venturecapital .slideContainer{
     height: 20vh;
+    border-style: solid;
+    position: relative;
+    margin: auto;
+
+}
+
+
+
+
+.slides{
+    height: 20vh;
+}
+
+
+.slide-1 .columnContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-.CSSgal .slider .slide4 .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    border-radius: 20px;
-
-}
-.CSSgal .slider .slide4 .column h4{
-    font-size: 1vw;
-}
-.CSSgal .slider .slide4 .columnSpace {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 3vw;
-    font-family: "poppins", sans-serif;
-}
-.CSSgal .slider .slide4 .bottomContainer {
-    height: 38vh;
-    display: flex;
-
-    float: bottom;
-    align-items: center;
     align-content: center;
+    column-gap: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
-.CSSgal .slider .slide4 .textContainer {
-    margin-right: 50%;
-    margin-left: 20%;
-    margin-top: 20vh;
+.slide-1 .columnContainer .column {
     display: flex;
     flex-direction: column;
-
-    font-family: "poppins", sans-serif;
+    justify-content: space-around;
+    flex: 1;
+    border-style: solid;
+    height: 20vh;
+    border-radius: 20px;
 }
-.CSSgal .slider .slide4 .textContainer h4 {
-    font-weight: normal;
-}
-.CSSgal .slider .slide4 .textContainer h1 {
-    margin-right: 10vw;
-}
-.CSSgal .slider .slide4 .textContainer p {
+.slide-1 .columnContainer .column div{
+    font-weight: bold;
 }
 
-.bottomContainer-bg-text{
-    background-color: #ffffff;
-    position: relative;
-    font-size: 12vw;
-    font-weight: bolder;
+
+.slide-2 .columnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    column-gap: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.slide-2 .columnContainer .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    border-style: solid;
+    height: 20vh;
+    border-radius: 20px;
+}
+.slide-2 .columnContainer .column h4{
+    font-size: 1.5vmin;
+}
+
+.slide-2 .columnContainer .column .bg-text::after {
     text-shadow: 10px 10px 30px #a9bfe5;
     font-family: "Poppins", sans-serif;
-}
-.bottomContainer-bg-text::after{
-    text-shadow: 10px 10px 30px #a9bfe5;
+    font-weight: bolder;
     z-index: -10;
     color: white;
     content: attr(data-bg-text);
     display: block;
-    font-size: 12vw;
+    font-size: 13vw;
     position: absolute;
- }
+    margin-left: 17vw;
+    margin-top: -16vh;
 
 
-.CSSgal .slider .slide5 .listContainer {
-    font-family: "poppins", sans-serif;
-    height: 10vh;
-    padding-left: 5vw;
-    padding-top: 5vh;
+
 }
-.CSSgal .slider .slide5 .listContainer p{
 
-    font-weight: 5000;
-}
-.CSSgal .slider .slide5 .columnContainer {
-    height: 20vh;
-    margin-right: 10vw;
-    margin-left: 10vw;
+
+
+.slide-3 .columnContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    align-content: center;
+    column-gap: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
-.CSSgal .slider .slide5 .column {
+
+.slide-3 .columnContainer .column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
-
-}
-.CSSgal .slider .slide5 .column h4{
-    font-size: 1vw;
-}
-.CSSgal .slider .slide5 .columnSpace {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 3vw;
-    font-family: "poppins", sans-serif;
-}
-.CSSgal .slider .slide5 .columnSpace {
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    font-size: 2vw;
-    text-align: center;
-    font-family: "Calibri", sans-serif;
-}
-.CSSgal .slider .slide5 .bottomContainer {
-    height: 38vh;
-    display: flex;
-
-    float: bottom;
-    align-items: center;
-    align-content: center;
-}
-.CSSgal .slider .slide5 .textContainer {
-    margin-right: 50%;
-    margin-left: 20%;
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
-
-    font-family: "poppins", sans-serif;
-}
-.CSSgal .slider .slide5 .textContainer h4 {
-    font-weight: normal;
-}
-.CSSgal .slider .slide5 .textContainer h1 {
-    margin-right: 10vw;
-}
-
-.CSSgal .slider .slide6 .listContainer {
-    font-family: "poppins", sans-serif;
-    height: 10vh;
-    padding-left: 5vw;
-    padding-top: 5vh;
-}
-.CSSgal .slider .slide6 .listContainer p{
-
-    font-weight: 5000;
-}
-.CSSgal .slider .slide6 .columnContainer {
-
+    border-style: solid;
     height: 20vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-.CSSgal .slider .slide6 .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
     border-radius: 20px;
+}
+.slide-3 .columnContainer .column h4{
+    font-size: 1.5vmin;
+}
+
+.slide-3 .columnContainer .column .bg-text::after {
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    z-index: -10;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 13vw;
+    position: absolute;
+    margin-left: 17vw;
+    margin-top: -16vh;
+
+
 
 }
-.CSSgal .slider .slide6 .column h4{
-    font-size: 1vw;
-}
-.CSSgal .slider .slide6 .columnSpace {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 3vw;
-    font-family: "poppins", sans-serif;
-}
-.CSSgal .slider .slide6 .bottomContainer {
-    height: 38vh;
-    display: flex;
 
-    float: bottom;
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+.venturecapital .bottomContainer{
+    height: 45vh;
+    border-style: solid;
+
+}
+.venturecapital .bottomContainer .textContainer{
+    margin-left: 10vw;
+}
+.venturecapital .bg-text::after {
+    text-shadow: 10px 10px 30px #a9bfe5;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    z-index: -10;
+    color: white;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 14.6vw;
+    position: absolute;
+    letter-spacing: -1vw;
+    top: 35%;
+    left: -10%;
+
+
+
+}
+
+
+
+
+.team .profile-container{
     align-items: center;
-    align-content: center;
-}
-.CSSgal .slider .slide6 .textContainer {
-    margin-right: 50%;
-    margin-left: 20%;
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
-
-    font-family: "poppins", sans-serif;
-}
-.CSSgal .slider .slide6 .textContainer h4 {
-    font-weight: normal;
-}
-.CSSgal .slider .slide6 .textContainer h1 {
-    margin-right: 10vw;
-}
-.CSSgal .slider .slide6 .textContainer p {
-}
-
-.CSSgal .slider .slide7 .profile-container{
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     margin-top: 30vh;
 
 }
-.CSSgal .slider .slide7 .profile-container .profile-gap{
+.team .profile-container .profile-gap{
     width: 25vw;
 }
-.CSSgal .slider .slide7 .profile-container .profile-picture{
+.team .profile-container .profile-picture{
     display: inline-block;
-    height: 200px;
+    height: 25vh;
     background:black;
-    width: 200px;
-    min-width: 20px;
-
-    box-sizing: content-box;
-    min-height: 20px;
+    width: 25vh;
     border-radius: 50%;
     border-width: 5px;
-    margin: 0;
     border-color:#ce8f18;
 }
-.CSSgal .slider .slide7 .profile-container .profile{
-    padding-left: 2vw;
+.team .profile-container .profile-info{
     width: 25vw;
     display: flex;
     flex-direction: column;
 
 }
-.CSSgal .slider .slide7 .profile-container .job-type{
+.team .profile-container .job-type{
     font-size: 15px;
     font-weight: lighter;
     color:#ce8f18;
-    display: flex;
-    height: 5vh;
 }
-.CSSgal .slider .slide7 .profile-container .name{
+.team .profile-container .name{
     font-weight: bolder;
-    font-size: 3vh;
-    text-align: center;
-    align-items: center;
-    height: 5vh;
-    display: flex;
 }
-
-.profile-bg-text {
-    background-color: #ffffff;
-    position: relative;
-    font-size: 12vw;
-    text-shadow: 10px 10px 30px #a9bfe5;
-    font-family: "Poppins", sans-serif;
-}
-
-.profile-bg-text::after {
+.team .bg-text::after {
     text-shadow: 10px 10px 30px #a9bfe5;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
-    margin-top: -12vh;
     color: white;
     content: attr(data-bg-text);
     display: block;
-    font-size: 12vw;
+    font-size: 15vw;
     position: absolute;
+    letter-spacing: -1vw;
+    top: 10%;
+    left: -10%;
+
+
+
 }
 
-
-
-
-.CSSgal .slider .slide8 .contact-container{
+.contact{
     display: flex;
-
-    width: 100%;
-    margin-top:10%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-.CSSgal .slider .slide8 .contact-info-container{
+.contact .contact-info-container{
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left:10%;
-    margin-right: 10%;
-    width: 50%;
-    height: 100%;
 
 }
-.CSSgal .slider .slide8 .contact-card-container{
+.contact .contact-info-container .contact-info-text{
+    margin-left: 15vw;
+}
+.contact .contact-card-container{
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:10%;
-    margin-right: 10%;
-    width: 50%;
-    height: 100%;
+
 
 }
-.CSSgal .slider .slide8 .contact-card-container .card-item{
+.contact .contact-card-container .card-item{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -610,224 +573,60 @@ h1 {
     padding-left: 10px;
 
 }
-.CSSgal .slider .slide8 .contact-card-container .msg{
+.contact .contact-card-container .msg{
     height: 15vh;
     padding-bottom: 80px;
 
 }
-.CSSgal .slider .slide8 .contact-card-container .submit{
+.contact .contact-card-container .submit{
     border: white;
     background-color: white;
     box-shadow: 10px 10px 30px #DDDDDD;
 
 }
-.CSSgal .slider .slide8 .contact-card-container .submit:hover{
+.contact .contact-card-container .submit:hover{
     border: white;
     background-color: white;
     box-shadow: 10px 10px 50px #ce8f18;;
 
 
 }
-
-.contact-bg-text {
-    background-color: #ffffff;
-    position: relative;
-    font-size: 12vw;
-    text-shadow: 10px 10px 30px #a9bfe5;
-    font-family: "Poppins", sans-serif;
-}
-
-.contact-bg-text::after {
+.contact .bg-text::after {
     text-shadow: 10px 10px 30px #a9bfe5;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
-    margin-top: -25vh;
     color: white;
     content: attr(data-bg-text);
     display: block;
-    font-size: 12vw;
+    font-size: 15vw;
     position: absolute;
+    letter-spacing: -1vw;
+    top: 10%;
+    left: -10%;
+
+
+
 }
+
+
 
 
 .footer{
-    position: absolute;
-    z-index: 4000;
-    top:90%;
-    width: 100%;
-    height: 7vh;
+    position: fixed;
+    width: 99vw;
+    height: 9vh;
+    bottom: 0;
+    border-style: solid;
+    background: white;
+    margin-left: -0.4vw;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-}
-.footer .copy\&social-container{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    align-content: center;
-    justify-content: space-between;
-
-    width: 20vh;
-}
-.footer .copy\&social-container .social{
-    height: 4vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center ;
-
-}
-.footer .copy\&social-container .social-icon{
-    color:black;
-
-
-}
-.footer .copy\&social-container .copyright{
-    height: 3vh;
-    text-align: center;
-
-}
-.footer .mouse-icon-container{
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.footer .mouse-icon-container .mouse-icon{
-    height: 4vh;
-}
-.footer .mail-elements-container{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    align-content: center;
-    justify-content: space-between;
-    width: 20vh;
 
-}
-.footer .mail-elements-container .email-icon-container{
-    width: 10vh;
-    height: 8vh;
-    background-image: url("src/Mail.svg");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center;
-    border-radius: 50%;
-    display: flex;
-    justify-self: center;
-    align-self: center;
 
-    vertical-align: middle;
 
-}
-.footer .mail-elements-container .email-icon{
-    vertical-align: center;
-    width: 8vh;
-}
-.footer .mail-elements-container .email-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    align-content: center;
-    justify-content: space-between;
-}
-@media screen and (max-width: 700px) {
-
-    .CSSgal .slider .slide1 .title {
-        margin-left: auto;
-        margin-top: 100%;
-
-        font-size: 1vw;
-        max-width: 100%;
-    }
-    .site-logo{
-        height: 4vh;
-    }
-    .nav-item-container{
-        height: 100%;
-        width: 16vh;
-        padding-right: 0;
-        margin: 0;
-
-    }
-    .lang-icon{
-        width: 10vw;
-    }
-    .menu-btn{
-        width: 6vw;
-        margin-bottom: 0;
-        margin-left: 5px;
-        padding-right: 0;
-    }
-
-    .slider{
-        width: 100vw;
-    }
-    .CSSgal .slider .slide3 .gridContainer {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-    .CSSgal .slider .slide3 .grid-item {
-        padding-left: 5px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 5px;
-        gap:5px;
-        align-items: center;
-        align-content: center;
-
-        width: 15vw;
-        height: 7vh;
-        background-color: rgba(255, 255, 255, 0.8);
-        box-shadow: 10px 10px 30px #a9bfe5;
-    }
-    .CSSgal .slider .slide3 .textContainer {
-        min-height: 40vh;
-        display: flex;
-        font-family: "Calibri", sans-serif;
-        margin: 10% 40% 40% 10%;
-        flex-direction: column;
-
-    }
-    .CSSgal .slider .slide3 h1 {
-        display: flex;
-        font-weight: 5000;
-        line-height: 50px;
-        margin-top: -50px;
-        letter-spacing: -0.06em;
-        font-size: 2.5vw;
-    }
-    .CSSgal .slider .slide3 p {
-        display: flex;
-        line-height: 30px;
-        font-weight: 500;
-        font-size: 1.4vw;
-    }
-
-    .CSSgal .slider .slide8 .contact-container{
-        display: flex;
-
-        width: 100%;
-        margin-top:10%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer .mouse-icon-container{
-       display: none;
-    }
-    .footer .mail-elements-container .email-icon-container{
-        display: none;
-
-    }
-    *{
-        margin:0;
-    }
-
-}
 
 
