@@ -89,7 +89,7 @@ html{
 }
 .wrapper ul li a{
     position: relative;
-    text-shadow: 33.4px 55.7px 62px #527bcd;
+    text-shadow: 3px 5px 62px #527bcd;
     z-index: 50000;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
@@ -97,7 +97,7 @@ html{
     font-size: 3em;
 }
 .wrapper ul li a:hover{
-    text-shadow: 1px 1px 30px darkblue;
+    text-shadow: 3px 5px 62px #527bcd;
     color: black;
     text-decoration: none;
 }
@@ -137,6 +137,9 @@ input[type="checkbox"]{
 
 }
 
+.home{
+
+}
 .home .title{
 
     margin-left: 45vw;
@@ -159,6 +162,10 @@ input[type="checkbox"]{
 
 
 }
+
+.about{
+
+}
 .about .bg-text::after {
     text-shadow: 33.4px 55.7px 62px #527bcd;
     font-family: "Poppins", sans-serif;
@@ -174,13 +181,20 @@ input[type="checkbox"]{
 
 
 }
-.about-text{
+.about-text-container{
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+    margin-right: 45vw;
+    font-size: 1.2vw;
+    font-weight: 500;
     position: absolute;
-    top: 30vh;
-    left: 10%;
+    height: 80vh;
 }
 
+.development{
 
+}
 .development .bg-text::after {
     text-shadow: 33.4px 55.7px 62px #527bcd;
     font-family: "Poppins", sans-serif;
@@ -217,7 +231,7 @@ input[type="checkbox"]{
     border-radius: 5px;
     align-items: center;
     align-content: center;
-    font-weight: bolder;
+    font-weight: 700;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 10px 10px 30px #a9bfe5;
 }
@@ -239,7 +253,7 @@ input[type="checkbox"]{
 }
 .development .textContainer p{
     margin-top: -2vh;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 0.7vw;
     font-family: "Poppins", sans-serif;
 
@@ -251,7 +265,7 @@ input[type="checkbox"]{
 .venturecapital .topContainer{
     display: flex;
     flex-direction: row;
-
+    height: 15vh;
 }
 .venturecapital .topContainer .topContainerCursor{
     display: flex;
@@ -269,7 +283,6 @@ input[type="checkbox"]{
 }
 .venturecapital .slideContainer{
     height: 20vh;
-
     position: relative;
     margin: auto;
 
@@ -280,46 +293,91 @@ input[type="checkbox"]{
 .venturecapital .columnContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: baseline;
     flex-wrap: nowrap;
     align-content: center;
-    column-gap: 10vw;
-    margin-right: 5vw;
-
-    margin-left: 5vw;
+    column-gap: 4vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 .venturecapital .columnContainer .column {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     flex: 1;
-
-    height: 20vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    font-weight: 500;
     border-radius: 20px;
+
 }
-.venturecapital .columnContainer .column h4{
-    font-size: 1.5vmin;
+.column-text{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+    border-radius: 20px;
+
 }
-.venturecapital .columnContainer .column .bg-text::after {
+.stage{
+    color: #ce8f18;
+    bottom: 0;
+    position:absolute;
+
+}
+.stage-text{
+    margin-top: 5vh
+}
+.column-bg-text::after {
     text-shadow: 33.4px 55.7px 62px #527bcd;
     font-family: "Poppins", sans-serif;
-    position: absolute;
-    margin-top: -10vh;
+    font-weight: bolder;
+    z-index: -10;
     color: white;
     content: attr(data-bg-text);
+    font-size: 14vw;
+    position: absolute;
+    margin-top: -12vh;
+    display: flex;
+    margin-left: 2vw;
 
 
 
 }
 .venturecapital .bottomContainer{
+    align-items: center;
+    display: flex;
     height: 45vh;
 
 
 }
 .venturecapital .bottomContainer .textContainer{
-    margin-left: 10vw;
+    margin-top: 10vh;
+    margin-left: 14.5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
 }
-.venturecapital .bg-text::after {
+.venturecapital .bottomContainer .textContainer h1{
+
+    font-size: 2.5vw;
+    line-height: 3vw;
+    margin-right: 50vw;
+}
+.venturecapital .bottomContainer .textContainer h3{
+    margin-top: -3vh;
+    font-size: 1.75vw;
+    margin-right: 45vw;
+}
+.venturecapital .bottomContainer .textContainer h4{
+    margin-top: -3vh;
+    font-weight: 500;
+    font-size: 0.7vw;
+    margin-right: 45vw;
+}
+.venturecapital .ventureCapital-bg-text::after {
     text-shadow: 33.4px 55.7px 62px #527bcd;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
@@ -339,7 +397,10 @@ input[type="checkbox"]{
 
 
 
+.team{
 
+
+}
 .team .profile-container{
     align-items: center;
     justify-content: space-evenly;
@@ -578,14 +639,14 @@ input[type="checkbox"]{
     cursor: pointer;
     margin: 0 2px;
     transition: background-color 0.6s ease;
-
+    color: transparent;
 
 }
-.active, .arrow:hover {
+.activex, .arrow:hover {
 
-    text-decoration: underline;
-    font-weight: normal;
+    font-weight: 700;
     color: #ce8f18;
+    display: block;
 
 }
 .active, .dot:hover {
