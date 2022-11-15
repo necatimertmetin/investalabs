@@ -129,7 +129,7 @@ input[type="checkbox"]{
 
     margin-left: 6vw;
     width:88vw;
-    height: 80vh;
+    height: 100vh;
     border-style: solid;
     border-color: transparent;
 
@@ -296,11 +296,10 @@ input[type="checkbox"]{
     align-items: baseline;
     flex-wrap: nowrap;
     align-content: center;
-    column-gap: 4vw;
     margin-right: 10vw;
     margin-left: 10vw;
 }
-.venturecapital .columnContainer .column {
+.column {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -310,12 +309,29 @@ input[type="checkbox"]{
     border-radius: 20px;
 
 }
+.column-space {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    font-weight: 500;
+    border-radius: 20px;
+    border-style: solid;
+    background-image: url("src/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 2vw;
+    background-position: center;
+    height: 4vh;
+    width: 4vw;
+
+}
 .column-text{
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: 200;
     border-radius: 20px;
 
 }
@@ -326,7 +342,8 @@ input[type="checkbox"]{
 
 }
 .stage-text{
-    margin-top: 5vh
+    margin-top: 5vh;
+    font-weight: 500;
 }
 .column-bg-text::after {
     text-shadow: 33.4px 55.7px 62px #527bcd;

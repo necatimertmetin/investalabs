@@ -142,9 +142,10 @@ input[type="checkbox"]{
 }
 .home .title{
 
-    margin-left: 45vw;
-    margin-top: 50vh;
-    font-size: 0.8vw;
+    margin-left: 25vw;
+    margin-top: 55vh;
+    font-size: 1.4vw;
+    letter-spacing: -0.1vw;
 
 }
 .home .bg-text::after {
@@ -157,8 +158,8 @@ input[type="checkbox"]{
     display: block;
     font-size: 12vw;
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 20vh;
+    left: 2vw;
 
 
 }
@@ -293,6 +294,7 @@ input[type="checkbox"]{
 .venturecapital .columnContainer {
     display: flex;
     flex-direction: row;
+    height: 20vh;
     align-items: baseline;
     flex-wrap: nowrap;
     align-content: center;
@@ -300,16 +302,7 @@ input[type="checkbox"]{
     margin-left: 10vw;
 }
 .column {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    font-weight: 500;
-    border-radius: 20px;
-
-}
-.column-space {
+    height: 20vh;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -318,13 +311,14 @@ input[type="checkbox"]{
     font-weight: 500;
     border-radius: 20px;
     border-style: solid;
-    background-image: url("src/right-arrow.svg");
-    background-repeat: no-repeat;
-    background-size: 2vw;
-    background-position: center;
-    height: 4vh;
-    width: 4vw;
 
+}
+.column-gap{
+    height: 20vh;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 .column-text{
     display: flex;
@@ -338,7 +332,6 @@ input[type="checkbox"]{
 .stage{
     color: #ce8f18;
     bottom: 0;
-    position:absolute;
 
 }
 .stage-text{

@@ -37,14 +37,17 @@
 </header>
 
 
-
+<div class="mySwiper">
     <div id="s1" class="container home">
-        <div class="bg-text" data-bg-text="Investalabs"></div>
+        <div class="bg-text" data-bg-text="INVESTALABS"></div>
         <div class="title">
             <h1>We build Markets and Utilities for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
         </div>
     </div>
-    <div id="s2" class="container about">
+
+    <div id="s2" style="height: 10vh"></div>
+
+    <div class="container about">
         <div class="bg-text" data-bg-text="About"></div>
         <div class="about-text-container">
             We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
@@ -55,7 +58,10 @@
 
         </div>
     </div>
-    <div id="s3" class="container development">
+
+    <div id="s3" style="height: 10vh"></div>
+
+    <div class="container development">
         <div class="bg-text" data-bg-text="Development"></div>
         <div class="gridContainer">
             <div class="grid-item"><img src="src/icon-1.svg"/>
@@ -116,7 +122,10 @@
                 which product to develop to increase the demand for the token.</p>
         </div>
     </div>
-    <div id="s4" class="container venturecapital">
+
+    <div id="s4" style="height: 10vh"></div>
+
+    <div class="container venturecapital">
         <div class="ventureCapital-bg-text" data-bg-text="VentureCapital"></div>
         <div class="topContainer">
             <div class="topContainerCursor" >
@@ -144,7 +153,9 @@
                         <div class="stage">Seed Stage</div>
 
                     </div>
-                    <!--<div class="column-space"></div> -->
+                    <div class="column" style="width: 1vw">
+                        <div class="column-bg-text"></div>
+                    </div>
                     <div class="column">
                         <div class="column-bg-text" data-bg-text="2"></div>
 
@@ -239,7 +250,10 @@
         <a class="prev" style="background: black" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)"></a>
     </div>
-    <div id="s5" class="container team">
+
+    <div id="s5" style="height: 10vh"></div>
+
+    <div class="container team">
         <div class="bg-text" data-bg-text="Team"></div>
         <div class="profile-container">
 
@@ -252,7 +266,10 @@
 
         </div>
     </div>
-    <div id="s6" class="container contact">
+
+    <div id="s6" style="height: 10vh"></div>
+
+    <div class="container contact">
         <div class="bg-text" data-bg-text="Contact"></div>
         <div class="contact-info-container">
             <div class="contact-info-text">
@@ -274,15 +291,7 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
+</div>
 <div style="height: 8.6vh"></div>
 
 <footer class="footer">
@@ -318,17 +327,15 @@
 
 
 
-<script>
-    function scroller(content){
-        var yukseklik = content.offsetHeight;
-        scrollTo(yukseklik)
-    }
-</script>
+
+
 <script>
     function navclick(content){
 
         const element = document.getElementById(content);
         element.scrollIntoView();
+        var hamburger = document.getElementById("active");
+        hamburger.classList.remove("#active:checked ~ .wrapper")
     }
 </script>
 <script>
