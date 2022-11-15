@@ -456,7 +456,7 @@ input[type="checkbox"]{
     border-width: 0.2vw;
     border-style: solid;
     border-color:#ce8f18;
-    box-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
+    box-shadow: 30px 50px 62px rgba(82, 123, 205, 0.3);
 }
 .team .profile-info{
     display: flex;
