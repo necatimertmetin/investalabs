@@ -56,8 +56,9 @@ html{
     background: white;
     transition: all 0.6s ease-in-out;
 }
+
 #active:checked ~ .wrapper{
-    right: 0;
+    right: 0vw;
 }
 .menu-btn{
     position: relative;
@@ -104,6 +105,7 @@ html{
 input[type="checkbox"]{
     display: none;
 }
+
 .nav-list{
     margin-top: -5vh;
     width: 50%;
@@ -164,6 +166,7 @@ input[type="checkbox"]{
 
 }
 
+
 .about{
 
 }
@@ -190,7 +193,7 @@ input[type="checkbox"]{
     margin-left: 12vw;
     margin-right: 45vw;
     font-size: 1.2vw;
-    font-weight: 500;
+    font-weight: 400;
     position: absolute;
     height: 80vh;
 }
@@ -206,9 +209,9 @@ input[type="checkbox"]{
     color: white;
     content: attr(data-bg-text);
     display: block;
-    font-size: 13vw;
+    font-size: 14vw;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: -10%;
 
 
@@ -313,6 +316,7 @@ input[type="checkbox"]{
     border-radius: 20px;
 
 }
+
 .column-gap{
     height: 20vh;
     display: flex;
@@ -532,7 +536,7 @@ input[type="checkbox"]{
     font-size: 15vw;
     position: absolute;
     letter-spacing: -1vw;
-    top: 10%;
+    top: 20%;
     left: -10%;
 
 
@@ -558,7 +562,7 @@ input[type="checkbox"]{
     align-items: center;
 }
 .footer .mouse-icon{
-    width: 2vw;
+    width: 1.5vw;
     margin-right: 8vw;
 }
 .footer .copy\&social-container{
@@ -566,6 +570,20 @@ input[type="checkbox"]{
 }
 .footer .mail-elements-container{
     margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.7vw;
+}
+.footer .email-icon-container{
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 20px 20px 62px #527bcd;
+    height: 2vw;
+    width: 2vw;
+    text-align: center;
+}
+.fa-envelope{
+    color: #ce8f18;
 }
 .footer .copy\&social-container .social{
     margin-top: 1vh;
@@ -578,7 +596,7 @@ input[type="checkbox"]{
 }
 .footer .copy\&social-container .copyright{
     margin-top: -0.5vh;
-    color: gray;
+    color: lightgray;
 }
 
 

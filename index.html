@@ -20,11 +20,11 @@
     <div class="nav-item-container">
         <a><img src="src/Lang.svg" class="lang-icon"/></a>
         <input type="checkbox" id="active">
-        <label for="active" class="menu-btn ham-menu"><span></span></label>
+        <label id="menu-btn" onclick="menubtnclick()" class="menu-btn ham-menu"><span></span></label>
         <div class="wrapper" id="wrapper">
             <ul class="nav-list">
                 <img class="nav-item-site-logo" src="src/Logo.svg"/>
-                <li class="nav-item"><a href="#s1" onclick="navclick(s1)">Home</a></li>
+                <li class="nav-item"><a href="#s1" onclick="navclick(s1)" >Home</a></li>
                 <li class="nav-item"><a href="#s2" onclick="navclick(s2)">About</a></li>
                 <li class="nav-item"><a href="#s3" onclick="navclick(s3)">Development</a></li>
                 <li class="nav-item"><a href="#s4" onclick="navclick(s4)">VentureCapital</a></li>
@@ -35,8 +35,6 @@
         </div>
     </div>
 </header>
-
-
 <div class="mySwiper">
     <div id="s1" class="container home">
         <div class="bg-text" data-bg-text="INVESTALABS"></div>
@@ -197,27 +195,27 @@
                     <div class="column">
                         <div class="column-bg-text" data-bg-text="5"></div>
                         <div></div>
-                        <div class="stage-text">Direct connection with Top IDO Launchpads</div>
+                        <div class="stage-text">Direct connection with<br> Top IDO Launchpads</div>
                         <div class="stage">Pre-IDO Stage</div>
                     </div>
-                    <div class="column-gap" style="width: 2vw;">
+                    <div class="column-gap" style="width: 2vw; margin-right: 5vw">
                         <div class="column-bg-text"></div>
 
                     </div>
                     <div class="column">
                         <div class="column-bg-text" data-bg-text="6"></div>
                         <div class="stage"></div>
-                        <div class="stage-text">Direct Connection with Tier-1 CEXes</div>
+                        <div class="stage-text">Direct Connection with<br> Tier-1 CEXes</div>
                         <div class="stage">Pre-IDO Stage</div>
                     </div>
-                    <div class="column-gap" style="width: 2vw;">
+                    <div class="column-gap" style="width: 2vw; margin-right: 5vw">
                         <div class="column-bg-text"></div>
 
                     </div>
                     <div class="column">
                         <div class="column-bg-text" data-bg-text="7"></div>
 
-                        <div class="stage-text">Implement snipe-protection And prepare for IDO</div>
+                        <div class="stage-text">Implement snipe-protection<br> And prepare for IDO</div>
                         <div class="stage">Pre-IDO Stage</div>
                     </div>
                 </div>
@@ -313,7 +311,7 @@
         <form class="contact-card-container" action="mailto:info@investalabs.com" method="post" enctype="text/plain">
             <input class="card-item name"type="text" id="Name" name="name" value="YOUR NAME"><br>
             <input class="card-item email" type="text" id="Email" name="email" value="EMAIL"><br>
-            <textarea class="card-item msg" type="text" id="Msg" name="msg">hey</textarea><br>
+            <textarea class="card-item msg" type="text" id="Msg" name="msg">YOUR MESSAGE</textarea><br>
             <input class="card-item submit" type="submit" value="Send">
         </form>
 
@@ -321,7 +319,6 @@
     </div>
 </div>
 <div style="height: 8.6vh"></div>
-
 <footer class="footer">
     <div class="copy&social-container">
         <div class="social">
@@ -342,7 +339,7 @@
 
     <div class="mail-elements-container">
         <div class="email-icon-container">
-
+            <i class="fa fa-envelope" aria-hidden="true" style="margin-top: 0.6vw"></i>
         </div>
         <div class="email-container">
             <div class="email-us">EMAIL US</div>
@@ -364,12 +361,25 @@
 
 </script>
 <script>
-    function navclick(content){
 
+</script>
+<script>
+    function scroll(content){
         const element = document.getElementById(content);
         element.scrollIntoView();
-        var hamburger = document.getElementById("active");
-        hamburger.classList.remove("#active:checked ~ .wrapper")
+    }
+    function menubtnclick(){
+        if(document.getElementById('active').checked){
+            document.getElementById('active').checked = false;
+
+        }
+        else{
+            document.getElementById('active').checked = true;
+        }
+    }
+    function navclick(content){
+        menubtnclick();
+        scroll(content);
     }
 </script>
 <script>
