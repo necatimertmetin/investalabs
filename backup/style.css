@@ -56,8 +56,9 @@ html{
     background: white;
     transition: all 0.6s ease-in-out;
 }
+
 #active:checked ~ .wrapper{
-    right: 0;
+    right: 0vw;
 }
 .menu-btn{
     position: relative;
@@ -104,6 +105,7 @@ html{
 input[type="checkbox"]{
     display: none;
 }
+
 .nav-list{
     margin-top: -5vh;
     width: 50%;
@@ -142,9 +144,9 @@ input[type="checkbox"]{
 }
 .home .title{
 
-    margin-left: 25vw;
-    margin-top: 55vh;
-    font-size: 1.4vw;
+    margin-left: 28.8vw;
+    margin-top: 50vh;
+    font-size: 1.35vw;
     letter-spacing: -0.1vw;
 
 }
@@ -164,6 +166,7 @@ input[type="checkbox"]{
 
 }
 
+
 .about{
 
 }
@@ -176,19 +179,21 @@ input[type="checkbox"]{
     content: attr(data-bg-text);
     display: block;
     font-size: 12vw;
+    letter-spacing: -1vw;
     position: absolute;
     top: 25%;
-    left: 25%;
+    left: 30%;
 
 
 }
 .about-text-container{
+    margin-top:5vh;
     display: flex;
     align-items: center;
     margin-left: 12vw;
     margin-right: 45vw;
     font-size: 1.2vw;
-    font-weight: 500;
+    font-weight: 400;
     position: absolute;
     height: 80vh;
 }
@@ -204,9 +209,9 @@ input[type="checkbox"]{
     color: white;
     content: attr(data-bg-text);
     display: block;
-    font-size: 13vw;
+    font-size: 14vw;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: -10%;
 
 
@@ -228,7 +233,8 @@ input[type="checkbox"]{
     padding-left: 1vw;
     display: flex;
     gap: 1vw;
-    height: 8vh;
+    height: 6.5vh;
+    width: 13vw;
     border-radius: 5px;
     align-items: center;
     align-content: center;
@@ -295,7 +301,6 @@ input[type="checkbox"]{
     display: flex;
     flex-direction: row;
     height: 20vh;
-    align-items: baseline;
     flex-wrap: nowrap;
     align-content: center;
     margin-right: 10vw;
@@ -306,36 +311,33 @@ input[type="checkbox"]{
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: space-between;
     align-content: center;
     font-weight: 500;
     border-radius: 20px;
-    border-style: solid;
 
 }
+
 .column-gap{
     height: 20vh;
-    border-style: solid;
     display: flex;
+    background-image: url("src/right-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1vw;
     flex-direction: column;
     align-content: center;
 }
-.column-text{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    font-weight: 200;
-    border-radius: 20px;
 
-}
 .stage{
     color: #ce8f18;
+    position: absolute;
     bottom: 0;
+    font-size: 0.9vw;
 
 }
 .stage-text{
-    margin-top: 5vh;
+    margin-top: 6vh;
+    font-size: 0.9vw;
     font-weight: 500;
 }
 .column-bg-text::after {
@@ -534,7 +536,7 @@ input[type="checkbox"]{
     font-size: 15vw;
     position: absolute;
     letter-spacing: -1vw;
-    top: 10%;
+    top: 20%;
     left: -10%;
 
 
@@ -560,7 +562,7 @@ input[type="checkbox"]{
     align-items: center;
 }
 .footer .mouse-icon{
-    width: 3vw;
+    width: 1.5vw;
     margin-right: 8vw;
 }
 .footer .copy\&social-container{
@@ -568,6 +570,20 @@ input[type="checkbox"]{
 }
 .footer .mail-elements-container{
     margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.7vw;
+}
+.footer .email-icon-container{
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 20px 20px 62px #527bcd;
+    height: 2vw;
+    width: 2vw;
+    text-align: center;
+}
+.fa-envelope{
+    color: #ce8f18;
 }
 .footer .copy\&social-container .social{
     margin-top: 1vh;
@@ -580,7 +596,7 @@ input[type="checkbox"]{
 }
 .footer .copy\&social-container .copyright{
     margin-top: -0.5vh;
-    color: gray;
+    color: lightgray;
 }
 
 
@@ -590,7 +606,7 @@ input[type="checkbox"]{
     cursor: pointer;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 45%;
     border-radius: 50%;
     color: white;
     font-weight: bold;
@@ -608,7 +624,7 @@ input[type="checkbox"]{
     background-color: white;
     background-image: url("src/right-arrow.svg");
     background-repeat: no-repeat;
-    background-size: 2vw;
+    background-size: 1vw;
     background-position: center;
 
     right: 0;
@@ -617,7 +633,7 @@ input[type="checkbox"]{
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 62px #527bcd;
 }
 /* Caption text */
 .text {
