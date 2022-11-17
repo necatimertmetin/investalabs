@@ -24,26 +24,26 @@
         <div class="wrapper" id="wrapper">
             <ul class="nav-list">
                 <img class="nav-item-site-logo" src="src/Logo.svg"/>
-                <li class="nav-item"><a href="#s1" onclick="navclick(s1)" >Home</a></li>
-                <li class="nav-item"><a href="#s2" onclick="navclick(s2)">About</a></li>
-                <li class="nav-item"><a href="#s3" onclick="navclick(s3)">Development</a></li>
-                <li class="nav-item"><a href="#s4" onclick="navclick(s4)">VentureCapital</a></li>
-                <li class="nav-item"><a href="#s5" onclick="navclick(s5)">Team</a></li>
-                <li class="nav-item"><a href="#s6" onclick="navclick(s6)">Contact</a></li>
+                <li class="nav-item"><a id="10" class="nav-item-a" href="#0" onclick="navclick(0)" >Home</a></li>
+                <li class="nav-item"><a id="20" class="nav-item-a" href="#1" onclick="navclick(1)" >About</a></li>
+                <li class="nav-item"><a id="30" class="nav-item-a" href="#2" onclick="navclick(2)" >Development</a></li>
+                <li class="nav-item"><a id="40" class="nav-item-a" href="#3" onclick="navclick(3)" >VentureCapital</a></li>
+                <li class="nav-item"><a id="50" class="nav-item-a" href="#4" onclick="navclick(4)" >Team</a></li>
+                <li class="nav-item"><a id="60" class="nav-item-a" href="#5" onclick="navclick(5)" >Contact</a></li>
 
             </ul>
         </div>
     </div>
 </header>
 <div class="mySwiper">
-    <div id="s1" style="position: absolute; height: 10vh; top: 0vh"></div>
+    <div id="0" style="position: absolute; height: 10vh; top: 0vh"></div>
     <div class="container home">
         <div class="bg-text" data-bg-text="INVESTALABS"></div>
         <div class="title">
             <h1>We build Markets and Utilities for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
         </div>
     </div>
-    <div id="s2" style="position: absolute; height: 10vh; top: 71vh"></div>
+    <div id="1" style="position: absolute; height: 10vh; top: 71vh"></div>
     <div class="container about">
         <div class="bg-text" data-bg-text="About"></div>
         <div class="about-text-container">
@@ -55,7 +55,7 @@
 
         </div>
     </div>
-    <div id="s3" style="position: absolute; height: 10vh; top: 152vh"></div>
+    <div id="2" style="position: absolute; height: 10vh; top: 152vh"></div>
     <div class="container development">
         <div class="bg-text" data-bg-text="Development"></div>
         <div class="gridContainer">
@@ -117,7 +117,7 @@
                 which product to develop to increase the demand for the token.</p>
         </div>
     </div>
-    <div id="s4" style="position: absolute; height: 10vh; top: 232.5vh"></div>
+    <div id="3" style="position: absolute; height: 10vh; top: 232.5vh"></div>
     <div class="container venturecapital">
         <div class="ventureCapital-bg-text" data-bg-text="VentureCapital"></div>
         <div class="topContainer">
@@ -268,10 +268,10 @@
             </div>
 
         </div>
-        <a class="prev" style="background: black" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1); clearInterval(intervalId)"></a>
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1);"></a>
     </div>
-    <div id="s5" style="position: absolute; height: 10vh; top: 314vh"></div>
+    <div id="4" style="position: absolute; height: 10vh; top: 314vh"></div>
     <div class="container team">
         <div class="bg-text" data-bg-text="Team"></div>
         <div class="teamlist">
@@ -333,20 +333,8 @@
 
             </div>
         </div>
-
-        <!--<div class="profile-container">
-
-            <div class="profile-gap"></div>
-            <img class="profile-picture"/>
-            <div class="profile-info">
-                <h1 class="job-type">CO-FOUNDER & CEO</h1>
-                <p class="name">Mustafa Güler</p>
-            </div>
-
-        </div>
-        -->
     </div>
-    <div id="s6" class="container contact">
+    <div id="5" class="container contact">
         <div class="bg-text" data-bg-text="Contact"></div>
         <div class="contact-info-container">
             <div class="contact-info-text">
@@ -360,9 +348,9 @@
         </div>
 
         <form class="contact-card-container" action="mailto:info@investalabs.com" method="post" enctype="text/plain">
-            <input class="card-item name"type="text" id="Name" name="name" value="YOUR NAME"><br>
-            <input class="card-item email" type="text" id="Email" name="email" value="EMAIL"><br>
-            <textarea class="card-item msg" type="text" id="Msg" name="msg">YOUR MESSAGE</textarea><br>
+            <input class="card-item name"type="text" id="Name" name="name" placeholder="YOUR NAME"><br>
+            <input class="card-item email" type="text" id="Email" name="email" placeholder="EMAIL"><br>
+            <textarea class="card-item msg" type="text" id="Msg" name="msg" placeholder="YOUR MESSAGE"></textarea><br>
             <input class="card-item submit" type="submit" value="Send">
         </form>
 
@@ -402,17 +390,56 @@
 
 
 
-
 <script>
-
-    var intervalId = window.setInterval(function(){
-        plusSlides(1)
-    }, 15000);
-
-
+    window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
 </script>
 <script>
+    window.setInterval(function(){
+        plusSlides(1)
+    }, 15000);
+</script>
+<script>
+    var iter= 0;
+    var hamburgerIter = 10;
 
+
+    window.addEventListener('wheel', function(event)
+    {
+
+        if (event.deltaY < 0)
+        {
+            if(iter !== 0) {
+                iter--;
+                document.getElementById(iter).scrollIntoView({behavior: "smooth"});
+                hamburgerIter -= 10;
+                navColor(hamburgerIter);
+
+
+            }
+
+        }
+        else if (event.deltaY > 0)
+        {
+            if(iter !==5){
+                iter++
+                document.getElementById(iter).scrollIntoView({behavior: "smooth"});
+                hamburgerIter += 10;
+                navColor(hamburgerIter);
+
+
+        }
+
+        }
+    });
+    function navColor(hamburgerIter){
+        var navItemColl = document.getElementsByClassName("nav-item-a")
+        for(var i=0, len=navItemColl.length; i<len; i++)
+        {
+            navItemColl[i].style.color = "white";
+
+            document.getElementById(hamburgerIter).style.color = "black";
+        }
+    }
 </script>
 <script>
     function scroll(content){
@@ -464,7 +491,6 @@
         arrows[slideIndex-1].className += " activex";
     }
 </script>
-
 <script>
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
