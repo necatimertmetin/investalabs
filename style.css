@@ -1,7 +1,7 @@
 
 html{
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
     padding: 0;
     margin: 0;
 }
@@ -100,7 +100,7 @@ html{
 }
 .wrapper ul li a:hover{
     text-shadow: 7.73px 12.8px 29px rgba(82, 123, 205, 0.5);
-    color: black;
+    color: black !important;
     text-decoration: none;
 }
 input[type="checkbox"]{
@@ -416,7 +416,6 @@ input[type="checkbox"]{
 }
 
 .teamlist{
-    height: 80vh;
     margin-left: 35vw;
     display: flex;
     flex-direction: row;
@@ -424,7 +423,6 @@ input[type="checkbox"]{
 .teamlist   .list{
     margin-top:5vh;
     margin-bottom:5vh;
-    height: 70vh;
     flex:1;
     display: flex;
     flex-direction: column;
@@ -435,6 +433,7 @@ input[type="checkbox"]{
     flex-direction: row;
     align-content: center;
     align-items: center;
+    font-size: 0.8vw;
     gap: 1vw;
 }
 .team .profile-container{
@@ -445,12 +444,11 @@ input[type="checkbox"]{
 
 }
 .team .profile-container .profile-gap{
-    width: 25vw;
 }
 .team .profile-picture{
     display: flex;
-    width: 10vh;
-    height: 10vh;
+    width: 4em;
+    height: 4em;
     background: wheat;
     border-radius: 50%;
     border-width: 0.2vw;
@@ -634,7 +632,7 @@ input[type="checkbox"]{
     cursor: pointer;
     position: absolute;
     text-align: center;
-    top: 45%;
+    top: 30%;
     border-radius: 50%;
     color: white;
     font-weight: bold;
@@ -646,7 +644,11 @@ input[type="checkbox"]{
 }
 /* Position the "next button" to the right */
 .prev{
-    visibility: hidden;
+    background-color: white;
+    background-image: url("src/left-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 1vw;
+    background-position: center;
 }
 .next {
     background-color: white;
@@ -711,10 +713,11 @@ input[type="checkbox"]{
 }
 /* Fading animation */
 .fade {
-    animation-name: slide;
+    animation-name: slideleft;
     animation-duration: 1.5s;
 }
-@keyframes slide {
+@keyframes slideleft {
+
     from {
         transform: translateX(+100%);
     }

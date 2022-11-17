@@ -90,15 +90,16 @@ html{
 }
 .wrapper ul li a{
     position: relative;
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 7.73px 12.8px 29px rgba(82, 123, 205, 0.6);
     z-index: 50000;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     color: white;
+    text-decoration: none;
     font-size: 3em;
 }
 .wrapper ul li a:hover{
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 7.73px 12.8px 29px rgba(82, 123, 205, 0.5);
     color: black;
     text-decoration: none;
 }
@@ -131,7 +132,7 @@ input[type="checkbox"]{
 
     margin-left: 6vw;
     width:88vw;
-    height: 100vh;
+    height: 80vh;
     border-style: solid;
     border-color: transparent;
 
@@ -151,7 +152,7 @@ input[type="checkbox"]{
 
 }
 .home .bg-text::after {
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
@@ -171,7 +172,7 @@ input[type="checkbox"]{
 
 }
 .about .bg-text::after {
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
@@ -187,13 +188,12 @@ input[type="checkbox"]{
 
 }
 .about-text-container{
-    margin-top:5vh;
     display: flex;
     align-items: center;
     margin-left: 12vw;
     margin-right: 45vw;
     font-size: 1.2vw;
-    font-weight: 400;
+    font-weight: 500;
     position: absolute;
     height: 80vh;
 }
@@ -202,16 +202,16 @@ input[type="checkbox"]{
 
 }
 .development .bg-text::after {
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
     color: white;
     content: attr(data-bg-text);
     display: block;
-    font-size: 14vw;
+    font-size: 13.5vw;
     position: absolute;
-    top: 30%;
+    top: 38%;
     left: -10%;
 
 
@@ -255,6 +255,7 @@ input[type="checkbox"]{
 .development .textContainer h2{
     font-size: 2vw;
     margin-right: 4vw;
+    line-height: 2vw;
     font-family: "Poppins", sans-serif;
 
 }
@@ -341,7 +342,7 @@ input[type="checkbox"]{
     font-weight: 500;
 }
 .column-bg-text::after {
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
@@ -390,7 +391,7 @@ input[type="checkbox"]{
     margin-right: 45vw;
 }
 .venturecapital .ventureCapital-bg-text::after {
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
@@ -413,6 +414,29 @@ input[type="checkbox"]{
 
 
 }
+
+.teamlist{
+    height: 80vh;
+    margin-left: 35vw;
+    display: flex;
+    flex-direction: row;
+}
+.teamlist   .list{
+    margin-top:5vh;
+    margin-bottom:5vh;
+    height: 70vh;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.teamlist .list .member{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap: 1vw;
+}
 .team .profile-container{
     align-items: center;
     justify-content: space-evenly;
@@ -423,31 +447,35 @@ input[type="checkbox"]{
 .team .profile-container .profile-gap{
     width: 25vw;
 }
-.team .profile-container .profile-picture{
-    display: inline-block;
-    height: 25vh;
-    background:black;
-    width: 25vh;
+.team .profile-picture{
+    display: flex;
+    width: 10vh;
+    height: 10vh;
+    background: wheat;
     border-radius: 50%;
-    border-width: 5px;
+    border-width: 0.2vw;
+    border-style: solid;
     border-color:#ce8f18;
+    box-shadow: 30px 50px 62px rgba(82, 123, 205, 0.3);
 }
-.team .profile-container .profile-info{
-    width: 25vw;
+.team .profile-info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
 }
-.team .profile-container .job-type{
-    font-size: 15px;
+.team .job-type{
     font-weight: lighter;
     color:#ce8f18;
+    bottom: 0;
 }
-.team .profile-container .name{
+.team  .name{
+    margin-top: -1vw;
+    font-size: 2vw;
     font-weight: bolder;
 }
 .team .bg-text::after {
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
@@ -526,7 +554,7 @@ input[type="checkbox"]{
 
 }
 .contact .bg-text::after {
-    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     z-index: -10;
@@ -577,7 +605,7 @@ input[type="checkbox"]{
 .footer .email-icon-container{
     border-radius: 50%;
     background-color: white;
-    box-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
+    box-shadow: 8.76px 14.5px 51px rgba(82, 123, 205, 0.45);
     height: 2vw;
     width: 2vw;
     text-align: center;
