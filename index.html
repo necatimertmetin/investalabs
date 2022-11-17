@@ -333,18 +333,6 @@
 
             </div>
         </div>
-
-        <!--<div class="profile-container">
-
-            <div class="profile-gap"></div>
-            <img class="profile-picture"/>
-            <div class="profile-info">
-                <h1 class="job-type">CO-FOUNDER & CEO</h1>
-                <p class="name">Mustafa Güler</p>
-            </div>
-
-        </div>
-        -->
     </div>
     <div id="5" class="container contact">
         <div class="bg-text" data-bg-text="Contact"></div>
@@ -402,7 +390,9 @@
 
 
 
-
+<script>
+    window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
+</script>
 <script>
     window.setInterval(function(){
         plusSlides(1)
