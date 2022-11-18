@@ -611,13 +611,18 @@
         endLocation = e.changedTouches[0].clientY;
         if(endLocation > startLocation){
             if(iterator !== 0) {
-                iterator--;
+
                 locationElement = document.getElementById(iterator)
-                scrollTo(0,-locationElement.offsetTop)
-                console.log(iterator)
+                PreviouslocationElement = document.getElementById((iterator-1))
+
+                iterator--
+                scrollTo(0,PreviouslocationElement.offsetTop)
+                console.log("şu anki elemanın offseti" + locationElement.offsetTop)
+                console.log("yukarıdaki elemanın offseti" + PreviouslocationElement.offsetTop)
+
                 hamburgerIter -= 10;
                 navColor(hamburgerIter);
-                console.log("scroll up")
+                console.log("scroll up : " + iterator)
             }
 
         }

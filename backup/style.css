@@ -4,9 +4,13 @@ html{
     overflow: hidden;
     padding: 0;
     margin: 0;
+    touch-action: cross-slide-y !important;
+
 }
 
-
+.mySwiper{
+    touch-action: cross-slide-y !important;
+}
 
 .sticky {
     position: fixed;
