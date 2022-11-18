@@ -276,7 +276,7 @@
 
         <div class="bg-text" data-bg-text="Team"></div>
         <div class="teamGrid">
-            <div class="teamGridMembers">
+            <div class="teamGridMembers firstGridMember">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
@@ -287,63 +287,63 @@
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Mert Metin</p>
+                    <p class="member-name">Mert<br>Metin</p>
                 </div>
             </div>
             <div class="teamGridMembers">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Elifnur Demir</p>
+                    <p class="member-name">Elifnur<br>Demir</p>
                 </div>
             </div>
             <div class="teamGridMembers">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Nicole Dede</p>
+                    <p class="member-name">Nicole<br>Dede</p>
                 </div>
             </div>
             <div class="teamGridMembers">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Mehmet Kayan</p>
+                    <p class="member-name">Mehmet<br>Kayan</p>
+                </div>
+            </div>
+            <div class="teamGridMembers secondRow">
+                <img class="member-picture"/>
+                <div class="member-info">
+                    <p class="member-job-type">CO-FOUNDER & CEO</p>
+                    <p class="member-name">Lorem<br>Ipsum</p>
                 </div>
             </div>
             <div class="teamGridMembers">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Lorem Ipsum</p>
+                    <p class="member-name">Mustafa<br>Güler</p>
                 </div>
             </div>
             <div class="teamGridMembers">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Mustafa Güler</p>
+                    <p class="member-name">Mustafa<br>Güler</p>
                 </div>
             </div>
             <div class="teamGridMembers">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Mustafa Güler</p>
+                    <p class="member-name">Mustafa<br>Güler</p>
                 </div>
             </div>
             <div class="teamGridMembers">
                 <img class="member-picture"/>
                 <div class="member-info">
                     <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Mustafa Güler</p>
-                </div>
-            </div>
-            <div class="teamGridMembers">
-                <img class="member-picture"/>
-                <div class="member-info">
-                    <p class="member-job-type">CO-FOUNDER & CEO</p>
-                    <p class="member-name">Mustafa Güler</p>
+                    <p class="member-name">Mustafa<br>Güler</p>
                 </div>
 
             </div>
@@ -616,7 +616,12 @@
                 PreviouslocationElement = document.getElementById((iterator-1))
 
                 iterator--
-                scrollTo(0,PreviouslocationElement.offsetTop)
+
+                scrollTo({
+                    left: 0,
+                    top: PreviouslocationElement.offsetTop,
+                    behavior: 'smooth'
+                })
                 console.log("şu anki elemanın offseti" + locationElement.offsetTop)
                 console.log("yukarıdaki elemanın offseti" + PreviouslocationElement.offsetTop)
 
@@ -630,7 +635,11 @@
             if(iterator !==5){
                 iterator++
                 locationElement = document.getElementById(iterator)
-                scrollTo(0,locationElement.offsetTop)
+                scrollTo({
+                    left: 0,
+                    top: locationElement.offsetTop,
+                    behavior: 'smooth'
+                })
                 console.log(iterator)
                 hamburgerIter += 10;
                 navColor(hamburgerIter);
