@@ -471,7 +471,13 @@
 </footer>
 
 
-
+<script>
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        function nameFunction() {
+            return false;
+        }
+    } else {}
+</script>
 <script>
     window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
 </script>
@@ -481,8 +487,9 @@
     }, 15000);
 </script>
 <script>
-    var iter= 0;
+
     var hamburgerIter = 10;
+    var iter= 0;
 
 
     window.addEventListener('wheel', function(event)
@@ -509,7 +516,7 @@
                 navColor(hamburgerIter);
 
 
-        }
+            }
 
         }
     });
@@ -591,6 +598,43 @@
             navbar.classList.remove("sticky");
         }
     }
+</script>
+<script>
+    var startLocation;
+    var endLocation;
+    var iterator = 0;
+    document.addEventListener("touchstart", e => {
+        startLocation = e.touches[0].clientY
+    })
+    var locationElement
+    document.addEventListener("touchend", e => {
+        endLocation = e.changedTouches[0].clientY;
+        if(endLocation > startLocation){
+            if(iterator !== 0) {
+                iterator--;
+                locationElement = document.getElementById(iterator)
+                scrollTo(0,-locationElement.offsetTop)
+                console.log(iterator)
+                hamburgerIter -= 10;
+                navColor(hamburgerIter);
+                console.log("scroll up")
+            }
+
+        }
+        else if(startLocation > endLocation){
+            if(iterator !==5){
+                iterator++
+                locationElement = document.getElementById(iterator)
+                scrollTo(0,locationElement.offsetTop)
+                console.log(iterator)
+                hamburgerIter += 10;
+                navColor(hamburgerIter);
+                console.log("scroll down")
+            }
+
+        }
+    })
+
 </script>
 </body>
 </html>
