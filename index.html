@@ -602,7 +602,6 @@
 <script>
     var startLocation;
     var endLocation;
-    var iterator = 0;
     document.addEventListener("touchstart", e => {
         startLocation = e.touches[0].clientY
     })
@@ -610,12 +609,12 @@
     document.addEventListener("touchend", e => {
         endLocation = e.changedTouches[0].clientY;
         if(endLocation > startLocation){
-            if(iterator !== 0) {
+            if(iter !== 0) {
 
-                locationElement = document.getElementById(iterator)
-                PreviouslocationElement = document.getElementById((iterator-1))
+                locationElement = document.getElementById(iter)
+                PreviouslocationElement = document.getElementById((iter-1))
 
-                iterator--
+                iter--
 
                 scrollTo({
                     left: 0,
@@ -627,20 +626,20 @@
 
                 hamburgerIter -= 10;
                 navColor(hamburgerIter);
-                console.log("scroll up : " + iterator)
+                console.log("scroll up : " + iter)
             }
 
         }
         else if(startLocation > endLocation){
-            if(iterator !==5){
-                iterator++
-                locationElement = document.getElementById(iterator)
+            if(iter !==5){
+                iter++
+                locationElement = document.getElementById(iter)
                 scrollTo({
                     left: 0,
                     top: locationElement.offsetTop,
                     behavior: 'smooth'
                 })
-                console.log(iterator)
+                console.log(iter)
                 hamburgerIter += 10;
                 navColor(hamburgerIter);
                 console.log("scroll down")
