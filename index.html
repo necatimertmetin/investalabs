@@ -495,7 +495,7 @@
     window.addEventListener('wheel', function(event)
     {
 
-        if (event.deltaY < 99)
+        if (event.deltaY < 50)
         {
             if(iter !== 0) {
                 iter--;
@@ -507,7 +507,7 @@
             }
 
         }
-        else if (event.deltaY > 99)
+        else if (event.deltaY > 50)
         {
             if(iter !==5){
                 iter++
