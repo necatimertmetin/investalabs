@@ -495,19 +495,8 @@
     window.addEventListener('wheel', function(event)
     {
 
-        if (event.deltaY < 50)
-        {
-            if(iter !== 0) {
-                iter--;
-                document.getElementById(iter).scrollIntoView({behavior: "smooth"});
-                hamburgerIter -= 10;
-                navColor(hamburgerIter);
-                console.log("scroll up scroll : " + iter)
-
-            }
-
-        }
-        else if (event.deltaY > 50)
+       
+        if (event.deltaY > 50)
         {
             if(iter !==5){
                 iter++
