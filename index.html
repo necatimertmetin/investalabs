@@ -627,7 +627,10 @@
 
                     iter--
 
-                    scrollTo(0, PreviouslocationElement.offsetTop)
+
+
+                    window.scrollTo(0, PreviouslocationElement.offsetTop)
+
                     console.log("şu anki elemanın offseti" + locationElement.offsetTop)
                     console.log("yukarıdaki elemanın offseti" + PreviouslocationElement.offsetTop)
 
@@ -641,7 +644,11 @@
                 if (iter !== 5) {
                     iter++
                     locationElement = document.getElementById(iter)
-                    scrollTo(0, locationElement.offsetTop)
+                    window.scrollTo(0, locationElement.offsetTop)
+
+
+
+
                     console.log(iter)
                     hamburgerIter += 10;
                     navColor(hamburgerIter);
