@@ -129,7 +129,7 @@
 
             <div class="topContainerList">
                 <span class="dot" onclick="currentSlide(1)">Seed Stage</span>
-                <span class="dot" onclick="currentSlide(2)">pre-IDO & IDO Stages</span>
+                <span class="dot" onclick="currentSlide(2)">Pre-IDO & IDO Stages</span>
                 <span class="dot" onclick="currentSlide(3)">Launch & Post-Launch Period</span>
             </div>
         </div>
@@ -495,7 +495,7 @@
     window.addEventListener('wheel', function(event)
     {
 
-        if (event.deltaY < 0)
+        if (event.deltaY < 99)
         {
             if(iter !== 0) {
                 iter--;
@@ -507,7 +507,7 @@
             }
 
         }
-        else if (event.deltaY > 0)
+        else if (event.deltaY > 99)
         {
             if(iter !==5){
                 iter++
