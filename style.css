@@ -1,5 +1,4 @@
-
-html{
+html {
     font-family: "Poppins", sans-serif;
     overflow: hidden;
     padding: 0;
@@ -8,7 +7,7 @@ html{
 
 }
 
-.mySwiper{
+.mySwiper {
     touch-action: cross-slide-y !important;
 }
 
@@ -17,9 +16,11 @@ html{
     top: 0;
     width: 100%;
 }
-.sticky + .content {
+
+.sticky+.content {
     padding-top: 60px;
 }
+
 .header {
     z-index: 5500;
     width: 100%;
@@ -32,10 +33,12 @@ html{
     align-items: center;
 
 }
-.site-logo{
+
+.site-logo {
     margin-left: 2vw;
 }
-.nav-item-container{
+
+.nav-item-container {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -43,16 +46,19 @@ html{
     gap: 3vw;
     margin-right: 3vw;
 }
-.lang-icon{
+
+.lang-icon {
     width: 4vw;
 }
-.ham-menu{
+
+.ham-menu {
     display: flex;
     height: 3vh;
 }
-.wrapper{
+
+.wrapper {
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 5000;
     right: -100%;
     height: 100%;
@@ -61,10 +67,11 @@ html{
     transition: all 0.6s ease-in-out;
 }
 
-#active:checked ~ .wrapper{
+#active:checked~.wrapper {
     right: 0vw;
 }
-.menu-btn{
+
+.menu-btn {
     position: relative;
     width: 2vw;
     background-image: url("src/Menu.svg");
@@ -75,24 +82,27 @@ html{
     font-size: 20px;
     cursor: pointer;
 }
-.close{
+
+.close {
     width: 100%;
     height: 100%;
     pointer-events: none;
     transition: background .6s;
 }
-.wrapper ul{
+
+.wrapper ul {
     position: relative;
 
     z-index: 5000;
     top: 60%;
-    left:50%;
+    left: 50%;
     height: 90%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
 }
-.wrapper ul li a{
+
+.wrapper ul li a {
     position: relative;
     text-shadow: 7.73px 12.8px 29px rgba(82, 123, 205, 0.6);
     z-index: 50000;
@@ -102,16 +112,18 @@ html{
     text-decoration: none;
     font-size: 3em;
 }
-.wrapper ul li a:hover{
+
+.wrapper ul li a:hover {
     text-shadow: 7.73px 12.8px 29px rgba(82, 123, 205, 0.5);
     color: black !important;
     text-decoration: none;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     display: none;
 }
 
-.nav-list{
+.nav-list {
     margin-top: -5vh;
     width: 50%;
     display: flex;
@@ -120,7 +132,8 @@ input[type="checkbox"]{
     position: absolute;
 
 }
-.nav-item-site-logo{
+
+.nav-item-site-logo {
     height: 5vh;
     margin-bottom: 5vh;
 }
@@ -130,12 +143,12 @@ input[type="checkbox"]{
 
 
 
-.container{
+.container {
     font-family: "Poppins", sans-serif;
-    position:relative;
+    position: relative;
 
     margin-left: 6vw;
-    width:88vw;
+    width: 88vw;
     height: 80vh;
     border-style: solid;
     border-color: transparent;
@@ -144,10 +157,9 @@ input[type="checkbox"]{
 
 }
 
-.home{
+.home {}
 
-}
-.home .title{
+.home .title {
 
     margin-left: 28.8vw;
     margin-top: 50vh;
@@ -155,6 +167,7 @@ input[type="checkbox"]{
     letter-spacing: -0.1vw;
 
 }
+
 .home .bg-text::after {
     text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
@@ -172,9 +185,8 @@ input[type="checkbox"]{
 }
 
 
-.about{
+.about {}
 
-}
 .about .bg-text::after {
     text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
@@ -191,7 +203,8 @@ input[type="checkbox"]{
 
 
 }
-.about-text-container{
+
+.about-text-container {
     display: flex;
     align-items: center;
     margin-left: 12vw;
@@ -202,9 +215,8 @@ input[type="checkbox"]{
     height: 80vh;
 }
 
-.development{
+.development {}
 
-}
 .development .bg-text::after {
     text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
@@ -221,8 +233,9 @@ input[type="checkbox"]{
 
 
 }
+
 .development .gridContainer {
-    padding-top:2vh;
+    padding-top: 2vh;
     padding-right: 2vw;
     min-height: 40vh;
     margin-left: 25vw;
@@ -231,6 +244,7 @@ input[type="checkbox"]{
     column-gap: 2vh;
     grid-template-columns: auto auto auto auto;
 }
+
 .development .grid-item {
 
     font-size: 0.7vw;
@@ -246,9 +260,11 @@ input[type="checkbox"]{
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.3);
 }
-.development .grid-item img{
+
+.development .grid-item img {
     width: 1.8vw;
 }
+
 .development .textContainer {
     font-size: 1vw;
     margin-left: 18vw;
@@ -256,14 +272,16 @@ input[type="checkbox"]{
     font-family: "Poppins", sans-serif;
 
 }
-.development .textContainer h2{
+
+.development .textContainer h2 {
     font-size: 2vw;
     margin-right: 4vw;
     line-height: 2vw;
     font-family: "Poppins", sans-serif;
 
 }
-.development .textContainer p{
+
+.development .textContainer p {
     margin-top: -2vh;
     font-weight: 500;
     font-size: 0.7vw;
@@ -272,14 +290,15 @@ input[type="checkbox"]{
 }
 
 
-.venturecapital{
-}
-.venturecapital .topContainer{
+.venturecapital {}
+
+.venturecapital .topContainer {
     display: flex;
     flex-direction: row;
     height: 15vh;
 }
-.venturecapital .topContainer .topContainerCursor{
+
+.venturecapital .topContainer .topContainerCursor {
     display: flex;
     flex-direction: column;
     width: 5vw;
@@ -287,21 +306,25 @@ input[type="checkbox"]{
     font-weight: bold;
 
 }
-.venturecapital .topContainer .topContainerList{
+
+.venturecapital .topContainer .topContainerList {
     height: 15vh;
 
     display: flex;
     flex-direction: column;
 }
-.venturecapital .slideContainer{
+
+.venturecapital .slideContainer {
     height: 20vh;
     position: relative;
     margin: auto;
 
 }
-.venturecapital .slides{
+
+.venturecapital .slides {
     height: 20vh;
 }
+
 .venturecapital .columnContainer {
     display: flex;
     flex-direction: row;
@@ -311,6 +334,7 @@ input[type="checkbox"]{
     margin-right: 10vw;
     margin-left: 10vw;
 }
+
 .column {
     height: 20vh;
     display: flex;
@@ -322,7 +346,7 @@ input[type="checkbox"]{
 
 }
 
-.column-gap{
+.column-gap {
     height: 20vh;
     display: flex;
     background-image: url("src/right-arrow.svg");
@@ -333,18 +357,20 @@ input[type="checkbox"]{
     align-content: center;
 }
 
-.stage{
+.stage {
     color: #ce8f18;
     position: absolute;
     bottom: 0;
     font-size: 0.9vw;
 
 }
-.stage-text{
+
+.stage-text {
     margin-top: 6vh;
     font-size: 0.9vw;
     font-weight: 500;
 }
+
 .column-bg-text::after {
     text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
@@ -361,14 +387,16 @@ input[type="checkbox"]{
 
 
 }
-.venturecapital .bottomContainer{
+
+.venturecapital .bottomContainer {
     align-items: center;
     display: flex;
     height: 45vh;
 
 
 }
-.venturecapital .bottomContainer .textContainer{
+
+.venturecapital .bottomContainer .textContainer {
     margin-top: 10vh;
     margin-left: 14.5vw;
 
@@ -377,23 +405,27 @@ input[type="checkbox"]{
     justify-content: center;
     height: auto;
 }
-.venturecapital .bottomContainer .textContainer h1{
+
+.venturecapital .bottomContainer .textContainer h1 {
 
     font-size: 2.5vw;
     line-height: 3vw;
     margin-right: 50vw;
 }
-.venturecapital .bottomContainer .textContainer h3{
+
+.venturecapital .bottomContainer .textContainer h3 {
     margin-top: -3vh;
     font-size: 1.75vw;
     margin-right: 45vw;
 }
-.venturecapital .bottomContainer .textContainer h4{
+
+.venturecapital .bottomContainer .textContainer h4 {
     margin-top: -3vh;
     font-weight: 500;
     font-size: 0.7vw;
     margin-right: 45vw;
 }
+
 .venturecapital .ventureCapital-bg-text::after {
     text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
@@ -414,11 +446,9 @@ input[type="checkbox"]{
 
 
 
-.team{
+.team {}
 
-
-}
-.teamGrid{
+.teamGrid {
     margin-left: 30vw;
     flex-direction: row;
     display: grid;
@@ -428,7 +458,8 @@ input[type="checkbox"]{
 
 
 }
-.firstGridMember{
+
+.firstGridMember {
 
     height: 40vh !important;
     margin-top: -18vh;
@@ -438,20 +469,24 @@ input[type="checkbox"]{
 
 
 }
-.firstGridMember .member-job-type{
+
+.firstGridMember .member-job-type {
     font-size: 1vw !important;
 }
-.firstGridMember .member-name{
+
+.firstGridMember .member-name {
     font-size: 1.5vw !important;
 }
-.firstGridMember .member-picture{
+
+.firstGridMember .member-picture {
     box-shadow: 20px 20px 62px rgba(82, 123, 205, 0.3);
     margin-top: 1vw;
     height: 12vw !important;
     width: 12vw !important;
 
 }
-.teamGridMembers{
+
+.teamGridMembers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -463,7 +498,8 @@ input[type="checkbox"]{
     text-align: center;
 
 }
-.secondRow{
+
+.secondRow {
     margin-left: 12vw;
 }
 
@@ -488,11 +524,11 @@ input[type="checkbox"]{
 .teamGridMembers:hover .member-name{
     font-size: 1.5vw;
 }*/
-.team .member-picture{
+.team .member-picture {
     border-radius: 50%;
     border-width: 0.2vw;
     border-style: solid;
-    border-color:#ce8f18;
+    border-color: #ce8f18;
     width: 4vw;
     background-image: url("src/profiles/profile.png");
     background-size: contain;
@@ -502,15 +538,16 @@ input[type="checkbox"]{
 }
 
 
-.team .list{
-    margin-top:5vh;
-    margin-bottom:5vh;
-    flex:1;
+.team .list {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
-.team .list .member{
-    flex:1;
+
+.team .list .member {
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -519,66 +556,73 @@ input[type="checkbox"]{
     gap: 1vw;
 }
 
-.team .member-info{
+.team .member-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
-.team .member-job-type{
+
+.team .member-job-type {
     font-weight: lighter;
-    color:#ce8f18;
+    color: #ce8f18;
 
     font-size: 0.7vw;
     bottom: 0;
 }
-.team .member-name{
+
+.team .member-name {
     margin-top: -1vw;
     font-size: 1vw;
     font-weight: bolder;
 }
 
-.teamlist{
+.teamlist {
     margin-left: 35vw;
     display: flex;
     flex-direction: row;
 }
 
 
-.team .profile-container{
+.team .profile-container {
     align-items: center;
     justify-content: space-evenly;
     display: flex;
     margin-top: 30vh;
 
 }
-.team .profile-container .profile-gap{
-}
-.team .profile-picture{
+
+.team .profile-container .profile-gap {}
+
+.team .profile-picture {
     display: flex;
     background-image: url("src/profiles/profile.png");
     border-radius: 50%;
     border-width: 0.2vw;
     border-style: solid;
-    border-color:#ce8f18;
+    border-color: #ce8f18;
     box-shadow: 30px 50px 62px rgba(82, 123, 205, 0.3);
 }
-.team .profile-info{
+
+.team .profile-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
-.team .job-type{
+
+.team .job-type {
     font-weight: lighter;
-    color:#ce8f18;
+    color: #ce8f18;
     bottom: 0;
 }
-.team  .name{
+
+.team .name {
     margin-top: -1vw;
     font-size: 2vw;
     font-weight: bolder;
 }
+
 .team .bg-text::after {
     text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
@@ -597,23 +641,26 @@ input[type="checkbox"]{
 
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.contact .contact-info-container{
+
+.contact .contact-info-container {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
-.contact .contact-info-container .contact-info-text{
+
+.contact .contact-info-container .contact-info-text {
     margin-left: 15vw;
 }
-.contact .contact-card-container{
+
+.contact .contact-card-container {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -622,7 +669,8 @@ input[type="checkbox"]{
 
 
 }
-.contact .contact-card-container .card-item{
+
+.contact .contact-card-container .card-item {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -636,7 +684,8 @@ input[type="checkbox"]{
     font-family: "Poppins", sans-serif;
 
 }
-.contact .contact-card-container .msg{
+
+.contact .contact-card-container .msg {
     max-height: 30vh;
     min-height: 10vh;
     max-width: 13vw;
@@ -645,19 +694,23 @@ input[type="checkbox"]{
     font-size: 0.8vw;
 
 }
-.contact .contact-card-container .submit{
+
+.contact .contact-card-container .submit {
     border: white;
     background-color: white;
     box-shadow: 10px 10px 30px #DDDDDD;
 
 }
-.contact .contact-card-container .submit:hover{
+
+.contact .contact-card-container .submit:hover {
     border: white;
     background-color: white;
-    box-shadow: 10px 10px 50px #ce8f18;;
+    box-shadow: 10px 10px 50px #ce8f18;
+    ;
 
 
 }
+
 .contact .bg-text::after {
     text-shadow: 33.4px 55.7px 62px rgba(82, 123, 205, 0.4);
     font-family: "Poppins", sans-serif;
@@ -679,13 +732,13 @@ input[type="checkbox"]{
 
 
 
-.footer{
+.footer {
     position: fixed;
     width: 99vw;
     height: 9vh;
     bottom: 0;
 
-    background: rgb(255,255,255);
+    background: rgb(255, 255, 255);
     /*background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);*/
     margin-left: -0.4vw;
 
@@ -695,20 +748,24 @@ input[type="checkbox"]{
     align-content: center;
     align-items: center;
 }
-.footer .mouse-icon{
+
+.footer .mouse-icon {
     width: 1.5vw;
     margin-right: 8vw;
 }
-.footer .copy\&social-container{
+
+.footer .copy\&social-container {
     margin-left: 5vw;
 }
-.footer .mail-elements-container{
+
+.footer .mail-elements-container {
     margin-right: 5vw;
     display: flex;
     flex-direction: row;
     gap: 0.7vw;
 }
-.footer .email-icon-container{
+
+.footer .email-icon-container {
     border-radius: 50%;
     background-color: white;
     box-shadow: 8.76px 14.5px 51px rgba(82, 123, 205, 0.45);
@@ -716,19 +773,23 @@ input[type="checkbox"]{
     width: 2vw;
     text-align: center;
 }
-.fa-envelope{
+
+.fa-envelope {
     color: #ce8f18;
 }
-.footer .copy\&social-container .social{
+
+.footer .copy\&social-container .social {
     margin-top: 1vh;
     display: flex;
     flex-direction: row;
     gap: 2vw;
 }
-.footer .copy\&social-container .social-icon{
-    color:black;
+
+.footer .copy\&social-container .social-icon {
+    color: black;
 }
-.footer .copy\&social-container .copyright{
+
+.footer .copy\&social-container .copyright {
     margin-top: -0.5vh;
     color: lightgray;
 }
@@ -736,7 +797,8 @@ input[type="checkbox"]{
 
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     text-align: center;
@@ -750,14 +812,16 @@ input[type="checkbox"]{
     width: 3vw;
     height: 3vw;
 }
+
 /* Position the "next button" to the right */
-.prev{
+.prev {
     background-color: white;
     background-image: url("src/left-arrow.svg");
     background-repeat: no-repeat;
     background-size: 1vw;
     background-position: center;
 }
+
 .next {
     background-color: white;
     background-image: url("src/right-arrow.svg");
@@ -769,10 +833,13 @@ input[type="checkbox"]{
     margin-right: 2vw;
     border-radius: 50%;
 }
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     box-shadow: 0px 0px 62px rgba(82, 123, 205, 0.3);
 }
+
 /* Caption text */
 .text {
     color: #f2f2f2;
@@ -783,6 +850,7 @@ input[type="checkbox"]{
     width: 100%;
     text-align: center;
 }
+
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
@@ -791,6 +859,7 @@ input[type="checkbox"]{
     position: absolute;
     top: 0;
 }
+
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -799,45 +868,55 @@ input[type="checkbox"]{
     transition: background-color 0.6s ease;
     color: gray;
 }
-.arrow{
+
+.arrow {
     cursor: pointer;
     margin: 0 2px;
     transition: background-color 0.6s ease;
     color: transparent;
 
 }
-.activex, .arrow:hover {
+
+.activex,
+.arrow:hover {
 
     font-weight: 700;
     color: #ce8f18;
     display: block;
 
 }
-.active, .dot:hover {
+
+.active,
+.dot:hover {
 
     text-decoration: underline;
     font-weight: bolder;
     color: black;
 }
+
 /* Fading animation */
 .fade {
     animation-name: slideleft;
     animation-duration: 1.5s;
 }
+
 @keyframes slideleft {
 
-    from {
-        transform: translateX(+100%);
+    0% {
+        opacity: 0;
     }
-    to {
-        transform: translateX(0%);
+
+    100% {
+        opacity: 1;
     }
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
 }
-
-
-
-
