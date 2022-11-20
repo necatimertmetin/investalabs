@@ -518,6 +518,7 @@ input[type="checkbox"] {
 
 .teamGridMembers {
     display: flex;
+    cursor: pointer;
     flex-direction: row;
     align-items: center;
     width: 20em;
@@ -873,11 +874,11 @@ input[type="checkbox"] {
 
 /* Fading animation */
 .fade {
-    animation-name: slideleft;
+    animation-name: fade;
     animation-duration: 1.5s;
 }
 
-@keyframes slideleft {
+@keyframes fade {
 
     0% {
         opacity: 0;
@@ -887,6 +888,7 @@ input[type="checkbox"] {
         opacity: 1;
     }
 }
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
