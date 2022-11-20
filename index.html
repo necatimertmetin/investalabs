@@ -27,28 +27,26 @@
             <div class="wrapper" id="wrapper">
                 <ul class="nav-list">
                     <img class="nav-item-site-logo" src="src/Logo.svg" />
-                    <li class="nav-item"><a id="10" class="nav-item-a" href="#0" onclick="navclick(0)">Home</a></li>
-                    <li class="nav-item"><a id="20" class="nav-item-a" href="#1" onclick="navclick(1)">About</a></li>
-                    <li class="nav-item"><a id="30" class="nav-item-a" href="#2" onclick="navclick(2)">Development</a>
-                    </li>
-                    <li class="nav-item"><a id="40" class="nav-item-a" href="#3"
-                            onclick="navclick(3)">VentureCapital</a></li>
-                    <li class="nav-item"><a id="50" class="nav-item-a" href="#4" onclick="navclick(4)">Team</a></li>
-                    <li class="nav-item"><a id="60" class="nav-item-a" href="#5" onclick="navclick(5)">Contact</a></li>
+                    <li class="nav-item"><a id="1" class="nav-item-a" href="#0" onclick="menubtnclick()" data-slide="1">Home</a></li>
+                    <li class="nav-item"><a id="2" class="nav-item-a" href="#1" onclick="menubtnclick()" data-slide="2">About</a></li>
+                    <li class="nav-item"><a id="3" class="nav-item-a" href="#2" onclick="menubtnclick()" data-slide="3">Development</a></li>
+                    <li class="nav-item"><a id="4" class="nav-item-a" href="#3" onclick="menubtnclick()" data-slide="4">VentureCapital</a></li>
+                    <li class="nav-item"><a id="5" class="nav-item-a" href="#4" onclick="menubtnclick()" data-slide="5">Team</a></li>
+                    <li class="nav-item"><a id="6" class="nav-item-a" href="#5" onclick="menubtnclick()" data-slide="6">Contact</a></li>
 
                 </ul>
             </div>
         </div>
     </header>
     <div class="mySwiper">
-        <div id="0" style="position: absolute; height: 10vh; top: 0vh"></div>
+
+
         <div class="container home">
             <div class="bg-text" data-bg-text="INVESTALABS"></div>
             <div class="title">
                 <h1>We build Markets and Utilities for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
             </div>
         </div>
-        <div id="1" style="position: absolute; height: 10vh; top: 71vh"></div>
         <div class="container about">
             <div class="bg-text" data-bg-text="About"></div>
             <div class="about-text-container">
@@ -60,7 +58,6 @@
 
             </div>
         </div>
-        <div id="2" style="position: absolute; height: 10vh; top: 152vh"></div>
         <div class="container development">
             <div class="bg-text" data-bg-text="Development"></div>
             <div class="gridContainer">
@@ -122,7 +119,6 @@
                     which product to develop to increase the demand for the token.</p>
             </div>
         </div>
-        <div id="3" style="position: absolute; height: 10vh; top: 232.5vh"></div>
         <div class="container venturecapital">
             <div class="ventureCapital-bg-text" data-bg-text="VentureCapital"></div>
             <div class="topContainer">
@@ -281,7 +277,6 @@
             <a class="prev" onclick="plusSlides(-1)"></a>
             <a class="next" onclick="plusSlides(1);"></a>
         </div>
-        <div id="4" style="position: absolute; height: 10vh; top: 314vh"></div>
         <div class="container team">
 
             <div class="bg-text" data-bg-text="Team"></div>
@@ -426,7 +421,7 @@
         -->
 
         </div>
-        <div id="5" class="container contact">
+        <div class="container contact">
             <div class="bg-text" data-bg-text="Contact"></div>
             <div class="contact-info-container">
                 <div class="contact-info-text">
@@ -441,11 +436,11 @@
             </div>
 
             <form class="contact-card-container" action="mailto:info@investalabs.com" method="post"
-                enctype="text/plain">
+                  enctype="text/plain">
                 <input class="card-item name" type="text" id="Name" name="name" placeholder="YOUR NAME"><br>
                 <input class="card-item email" type="text" id="Email" name="email" placeholder="EMAIL"><br>
                 <textarea class="card-item msg" type="text" id="Msg" name="msg"
-                    placeholder="YOUR MESSAGE"></textarea><br>
+                          placeholder="YOUR MESSAGE"></textarea><br>
                 <input class="card-item submit" type="submit" value="Send">
             </form>
 
@@ -500,52 +495,6 @@
         }, 15000);
     </script>
     <script>
-
-        var hamburgerIter = 10;
-        var iter = 0;
-
-
-        window.addEventListener('wheel', function (event) {
-
-            if (event.deltaY < -50) {
-                if (iter !== 0) {
-                    iter--;
-                    document.getElementById(iter).scrollIntoView({ behavior: "smooth" });
-                    hamburgerIter -= 10;
-                    navColor(hamburgerIter);
-                    console.log("scroll up scroll : " + iter)
-
-                }
-
-            }
-            if (event.deltaY > 50) {
-                if (iter !== 5) {
-                    iter++
-                    document.getElementById(iter).scrollIntoView({ behavior: "smooth" });
-                    hamburgerIter += 10;
-                    navColor(hamburgerIter);
-
-                    console.log("scroll down scroll: " + iter)
-                }
-
-            }
-        });
-        function navColor(hamburgerIter) {
-            var navItemColl = document.getElementsByClassName("nav-item-a")
-            for (var i = 0, len = navItemColl.length; i < len; i++) {
-                navItemColl[i].style.color = "white";
-
-                document.getElementById(hamburgerIter).style.color = "black";
-            }
-        }
-
-
-    </script>
-    <script>
-        function scroll(content) {
-            const element = document.getElementById(content);
-            element.scrollIntoView();
-        }
         function menubtnclick() {
             if (document.getElementById('active').checked) {
                 document.getElementById('active').checked = false;
@@ -554,10 +503,6 @@
             else {
                 document.getElementById('active').checked = true;
             }
-        }
-        function navclick(content) {
-            menubtnclick();
-            scroll(content);
         }
     </script>
     <script>
@@ -611,59 +556,70 @@
         }
     </script>
     <script>
-        var startLocation;
-        var endLocation;
-        document.addEventListener("touchstart", e => {
-            startLocation = e.touches[0].clientY
-        })
-        var locationElement
-        document.addEventListener("touchend", e => {
-            endLocation = e.changedTouches[0].clientY;
-            if (endLocation > startLocation) {
-                if (iter !== 0) {
-
-                    locationElement = document.getElementById(iter)
-                    PreviouslocationElement = document.getElementById((iter - 1))
-
-                    iter--
-
-
-
-                    window.scrollTo(0, PreviouslocationElement.offsetTop)
-
-                    console.log("şu anki elemanın offseti" + locationElement.offsetTop)
-                    console.log("yukarıdaki elemanın offseti" + PreviouslocationElement.offsetTop)
-
-                    hamburgerIter -= 10;
-                    navColor(hamburgerIter);
-                    console.log("scroll up : " + iter)
-                }
-
-            }
-            else if (startLocation > endLocation) {
-                if (iter !== 5) {
-                    iter++
-                    locationElement = document.getElementById(iter)
-                    window.scrollTo(0, locationElement.offsetTop)
-
-
-
-
-                    console.log(iter)
-                    hamburgerIter += 10;
-                    navColor(hamburgerIter);
-                    console.log("scroll down")
-                }
-
-            }
-        })
-
-    </script>
-    <script>
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }
     </script>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mySwiper').slick({
+                vertical: true,
+                verticalSwiping: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                loop: false,
+                infinite: false
+        });
+        });
+        var scrollCount = null;
+        var scroll= null;
+        var slideno = null;
+        $('.mySwiper').on('wheel', (function(e) {
+            e.preventDefault();
+
+            clearTimeout(scroll);
+            scroll = setTimeout(function(){scrollCount=0;}, 200);
+            if(scrollCount) return 0;
+            scrollCount=1;
+
+
+            if (e.originalEvent.deltaY < 0) {
+                $('.mySwiper').slick('slickNext');
+                slideno = $(this).data('slide');
+                document.getElementById(slideno).style.color = 'black';
+            } else {
+                $('.mySwiper').slick('slickPrev');
+                slideno = $(this).data('slide');
+                document.getElementById(slideno).style.color = 'black';
+            }
+
+        }));
+        $('a[data-slide]').click(function(e) {
+            e.preventDefault();
+            slideno = $(this).data('slide');
+            $('.mySwiper').slick('slickGoTo', slideno - 1);
+        });
+        $('.mySwiper').on('init reInit afterChange', function (event, slick, currentSlide) {
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            var navItemColl = document.getElementsByClassName("nav-item-a")
+            for (var j = 0, len = navItemColl.length; j < len; j++) {
+                navItemColl[j].style.color = "white";
+
+                document.getElementById(i).style.color = "black";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
