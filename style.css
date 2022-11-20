@@ -553,11 +553,41 @@ input[type="checkbox"] {
     border-style: solid;
     border-color: #ce8f18;
     width: 5vw;
-    background-image: url("src/profiles/profile.png");
+
     background-size: contain;
     height: 5vw;
     background-repeat: no-repeat;
     background-position: center;
+}
+#member-0-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-1-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-2-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-3-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-4-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-5-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-6-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-7-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-8-pic{
+    background-image: url("src/profiles/profile.png");
+}
+#member-9-pic{
+    background-image: url("src/profiles/profile.png");
 }
 .team .list {
     margin-top: 5vh;
