@@ -155,6 +155,7 @@ input[type="checkbox"] {
 
 
 
+
 }
 
 .home {}
@@ -446,63 +447,84 @@ input[type="checkbox"] {
 
 
 
-.team {}
 
-.teamGrid {
-    margin-left: 30vw;
+
+
+.largeMemberView{
+    height: 20vw;
+    width: 35vw;
+    position: absolute;
+    display: flex;
     flex-direction: row;
-    display: grid;
-    width: 40vw;
-    grid-template-columns: auto auto auto auto auto;
-    margin-top: 35vh;
-
-
-}
-
-.firstGridMember {
-
-    height: 40vh !important;
-    margin-top: -18vh;
-    width: 15vw !important;
-    font-size: 2vw !important;
-    margin-left: 5vw;
-
+    align-items: center;
+    gap:3vw;
+    left: 45vw;
+    top: -1vw;
 
 }
-
-.firstGridMember .member-job-type {
-    font-size: 1vw !important;
+.large-member-picture {
+    border-radius: 50%;
+    border-width: 0.2vw;
+    border-style: solid;
+    border-color: #ce8f18;
+    width: 15vw;
+    background-image: url("src/profiles/profile.png");
+    background-size: contain;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.large-member-job-type{
+    font-size: 0.8vw;
+    color: #ce8f18;
+}
+.large-member-name{
+    font-size: 1.5vw;
+    margin-top: -1vw;
+    font-weight: bolder;
 }
 
-.firstGridMember .member-name {
-    font-size: 1.5vw !important;
-}
 
-.firstGridMember .member-picture {
-    box-shadow: 20px 20px 62px rgba(82, 123, 205, 0.3);
-    margin-top: 1vw;
-    height: 12vw !important;
-    width: 12vw !important;
+.large-member-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: left !important;
+    font-size: 5vw;
+
+}
+.teamGridContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45vh;
+    margin-left: -6vw;
+    flex-wrap: nowrap;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+.teamGrid {
+    flex-direction: row;
+    display: flex;
+    width: 100vw;
+    margin-left: -6vw;
+    margin-right: -6vw;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+
 
 }
 
 .teamGridMembers {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    height: 20vh;
-    width: 8vw;
-    gap: 5px;
-    border-radius: 20px;
-    text-align: center;
+    width: 20em;
+    gap: 15px;
     text-align: center;
 
 }
-
-.secondRow {
-    margin-left: 12vw;
-}
-
 /*.teamGridMembers:hover{
     z-index: 10;
     height: 15vw;
@@ -529,15 +551,13 @@ input[type="checkbox"] {
     border-width: 0.2vw;
     border-style: solid;
     border-color: #ce8f18;
-    width: 4vw;
+    width: 5vw;
     background-image: url("src/profiles/profile.png");
     background-size: contain;
-    height: 4vw;
+    height: 5vw;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
 .team .list {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -559,14 +579,14 @@ input[type="checkbox"] {
 .team .member-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left !important;
 
 }
 
 .team .member-job-type {
     font-weight: lighter;
     color: #ce8f18;
-
+    margin-top: -0.5vw;
     font-size: 0.7vw;
     bottom: 0;
 }
@@ -574,52 +594,6 @@ input[type="checkbox"] {
 .team .member-name {
     margin-top: -1vw;
     font-size: 1vw;
-    font-weight: bolder;
-}
-
-.teamlist {
-    margin-left: 35vw;
-    display: flex;
-    flex-direction: row;
-}
-
-
-.team .profile-container {
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-    margin-top: 30vh;
-
-}
-
-.team .profile-container .profile-gap {}
-
-.team .profile-picture {
-    display: flex;
-    background-image: url("src/profiles/profile.png");
-    border-radius: 50%;
-    border-width: 0.2vw;
-    border-style: solid;
-    border-color: #ce8f18;
-    box-shadow: 30px 50px 62px rgba(82, 123, 205, 0.3);
-}
-
-.team .profile-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.team .job-type {
-    font-weight: lighter;
-    color: #ce8f18;
-    bottom: 0;
-}
-
-.team .name {
-    margin-top: -1vw;
-    font-size: 2vw;
     font-weight: bolder;
 }
 
@@ -634,12 +608,15 @@ input[type="checkbox"] {
     font-size: 15vw;
     position: absolute;
     letter-spacing: -1vw;
-    top: 10%;
+    top: 5%;
     left: -10%;
 
 
 
 }
+
+
+
 
 .contact {
     display: flex;
