@@ -593,11 +593,11 @@
 
 
             if (e.originalEvent.deltaY < 0) {
-                $('.mySwiper').slick('slickNext');
+                $('.mySwiper').slick('slickPrev');
                 slideno = $(this).data('slide');
                 document.getElementById(slideno).style.color = 'black';
             } else {
-                $('.mySwiper').slick('slickPrev');
+                $('.mySwiper').slick('slickNext');
                 slideno = $(this).data('slide');
                 document.getElementById(slideno).style.color = 'black';
             }
