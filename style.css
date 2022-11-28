@@ -517,7 +517,6 @@ input[type="checkbox"] {
 }
 
 .teamGridMembers {
-    border-style: solid;
     display: flex;
     cursor: pointer;
     flex-direction: row;
