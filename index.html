@@ -6,655 +6,582 @@
     <title>InvestaLabs</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="src/Logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <header class="header" id="navbar">
+<header class="header" id="navbar">
 
-        <div class="site-logo-container">
-            <img class="site-logo" src="src/Logo.svg" />
+    <div class="site-logo-container">
+        <img class="site-logo" src="src/Logo.svg" />
+    </div>
+    <div class="nav-item-container">
+        <input type="checkbox" id="active">
+        <label id="menu-btn" onclick="menubtnclick()" class="menu-btn ham-menu"><span></span></label>
+        <div class="wrapper" id="wrapper">
+            <ul class="nav-list">
+                <img class="nav-item-site-logo" src="src/Logo.svg" />
+                <li class="nav-item"><a id="1" class="nav-item-a" href="#0" onclick="menubtnclick()" data-slide="1">Home</a></li>
+                <li class="nav-item"><a id="2" class="nav-item-a" href="#1" onclick="menubtnclick()" data-slide="2">About</a></li>
+                <li class="nav-item"><a id="3" class="nav-item-a" href="#2" onclick="menubtnclick()" data-slide="3">Development</a></li>
+                <li class="nav-item"><a id="4" class="nav-item-a" href="#3" onclick="menubtnclick()" data-slide="4">VentureCapital</a></li>
+                <li class="nav-item"><a id="5" class="nav-item-a" href="#4" onclick="menubtnclick()" data-slide="5">Team</a></li>
+                <li class="nav-item"><a id="6" class="nav-item-a" href="#5" onclick="menubtnclick()" data-slide="6">Contact</a></li>
+
+            </ul>
         </div>
-        <div class="nav-item-container">
-            <a><img src="src/Lang.svg" class="lang-icon" /></a>
-            <input type="checkbox" id="active">
-            <label id="menu-btn" onclick="menubtnclick()" class="menu-btn ham-menu"><span></span></label>
-            <div class="wrapper" id="wrapper">
-                <ul class="nav-list">
-                    <img class="nav-item-site-logo" src="src/Logo.svg" />
-                    <li class="nav-item"><a id="1" class="nav-item-a" href="#0" onclick="menubtnclick()" data-slide="1">Home</a></li>
-                    <li class="nav-item"><a id="2" class="nav-item-a" href="#1" onclick="menubtnclick()" data-slide="2">About</a></li>
-                    <li class="nav-item"><a id="3" class="nav-item-a" href="#2" onclick="menubtnclick()" data-slide="3">Development</a></li>
-                    <li class="nav-item"><a id="4" class="nav-item-a" href="#3" onclick="menubtnclick()" data-slide="4">VentureCapital</a></li>
-                    <li class="nav-item"><a id="5" class="nav-item-a" href="#4" onclick="menubtnclick()" data-slide="5">Team</a></li>
-                    <li class="nav-item"><a id="6" class="nav-item-a" href="#5" onclick="menubtnclick()" data-slide="6">Contact</a></li>
+    </div>
+</header>
+<div class="mySwiper">
 
-                </ul>
-            </div>
+
+    <div class="container home">
+        <div class="bg-text" data-bg-text="INVESTALABS"></div>
+        <div class="title">
+            <h1>We build Ventures and Dapps for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
         </div>
-    </header>
-    <div class="mySwiper">
-
-
-        <div class="container home">
-            <div class="bg-text" data-bg-text="INVESTALABS"></div>
-            <div class="title">
-                <h1>We build Markets and Utilities for &nbsp<span style="color: #ce8f18">Web 3.0</span></h1>
-            </div>
-        </div>
-        <div class="container about">
-            <div class="bg-text" data-bg-text="About"></div>
-            <div class="about-text-container">
-                We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
-                Investa Labs's mission of creating more economic freedom for the world.<br><br>We partner with
-                founding
-                teams at the earliest stages, and invest broadly across all categories within the
-                cryptoeconomy.
-
-            </div>
-        </div>
-        <div class="container development">
-            <div class="bg-text" data-bg-text="Development"></div>
-            <div class="gridContainer">
-                <div class="grid-item"><img src="src/icon-1.svg" />
-                    Dedicated nodes
-                </div>
-                <div class="grid-item"><img src="src/icon-2.svg" /> Shared
-                    Nodes
-                </div>
-                <div class="grid-item"><img src="src/icon-3.svg" /> NFT
-                    Marketplace
-                </div>
-                <div class="grid-item"><img src="src/icon-4.svg" />
-                    Custodial
-                    Service</div>
-                <div class="grid-item"><img src="src/icon-5.svg" /> Trading
-                    tools
-                </div>
-                <div class="grid-item"><img src="src/icon-6.svg" /> Crypto
-                    Exchanges
-                </div>
-                <div class="grid-item"><img src="src/icon-7.svg" /> Live
-                    Price Feed
-                </div>
-                <div class="grid-item"><img src="src/icon-8.svg" />
-                    Industrial
-                    solutions</div>
-                <div class="grid-item"><img src="src/icon-9.svg" />
-                    Coin/Token
-                    Insurance</div>
-                <div class="grid-item"><img src="src/icon-10.svg" /> DAPP
-                    Creation
-                </div>
-                <div class="grid-item"><img src="src/icon-11.svg" />
-                    Tokenomics</div>
-                <div class="grid-item"><img src="src/icon-12.svg" /> Exchange
-                    Services</div>
-                <div class="grid-item"><img src="src/icon-13.svg" />
-                    E-Learning
-                    Infrastructure</div>
-                <div class="grid-item"><img src="src/icon-14.svg" />
-                    Decentralized
-                    File Storage</div>
-                <div class="grid-item"><img src="src/icon-15.svg" /> Smart
-                    Contract
-                    Writing</div>
-                <div class="grid-item"><img src="src/icon-16.svg" /> Smart
-                    Contract
-                    Auditing</div>
-            </div>
-
-
-            <div class="textContainer">
-                <h2>We develop, build and integrate Utilities only to add value to the project</h2>
-                <p>We have already created dozens of useful utilities that rocketed the project's earnings.
-                    We know
-                    how difficult it is to find qualified developers, but it is even more difficult to
-                    understand
-                    which product to develop to increase the demand for the token.</p>
-            </div>
-        </div>
-        <div class="container venturecapital">
-            <div class="ventureCapital-bg-text" data-bg-text="VentureCapital"></div>
-            <div class="topContainer">
-                <div class="topContainerCursor">
-                    <span class="arrow" onclick="currentSlide(1)">></span>
-                    <span class="arrow" onclick="currentSlide(2)">></span>
-                    <span class="arrow" onclick="currentSlide(3)">></span>
-                </div>
-
-                <div class="topContainerList">
-                    <span class="dot" onclick="currentSlide(1)">Seed Stage</span>
-                    <span class="dot" onclick="currentSlide(2)">Pre-IDO & IDO Stages</span>
-                    <span class="dot" onclick="currentSlide(3)">Launch & Post-Launch Period</span>
-                </div>
-            </div>
-
-            <div class="slideContainer">
-                <div class="slides fade slide-1">
-
-                    <div class="columnContainer">
-
-                        <div class="column">
-                            <div class="column-bg-text" data-bg-text="1"></div>
-
-                            <div class="stage-text">perform due dilligence and project analysis</div>
-                            <div class="stage">Seed Stage</div>
-
-                        </div>
-                        <div class="column-gap" style="width: 2vw;">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column">
-                            <div class="column-bg-text" data-bg-text="2"></div>
-
-                            <div class="stage-text">Give recommendations on the pitch deck, tokenomics, WP, and token
-                                circulation models</div>
-                            <div class="stage">Seed Stage</div>
-
-                        </div>
-                        <div class="column-gap" style="width: 2vw;">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column">
-                            <div class="column-bg-text" data-bg-text="3"></div>
-
-                            <div class="stage-text">Invest ourselves and attract other Tier-1 VCs. into the seed round
-                            </div>
-                            <div class="stage">Seed Stage</div>
-
-                        </div>
-                        <div class="column-gap" style="width: 2vw;">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column">
-                            <div class="column-bg-text" data-bg-text="4"></div>
-
-                            <div class="stage-text">Develop, secure and integrate utilities</div>
-                            <div class="stage">Seed Stage</div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="slides fade slide-2">
-
-                    <div class="columnContainer">
-                        <div class="column">
-                            <div class="column-bg-text" data-bg-text="5"></div>
-                            <div></div>
-                            <div class="stage-text">Direct connection with<br> Top IDO Launchpads</div>
-                            <div class="stage">Pre-IDO Stage</div>
-                        </div>
-                        <div class="column-gap" style="width: 2vw; margin-right: 5vw">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column">
-                            <div class="column-bg-text" data-bg-text="6"></div>
-                            <div class="stage"></div>
-                            <div class="stage-text">Direct Connection with<br> Tier-1 CEXes</div>
-                            <div class="stage">Pre-IDO Stage</div>
-                        </div>
-                        <div class="column-gap" style="width: 2vw; margin-right: 5vw">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column">
-                            <div class="column-bg-text" data-bg-text="7"></div>
-
-                            <div class="stage-text">Implement snipe-protection<br> And prepare for IDO</div>
-                            <div class="stage">Pre-IDO Stage</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="slides fade slide-3">
-                    <div class="columnContainer">
-
-                        <div class="column" style="z-index: 100;">
-                            <div class="column-bg-text" data-bg-text="8"></div>
-
-                            <div class="stage-text">Develop and implement A strategy for the first 48 hours of trading
-                            </div>
-                            <div class="stage">Launch Stage</div>
-                        </div>
-                        <div class="column-gap" style="width: 2vw;">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column" style="z-index: 100;">
-                            <div class="column-bg-text" data-bg-text="9"></div>
-
-                            <div class="stage-text">Token liquidation</div>
-                            <div class="stage">Launch Stage</div>
-                        </div>
-                        <div class="column-gap" style="width: 2vw;">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column" style="z-index: 100;">
-                            <div class="column-bg-text" data-bg-text="10" style="margin-left: -3vw"></div>
-
-                            <div class="stage-text">We support the project and it's Investors on their way to the top of
-                                The crypto market</div>
-                            <div class="stage">Post-Launch Period</div>
-                        </div>
-                        <div class="column-gap" style="width: 2vw;">
-                            <div class="column-bg-text"></div>
-
-                        </div>
-                        <div class="column" style="z-index: 100;">
-                            <div class="column-bg-text" data-bg-text="11" style="margin-left: -1vw"></div>
-                            <div class="stage-text">Develop, secure and integrate utilities</div>
-                            <div class="stage">Post-Launch Period</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="bottomContainer">
-                <div class="textContainer">
-                    <h1>Investa Labs Incubator</h1>
-                    <h3>Our Investment Arm</h3>
-                    <h4>Investa Labs has come undreds of paths with the founders from idea to successfully launching
-                        their tokens on the exchange and mass adoption.</h4>
-                </div>
-
-            </div>
-            <a class="prev" onclick="plusSlides(-1)"></a>
-            <a class="next" onclick="plusSlides(1);"></a>
-        </div>
-        <div class="container team">
-
-            <div class="bg-text" data-bg-text="Team"></div>
-
-            <div id="largeMemberView" class="largeMemberView">
-                <img id="largeMemberPicture" class="large-member-picture" />
-                <div class="large-member-info">
-                    <p id="largeMemberJobType" class="large-member-job-type">CO-FOUNDER & CEO</p>
-                    <p id="largeMemberName" class="large-member-name">Mustafa Güler</p>
-                </div>
-            </div>
-            <div class="teamGridContainer">
-                <div class="teamGrid">
-                    <div id="member-0" class="teamGridMembers" onclick="memberSelect(this.id, 'member-0-pic', 'member-0-job', 'member-0-name')">
-                        <img id="member-0-pic" class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-0-job" class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-0-name" class="member-name">Mustafa Güler</p>
-                        </div>
-                    </div>
-                    <div id="member-1" class="teamGridMembers" onclick="memberSelect(this.id, 'member-1-pic', 'member-1-job', 'member-1-name')">
-                        <img id="member-1-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-1-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-1-name" class="member-name">Mert Metin</p>
-                        </div>
-                    </div>
-                    <div id="member-2" class="teamGridMembers" onclick="memberSelect(this.id, 'member-2-pic', 'member-2-job', 'member-2-name')">
-                        <img id="member-2-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-2-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-2-name" class="member-name">Elifnur Demir</p>
-                        </div>
-                    </div>
-                    <div id="member-3" class="teamGridMembers" onclick="memberSelect(this.id, 'member-3-pic', 'member-3-job', 'member-3-name')">
-                        <img id="member-3-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-3-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-3-name" class="member-name">Nicole Dede</p>
-                        </div>
-                    </div>
-                    <div id="member-4" class="teamGridMembers" onclick="memberSelect(this.id, 'member-4-pic', 'member-4-job', 'member-4-name')">
-                        <img id="member-4-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-4-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-4-name" class="member-name">Mehmet Kayan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="teamGrid">
-                    <div id="member-5" class="teamGridMembers" onclick="memberSelect(this.id, 'member-5-pic', 'member-5-job', 'member-5-name')">
-                        <img id="member-5-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-5-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-5-name" class="member-name">Mustafa Güler</p>
-                        </div>
-                    </div>
-                    <div id="member-6" class="teamGridMembers" onclick="memberSelect(this.id, 'member-6-pic', 'member-6-job', 'member-6-name')">
-                        <img id="member-6-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-6-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-6-name" class="member-name">Mert Metin</p>
-                        </div>
-                    </div>
-                    <div id="member-7" class="teamGridMembers" onclick="memberSelect(this.id, 'member-7-pic', 'member-7-job', 'member-7-name')">
-                        <img id="member-7-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-7-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-7-name" class="member-name">Elifnur Demir</p>
-                        </div>
-                    </div>
-                    <div id="member-8" class="teamGridMembers" onclick="memberSelect(this.id, 'member-8-pic', 'member-8-job', 'member-8-name')">
-                        <img id="member-8-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-8-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-8-name" class="member-name">Nicole Dede</p>
-                        </div>
-                    </div>
-                    <div id="member-9" class="teamGridMembers" onclick="memberSelect(this.id, 'member-9-pic', 'member-9-job', 'member-9-name')">
-                        <img id="member-9-pic"  class="member-picture" />
-                        <div class="member-info">
-                            <p id="member-9-job"  class="member-job-type">CO-FOUNDER & CEO</p>
-                            <p id="member-9-name" class="member-name">Mehmet Kayan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--
-        <div class="teamlist">
-            <div class="list list1">
-                <div class="member">
-                    <img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div>
-                </div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-            </div>
-            <div class="list list2">
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-                <div class="member"><img class="profile-picture"/>
-                    <div class="profile-info">
-                        <p class="job-type">CO-FOUNDER & CEO</p>
-                        <p class="name">Mustafa Güler</p>
-                    </div></div>
-
-            </div>
-        </div>
-        -->
-
-        </div>
-        <div class="container contact">
-            <div class="bg-text" data-bg-text="Contact"></div>
-            <div class="contact-info-container">
-                <div class="contact-info-text">
-                    <h3 style="letter-spacing: 0.5vw; font-weight: 500">CONNECTED WITH US</h3>
-                    <p style="margin-right: 10vw; font-weight : inherit ">Quis ipsum suspendisse ultrices. Rissus
-                        commodo viverra maecenas accumsan lacus sed vel facilisis adipiscing.</p>
-                    <h2 style="font-weight: 400; font-size: 2vw">info@investalabs.com</h2>
-                    <p style="color: gray">004 Riley Street, Surry Hills 2050 Sydney, Australia</p>
-                    <p style="color: gray">+0234 233 423 444</p>
-                </div>
-
-            </div>
-
-            <form class="contact-card-container" action="mailto:info@investalabs.com" method="post"
-                  enctype="text/plain">
-                <input class="card-item name" type="text" id="Name" name="name" placeholder="YOUR NAME"><br>
-                <input class="card-item email" type="text" id="Email" name="email" placeholder="EMAIL"><br>
-                <textarea class="card-item msg" type="text" id="Msg" name="msg"
-                          placeholder="YOUR MESSAGE"></textarea><br>
-                <input class="card-item submit" type="submit" value="Send">
-            </form>
-
+    </div>
+    <div class="container about">
+        <div class="bg-text" data-bg-text="About"></div>
+        <div class="about-text-container">
+            We back exceptional entrepreneurs working to advance the crypto/Web3 ecosystem and support
+            Investa Labs's mission of creating more economic freedom for the world.<br><br>We partner with
+            founding
+            teams at the earliest stages, and invest broadly across all categories within the
+            cryptoeconomy.
 
         </div>
     </div>
-    <div style="height: 8.6vh"></div>
-    <footer class="footer">
-        <div class="copy&social-container">
-            <div class="social">
-
-                <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
-                <a class="social-icon" href="#"><i class="fa fa-youtube-play"></i></a>
-                <a class="social-icon" href="#"><i class="fa fa-instagram"></i></a>
-
-
+    <div class="container development">
+        <div class="bg-text" data-bg-text="Development"></div>
+        <div class="gridContainer">
+            <div class="grid-item"><img src="src/icon-1.svg" />
+                Dedicated nodes
             </div>
-            <p class="copyright">© 2022 INVESTALABS. - All Rights Reserved.</p>
+            <div class="grid-item"><img src="src/icon-2.svg" /> Shared
+                Nodes
+            </div>
+            <div class="grid-item"><img src="src/icon-3.svg" /> NFT
+                Marketplace
+            </div>
+            <div class="grid-item"><img src="src/icon-4.svg" />
+                Custodial
+                Service</div>
+            <div class="grid-item"><img src="src/icon-5.svg" /> Trading
+                tools
+            </div>
+            <div class="grid-item"><img src="src/icon-6.svg" /> Crypto
+                Exchanges
+            </div>
+            <div class="grid-item"><img src="src/icon-7.svg" /> Live
+                Price Feed
+            </div>
+            <div class="grid-item"><img src="src/icon-8.svg" />
+                Industrial
+                solutions</div>
+            <div class="grid-item"><img src="src/icon-9.svg" />
+                Coin/Token
+                Insurance</div>
+            <div class="grid-item"><img src="src/icon-10.svg" /> DAPP
+                Creation
+            </div>
+            <div class="grid-item"><img src="src/icon-11.svg" />
+                Tokenomics</div>
+            <div class="grid-item"><img src="src/icon-12.svg" /> Exchange
+                Services</div>
+            <div class="grid-item"><img src="src/icon-13.svg" />
+                E-Learning
+                Infrastructure</div>
+            <div class="grid-item"><img src="src/icon-14.svg" />
+                Decentralized
+                File Storage</div>
+            <div class="grid-item"><img src="src/icon-15.svg" /> Smart
+                Contract
+                Writing</div>
+            <div class="grid-item"><img src="src/icon-16.svg" /> Smart
+                Contract
+                Auditing</div>
         </div>
 
 
-        <img class="mouse-icon" alt="mouse" src="src/Mouse.svg" />
-
-
-        <div class="mail-elements-container">
-            <div class="email-icon-container">
-                <i class="fa fa-envelope" aria-hidden="true" style="margin-top: 0.6vw"></i>
+        <div class="textContainer">
+            <h2>We develop, build and integrate Utilities only to add value to the project</h2>
+            <p>We have already created dozens of useful utilities that rocketed the project's earnings.
+                We know
+                how difficult it is to find qualified developers, but it is even more difficult to
+                understand
+                which product to develop to increase the demand for the token.</p>
+        </div>
+    </div>
+    <div class="container venturecapital">
+        <div class="ventureCapital-bg-text" data-bg-text="VentureCapital"></div>
+        <div class="topContainer">
+            <div class="topContainerCursor">
+                <span class="arrow" onclick="currentSlide(1)">></span>
+                <span class="arrow" onclick="currentSlide(2)">></span>
+                <span class="arrow" onclick="currentSlide(3)">></span>
             </div>
-            <div class="email-container">
-                <div class="email-us">EMAIL US</div>
-                <div class="email-address" style="font-weight: 600">info@investalabs.com</div>
+
+            <div class="topContainerList">
+                <span class="dot" onclick="currentSlide(1)">Seed Stage</span>
+                <span class="dot" onclick="currentSlide(2)">Pre-IDO & IDO Stages</span>
+                <span class="dot" onclick="currentSlide(3)">Launch & Post-Launch Period</span>
+            </div>
+        </div>
+
+        <div class="slideContainer">
+            <div class="slides fade slide-1">
+
+                <div class="columnContainer">
+
+                    <div class="column">
+                        <div class="column-bg-text" data-bg-text="1"></div>
+
+                        <div class="stage-text">Perform due dilligence and project analysis</div>
+                        <div class="stage">Seed Stage</div>
+
+                    </div>
+                    <div class="column-gap" style="width: 2vw;">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column">
+                        <div class="column-bg-text" data-bg-text="2"></div>
+
+                        <div class="stage-text">Give recommendations on the pitch deck, tokenomics, WP, and token
+                            circulation models</div>
+                        <div class="stage">Seed Stage</div>
+
+                    </div>
+                    <div class="column-gap" style="width: 2vw;">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column">
+                        <div class="column-bg-text" data-bg-text="3"></div>
+
+                        <div class="stage-text">Invest ourselves and attract other Tier-1 VCs. into the seed round
+                        </div>
+                        <div class="stage">Seed Stage</div>
+
+                    </div>
+                    <div class="column-gap" style="width: 2vw;">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column">
+                        <div class="column-bg-text" data-bg-text="4"></div>
+
+                        <div class="stage-text">Develop, secure and integrate utilities</div>
+                        <div class="stage">Seed Stage</div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slides fade slide-2">
+
+                <div class="columnContainer">
+                    <div class="column">
+                        <div class="column-bg-text" data-bg-text="5"></div>
+                        <div></div>
+                        <div class="stage-text">Direct connection with<br> Top IDO Launchpads</div>
+                        <div class="stage">Pre-IDO Stage</div>
+                    </div>
+                    <div class="column-gap" style="width: 2vw; margin-right: 5vw">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column">
+                        <div class="column-bg-text" data-bg-text="6"></div>
+                        <div class="stage"></div>
+                        <div class="stage-text">Direct Connection with<br> Tier-1 CEXes</div>
+                        <div class="stage">Pre-IDO Stage</div>
+                    </div>
+                    <div class="column-gap" style="width: 2vw; margin-right: 5vw">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column">
+                        <div class="column-bg-text" data-bg-text="7"></div>
+
+                        <div class="stage-text">Implement snipe-protection<br> And prepare for IDO</div>
+                        <div class="stage">Pre-IDO Stage</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slides fade slide-3">
+                <div class="columnContainer">
+
+                    <div class="column" style="z-index: 100;">
+                        <div class="column-bg-text" data-bg-text="8"></div>
+
+                        <div class="stage-text">Develop and implement A strategy for the first 48 hours of trading
+                        </div>
+                        <div class="stage">Launch Stage</div>
+                    </div>
+                    <div class="column-gap" style="width: 2vw;">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column" style="z-index: 100;">
+                        <div class="column-bg-text" data-bg-text="9"></div>
+
+                        <div class="stage-text">Token liquidation</div>
+                        <div class="stage">Launch Stage</div>
+                    </div>
+                    <div class="column-gap" style="width: 2vw;">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column" style="z-index: 100;">
+                        <div class="column-bg-text" data-bg-text="10" style="margin-left: -3vw"></div>
+
+                        <div class="stage-text">We support the project and it's Investors on their way to the top of
+                            The crypto market</div>
+                        <div class="stage">Post-Launch Period</div>
+                    </div>
+                    <div class="column-gap" style="width: 2vw;">
+                        <div class="column-bg-text"></div>
+
+                    </div>
+                    <div class="column" style="z-index: 100;">
+                        <div class="column-bg-text" data-bg-text="11" style="margin-left: -1vw"></div>
+                        <div class="stage-text">Develop, secure and integrate utilities</div>
+                        <div class="stage">Post-Launch Period</div>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </footer>
+
+        <div class="bottomContainer">
+            <div class="textContainer">
+                <h1>Investa Labs Incubator</h1>
+                <h3>Our Investment Arm</h3>
+                <h4>Investa Labs has come undreds of paths with the founders from idea to successfully launching
+                    their tokens on the exchange and mass adoption.</h4>
+            </div>
+
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1);"></a>
+    </div>
+    <div class="container team">
+
+        <div class="bg-text" data-bg-text="Team"></div>
+
+        <div id="largeMemberView" class="largeMemberView">
+            <img id="largeMemberPicture" class="large-member-picture" />
+            <div class="large-member-info">
+                <p id="largeMemberJobType" class="large-member-job-type">CO-FOUNDER & CEO</p>
+                <p id="largeMemberName" class="large-member-name">Mustafa GÜLER</p>
+            </div>
+        </div>
+        <div class="teamGridContainer">
+            <div class="teamGrid">
+                <div id="member-0" class="teamGridMembers" onclick="memberSelect(this.id, 'member-0-pic', 'member-0-job', 'member-0-name')">
+                    <img id="member-0-pic" class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-0-job" class="member-job-type">CO-FOUNDER & COO</p>
+                        <p id="member-0-name" class="member-name">Berkcan AKSAY</p>
+                    </div>
+                </div>
+                <div id="member-1" class="teamGridMembers" onclick="memberSelect(this.id, 'member-1-pic', 'member-1-job', 'member-1-name')">
+                    <img id="member-1-pic"  class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-1-job"  class="member-job-type">CO-FOUNDER & CTO</p>
+                        <p id="member-1-name" class="member-name">Tezcan TURASAN</p>
+                    </div>
+                </div>
+                <div id="member-2" class="teamGridMembers" onclick="memberSelect(this.id, 'member-2-pic', 'member-2-job', 'member-2-name')">
+                    <img id="member-2-pic"  class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-2-job"  class="member-job-type">BLOCKCHAIN DEVELOPER</p>
+                        <p id="member-2-name" class="member-name">Bilgin KOÇAK</p>
+                    </div>
+                </div>
+                <div id="member-3" class="teamGridMembers" onclick="memberSelect(this.id, 'member-3-pic', 'member-3-job', 'member-3-name')">
+                    <img id="member-3-pic"  class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-3-job"  class="member-job-type">SR. FRONT-END DEVELOPER</p>
+                        <p id="member-3-name" class="member-name">Orçun KILIÇASLAN</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="teamGrid">
+                <div id="member-4" class="teamGridMembers" onclick="memberSelect(this.id, 'member-4-pic', 'member-4-job', 'member-4-name')">
+                    <img id="member-4-pic"  class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-4-job"  class="member-job-type">SR. DESIGNER</p>
+                        <p id="member-4-name" class="member-name">Ozan TÜRKOĞLU</p>
+                    </div>
+                </div>
+                <div id="member-5" class="teamGridMembers" onclick="memberSelect(this.id, 'member-5-pic', 'member-5-job', 'member-5-name')">
+                    <img id="member-5-pic"  class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-5-job"  class="member-job-type">JR. BACKEND DEVELOPER</p>
+                        <p id="member-5-name" class="member-name">Zeynel Abidin AYHAN</p>
+                    </div>
+                </div>
+                <div id="member-6" class="teamGridMembers" onclick="memberSelect(this.id, 'member-6-pic', 'member-6-job', 'member-6-name')">
+                    <img id="member-6-pic"  class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-6-job"  class="member-job-type">PROJECT ANALYST</p>
+                        <p id="member-6-name" class="member-name">Ertuğrul Said ŞİMŞEK</p>
+                    </div>
+                </div>
+                <div id="member-7" class="teamGridMembers" onclick="memberSelect(this.id, 'member-7-pic', 'member-7-job', 'member-7-name')">
+                    <img id="member-7-pic"  class="member-picture" />
+                    <div class="member-info">
+                        <p id="member-7-job"  class="member-job-type">OPERATIONS SPECIALIST</p>
+                        <p id="member-7-name" class="member-name">Muhammed Burak ERGEN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-    <script>
 
-        function memberSelect(memberID, imageID, jobID, nameID){
-            var largeMemberName = 'largeMemberName'
-            var largeMemberJob = 'largeMemberJobType'
-            var largeMemberPic = 'largeMemberPicture'
+    </div>
+    <div class="container contact">
+        <div class="bg-text" data-bg-text="Contact"></div>
+        <div class="contact-info-container">
+            <div class="contact-info-text">
+                <h3 style="letter-spacing: 0.5vw; font-weight: 500">CONNECTED WITH US</h3>
+                <p style="margin-right: 10vw; font-weight : inherit ">Quis ipsum suspendisse ultrices. Rissus
+                    commodo viverra maecenas accumsan lacus sed vel facilisis adipiscing.</p>
+                <h2 style="font-weight: 400; font-size: 2vw">info@investalabs.com</h2>
+                <p style="color: gray">004 Riley Street, Surry Hills 2050 Sydney, Australia</p>
+                <p style="color: gray">+0234 233 423 444</p>
+            </div>
 
+        </div>
 
-            var nameIter = document.getElementById(largeMemberName).innerHTML
-
-
-            var jobIter = document.getElementById(largeMemberJob).innerHTML
-
-
-            const memberImg = document.getElementById(imageID);
-            const memberImgStyles = window.getComputedStyle(memberImg);
-            const image = memberImgStyles.backgroundImage;
-
-
-            const largeMemberImg = document.getElementById(largeMemberPic);
-            const largeMemberImgStyles = window.getComputedStyle(largeMemberImg);
-            const LargeImage = largeMemberImgStyles.backgroundImage;
-
-
-            document.getElementById('largeMemberView').classList.toggle('fade');
-
-
-            document.getElementById(largeMemberName).innerHTML = document.getElementById(nameID).innerHTML;
-            document.getElementById(nameID).innerHTML = nameIter;
-
-            document.getElementById(largeMemberJob).innerHTML = document.getElementById(jobID).innerHTML;
-            document.getElementById(jobID).innerHTML = jobIter;
-
-            document.getElementById(largeMemberPic).style.backgroundImage = image;
-            document.getElementById(imageID).style.backgroundImage = LargeImage;
-            setTimeout(function(){document.getElementById('largeMemberView').classList.remove('fade')}, 1500);
+        <form class="contact-card-container" action="mailto:info@investalabs.com" method="post"
+              enctype="text/plain">
+            <input class="card-item name" type="text" id="Name" name="name" placeholder="YOUR NAME"><br>
+            <input class="card-item email" type="text" id="Email" name="email" placeholder="EMAIL"><br>
+            <textarea class="card-item msg" type="text" id="Msg" name="msg"
+                      placeholder="YOUR MESSAGE"></textarea><br>
+            <input class="card-item submit" type="submit" value="Send">
+        </form>
 
 
+    </div>
+</div>
+<div style="height: 8.6vh"></div>
+<footer class="footer">
+    <div class="copy&social-container">
+        <div class="social">
+
+            <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="social-icon" href="#"><i class="fa fa-youtube-play"></i></a>
+            <a class="social-icon" href="#"><i class="fa fa-instagram"></i></a>
+
+
+        </div>
+        <p class="copyright">© 2022 INVESTALABS. - All Rights Reserved.</p>
+    </div>
+
+
+    <img class="mouse-icon" alt="mouse" src="src/Mouse.svg" />
+
+
+    <div class="mail-elements-container">
+        <div class="email-icon-container">
+            <i class="fa fa-envelope" aria-hidden="true" style="margin-top: 0.6vw"></i>
+        </div>
+        <div class="email-container">
+            <div class="email-us">EMAIL US</div>
+            <div class="email-address" style="font-weight: 600">info@investalabs.com</div>
+        </div>
+
+    </div>
+</footer>
+
+
+<script>
+
+    function memberSelect(memberID, imageID, jobID, nameID){
+        var largeMemberName = 'largeMemberName'
+        var largeMemberJob = 'largeMemberJobType'
+        var largeMemberPic = 'largeMemberPicture'
+
+
+        var nameIter = document.getElementById(largeMemberName).innerHTML
+
+
+        var jobIter = document.getElementById(largeMemberJob).innerHTML
+
+
+        const memberImg = document.getElementById(imageID);
+        const memberImgStyles = window.getComputedStyle(memberImg);
+        const image = memberImgStyles.backgroundImage;
+
+
+        const largeMemberImg = document.getElementById(largeMemberPic);
+        const largeMemberImgStyles = window.getComputedStyle(largeMemberImg);
+        const LargeImage = largeMemberImgStyles.backgroundImage;
+
+
+        document.getElementById('largeMemberView').classList.toggle('fade');
+
+
+        document.getElementById(largeMemberName).innerHTML = document.getElementById(nameID).innerHTML;
+        document.getElementById(nameID).innerHTML = nameIter;
+
+        document.getElementById(largeMemberJob).innerHTML = document.getElementById(jobID).innerHTML;
+        document.getElementById(jobID).innerHTML = jobIter;
+
+        document.getElementById(largeMemberPic).style.backgroundImage = image;
+        document.getElementById(imageID).style.backgroundImage = LargeImage;
+        setTimeout(function(){document.getElementById('largeMemberView').classList.remove('fade')}, 1500);
+
+
+
+    }
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        function nameFunction() {
+            return false;
+        }
+    } else { }
+    window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
+    window.setInterval(function () {
+        plusSlides(1)
+    }, 15000);
+    function menubtnclick() {
+        if (document.getElementById('active').checked) {
+            document.getElementById('active').checked = false;
 
         }
-
-        if (window.matchMedia('(max-width: 767px)').matches) {
-            function nameFunction() {
-                return false;
-            }
-        } else { }
-        window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
-        window.setInterval(function () {
-            plusSlides(1)
-        }, 15000);
-        function menubtnclick() {
-            if (document.getElementById('active').checked) {
-                document.getElementById('active').checked = false;
-
-            }
-            else {
-                document.getElementById('active').checked = true;
-            }
+        else {
+            document.getElementById('active').checked = true;
         }
-        let slideIndex = 1;
-        showSlides(slideIndex);
+    }
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        let arrows = document.getElementsByClassName("arrow");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            arrows[i].className = arrows[i].className.replace(" activex", "");
         }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        arrows[slideIndex - 1].className += " activex";
+    }
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
 
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slides");
-            let dots = document.getElementsByClassName("dot");
-            let arrows = document.getElementsByClassName("arrow");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-                arrows[i].className = arrows[i].className.replace(" activex", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            arrows[slideIndex - 1].className += " activex";
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
         }
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function () { myFunction() };
-
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
-    </script>
+    }
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
 
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.mySwiper').slick({
-                vertical: true,
-                verticalSwiping: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                prevArrow: false,
-                nextArrow: false,
-                loop: false,
-                infinite: false,
-                zIndex: -100
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.mySwiper').slick({
+            vertical: true,
+            verticalSwiping: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            prevArrow: false,
+            nextArrow: false,
+            loop: false,
+            infinite: false,
+            zIndex: -100
         });
-        });
-        var scrollCount = null;
-        var scroll= null;
-        var slideno = null;
-        $('.mySwiper').on('wheel', (function(e) {
-            e.preventDefault();
+    });
+    var scrollCount = null;
+    var scroll= null;
+    var slideno = null;
+    $('.mySwiper').on('wheel', (function(e) {
+        e.preventDefault();
 
-            clearTimeout(scroll);
-            scroll = setTimeout(function(){scrollCount=0;}, 200);
-            if(scrollCount) return 0;
-            scrollCount=1;
+        clearTimeout(scroll);
+        scroll = setTimeout(function(){scrollCount=0;}, 200);
+        if(scrollCount) return 0;
+        scrollCount=1;
 
 
-            if (e.originalEvent.deltaY < 0) {
-                $('.mySwiper').slick('slickPrev');
-                slideno = $(this).data('slide');
-                document.getElementById(slideno).style.color = 'black';
-            } else {
-                $('.mySwiper').slick('slickNext');
-                slideno = $(this).data('slide');
-                document.getElementById(slideno).style.color = 'black';
-            }
-
-        }));
-        $('a[data-slide]').click(function(e) {
-            e.preventDefault();
+        if (e.originalEvent.deltaY < 0) {
+            $('.mySwiper').slick('slickPrev');
             slideno = $(this).data('slide');
-            $('.mySwiper').slick('slickGoTo', slideno - 1);
-        });
-        $('.mySwiper').on('init reInit afterChange', function (event, slick, currentSlide) {
-            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-            var i = (currentSlide ? currentSlide : 0) + 1;
-            var navItemColl = document.getElementsByClassName("nav-item-a")
-            for (var j = 0, len = navItemColl.length; j < len; j++) {
-                navItemColl[j].style.color = "white";
+            document.getElementById(slideno).style.color = 'black';
+        } else {
+            $('.mySwiper').slick('slickNext');
+            slideno = $(this).data('slide');
+            document.getElementById(slideno).style.color = 'black';
+        }
 
-                document.getElementById(i).style.color = "black";
-            }
-        });
-    </script>
+    }));
+    $('a[data-slide]').click(function(e) {
+        e.preventDefault();
+        slideno = $(this).data('slide');
+        $('.mySwiper').slick('slickGoTo', slideno - 1);
+    });
+    $('.mySwiper').on('init reInit afterChange', function (event, slick, currentSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        var navItemColl = document.getElementsByClassName("nav-item-a")
+        for (var j = 0, len = navItemColl.length; j < len; j++) {
+            navItemColl[j].style.color = "white";
+
+            document.getElementById(i).style.color = "black";
+        }
+    });
+</script>
 
 </body>
 

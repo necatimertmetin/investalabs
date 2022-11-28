@@ -479,7 +479,7 @@ input[type="checkbox"] {
     color: #ce8f18;
 }
 .large-member-name{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-top: -1vw;
     font-weight: bolder;
 }
@@ -517,13 +517,14 @@ input[type="checkbox"] {
 }
 
 .teamGridMembers {
+    border-style: solid;
     display: flex;
     cursor: pointer;
     flex-direction: row;
     align-items: center;
-    width: 20em;
+    font-size: 1vw;
+    width: 20vw;
     gap: 15px;
-    text-align: center;
 
 }
 /*.teamGridMembers:hover{
