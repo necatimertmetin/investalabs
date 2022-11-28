@@ -12,6 +12,7 @@ html {
 }
 
 .sticky {
+    z-index: 5500 !important;
     position: fixed;
     top: 0;
     width: 100%;
@@ -21,8 +22,12 @@ html {
     padding-top: 60px;
 }
 
+body{
+    margin: 0;
+}
 .header {
     z-index: 5500 !important;
+    position: relative;
     width: 100%;
     background-color: white;
     display: flex;
@@ -36,6 +41,7 @@ html {
 
 .site-logo {
     margin-left: 2vw;
+
 }
 
 .nav-item-container {
@@ -207,13 +213,32 @@ input[type="checkbox"] {
 
 .about-text-container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-left: 12vw;
-    margin-right: 45vw;
     font-size: 1.2vw;
     font-weight: 500;
     position: absolute;
     height: 80vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    gap: 50px
+}
+.about-text-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.column1{
+    flex: 1;
+    text-align: right;
+}
+.column2{
+    flex: 1;
+}
+.column3{
+    flex: 1;
 }
 
 .development {}
